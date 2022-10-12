@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
 /* 공통선언 */
 * {
@@ -9,4 +11,669 @@
     padding: 0;
     word-break: keep-all;
     outline: 1px solid blue;
+}
+
+body {
+    min-width: 1500px;
+}
+
+body .pageTop{
+    position: fixed;
+    right: 5%; bottom: 3%;
+    width: 50px; height: 50px;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    z-index: 5;
+    border: none;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --colorRed: #DD454F;
+    --colorPink: #FF9C9C;
+    --colorLightpink: #FFF8F8;
+    --colorSky: #DDF3FF;  
+    --colorFontBlack: #000000;
+    --colorFontBasic: #383838;
+    --colorFontLight: #808080;
+    --colorFontWhite: #ffffff;    
+}
+
+section,
+.section {
+    width: 100%;
+}
+
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+i > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4.375rem;
+    line-height: 95px;
+    color: var(--colorFontWhite);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+}
+
+/*main header*/
+header {
+    height: 80px;
+    width: 100%;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+nav.inner {
+    justify-content: space-between;
+}
+
+nav.inner .logo {
+    width: 110px; height: 80px;
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 50%/ cover;
+}
+
+nav.inner .gnb {
+    display: flex; 
+    align-items: center;
+}
+
+nav.inner .gnb li {
+    margin-right: 55px;
+}
+
+nav.inner .gnb li:nth-child(4) {
+    margin-right: 0;
+}
+
+nav.inner li > a {
+    padding: 10px 5px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+nav.inner li > a:hover {
+    color: var(--colorRed);
+}
+
+/* sub page: title */
+.sec01 {
+    height: 450px;
+    margin: 80px 0 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
+}
+
+.sec01 .inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0;
+}
+
+.sec01 .inner p {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 41px;
+    letter-spacing: -0.05em;
+    color: var(--colorFontWhite);
+    margin: 10px 0 4px;
+}
+
+.sec01 .inner .textBox {
+    margin: 50px 0 0;
+}
+
+.sec01 .inner .textBox > .ico_wh {
+    margin: 0 15px 0 0;
+    font-size: 20px; 
+    color: var(--colorFontWhite);
+}
+
+.sec01 .inner .textBox > span{
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--colorFontWhite);
+}
+
+/* sub page: nav */
+.sub {
+    height: 60px;
+    background: var(--colorRed);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.sub .inner {
+    align-items: center;
+    position: relative;
+}
+
+.sub .inner li {
+    flex: 1 1 0%;
+    text-align: center;
+}
+
+.sub .inner li:first-child::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    display: block;
+    background: var(--colorFontWhite);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub .inner a {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 27px;
+    color: var(--colorFontWhite);
+}
+
+.sub .inner a:hover {
+    color: var(--colorFontBlack);
+}
+
+/* DREAM project? */
+.sec02 {
+    height: 850px;
+    background: var(--colorLightpink);
+}
+
+.sec02 .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    gap: 70px;
+}
+
+.sec02 .inner .title {
+    position: relative;
+    padding: 0 0 35px;
+}
+
+.sec02 .inner .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
+.sec02 .inner .content {
+    width: 100%;
+    padding: 0 300px 0 0;
+    position: relative;
+}
+
+.sec02 .inner .textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    padding: 40px 50px 60px;
+    background: var(--colorRed);
+}
+
+.sec02 .inner .textBox p {
+    white-space: pre-line;
+    color: var(--colorFontWhite);
+}
+
+.sec02 .inner .textBox p:nth-child(1) {
+    font-size: 1.6875rem;
+    line-height: 37px;
+}
+
+.sec02 .inner .textBox p:nth-child(1) span {
+    font-weight: 700;
+}
+
+.sec02 .inner .textBox p:nth-child(2) {
+    margin: 50px 0 15px;
+}
+
+.sec02 .inner .textBox p:nth-child(2),
+.sec02 .inner .textBox p:nth-child(3) {
+    font-size: 1.25rem;
+    line-height: 27px;
+}
+
+.sec02 .inner img {
+    width: 350px;
+    height: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute; 
+    top: 75px;
+    right: 65px;
+}
+
+/* 대장암 예방법 'DREAM' */
+.sec03 {
+    height: 920px;
+}
+
+.sec03 .inner {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.sec03 .inner h3 > span {
+    display: block;
+    font-weight: 600;
+}
+
+.sec03 .inner .dream {
+    padding: 10px 0;
+}
+
+.sec03 .inner .dream div {
+    display: flex;
+    margin: 0 0 25px;
+}
+
+.sec03 .inner .dream div:last-child {
+    margin: 0;
+}
+
+.sec03 .inner .dream div dt {
+    font-weight: 700;
+    font-size: 2.8125rem;
+    line-height: 82px;
+    text-align: center;
+    color: var(--colorFontWhite);
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    background: var(--colorRed);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 40px 0 0;
+    transform: translate(0, 0);
+    transition: all 0.3s ease-out;
+}
+
+.sec03 .inner .dream div dt:hover {
+    transform: translate(0, -10px);
+    transition: all 0.3s ease-out;
+}
+
+
+.sec03 .inner .dream div dd {
+    font-weight: 600;
+    line-height: 85px;
+}
+
+
+.sec03 .inner .dream div dd > span {
+    color: var(--colorRed);
+}
+
+.sec03 .inner .dream div dd:nth-child(2) {
+    font-size: 2.1875rem;
+    margin: 0 15px 0 0;
+}
+
+.sec03 .inner .dream div dd:nth-child(3) {
+    font-size: 1.5625rem;
+    color: var(--colorFontBasic);
+}
+
+/* 모두에게 적용되는 프로젝트 */
+.sec04 .inner {
+    flex-direction: column;
+    padding: 100px 0 120px;
+    gap: 100px;
+}
+
+.sec04 .inner h3 > span {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.sec04 .inner .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    gap: 150px;
+}
+
+.sec04 .inner .content li {
+    display: flex;
+    align-items: center;
+}
+
+.sec04 .inner .content li img {
+    min-width: 200px;
+    height: 250px;
+    object-fit: none;
+    border-radius: 15px;
+    background: var(--colorSky);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 150px 0 0;
+}
+
+.sec04 .inner .content li:nth-child(1) img {
+    object-position: 7.5% 61%;
+} 
+
+.sec04 .inner .content li:nth-child(2) img {
+    object-position: 48.5% 31%;
+} 
+
+.sec04 .inner .content li:nth-child(3) img {
+    object-position: 88.5% 32%;
+} 
+
+.sec04 .inner .content li dl > dt {
+    font-weight: 700;
+    font-size: 2.1875rem;
+    line-height: 48px;
+    color: var(--colorRed);
+    margin: 0 0 30px;
+}
+
+.sec04 .inner .content li dl > dd {
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--colorFontBasic);
+}
+
+.sec04 .inner .content li dl > dd:nth-child(2) {
+    margin: 0 0 10px;
+}
+
+/* 주변 검진기관 찾기 */
+.sec05 {
+    height: 450px;
+    background: var(--colorSky);
+}
+
+.sec05 .inner {
+    flex-direction: column;
+    align-items: center;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
+    padding: 35px 140px 35px 160px;
+}
+
+.sec05 .inner .content .ico_wh{
+    font-size: 100px;
+
+}
+
+/* 로고 및 캐릭터 */
+.sec06 .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.sec06 .inner .title {
+    padding: 0 0 35px;
+    position: relative;
+}
+
+.sec06 .inner .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
+.sec06 .inner ul {
+    display: flex;
+    flex-direction: column;
+    gap: 80px 0;
+    width: 100%;
+    margin: 60px 0 0;
+}
+
+.sec06 .inner ul li {
+    position: relative;
+}
+
+.sec06 .inner ul li:nth-child(2) {
+    margin: 50px 0 0;
+}
+
+.sec06 .inner ul li:nth-child(1)::after,
+.sec06 .inner ul li:nth-child(2)::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: #D2D2D2;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.sec06 .inner ul li:nth-child(1)::after {
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+}
+
+.sec06 .inner ul li h4 {
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 41px;
+}
+
+.sec06 .inner ul li:nth-child(1) h4,
+.sec06 .inner ul li:nth-child(3) h4 {
+    margin: 0 0 30px;
+}
+
+.sec06 .inner ul li p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    white-space: pre-line;
+    color: var(--colorFontBasic);
+}
+
+.sec06 .inner ul .color {
+    display: flex;
+    margin: 50px 0;
+    padding: 0 0 30px;
+}
+
+.sec06 .inner ul .color > span {
+    flex: 1 1 50%;
+    height: 200px;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 200px;
+    text-align: center;
+    color: var(--colorFontWhite);
+    border-radius: 15px;
+}
+
+.sec06 .inner ul .color > span:nth-child(1) {
+    background: #A0C9AF;
+    margin: 0 50px 0 0;
+}
+
+.sec06 .inner ul .color > span:nth-child(2) {
+    background: var(--colorRed);
+    margin: 0 0 0 50px;
+}
+
+.sec06 .inner ul .design {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec06 .inner ul .design > img {
+    height: 400px;
+}
+
+.sec06 .inner ul li:nth-child(1) .design img {
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+.sec06 .inner ul li:nth-child(3) .design img {
+    object-fit: cover;
+    object-position: 50% 22%;
+}
+
+.sec06 .inner ul li:nth-child(1) .design img, 
+.sec06 .inner ul li:nth-child(3) .design img {
+    margin: 40px 0;
+}
+
+.sec06 .inner ul .design > a {
+    align-self: center;
+    width: 250px;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 34px;
+    text-align: center;
+    color: var(--colorRed);
+    border: 1px solid var(--colorRed);
+}
+
+.sec06 .inner ul .design > a:hover {
+    color: var(--colorFontWhite);
+    background: var(--colorRed);
+}
+
+/* footer */
+.fnb {
+    height: 340px;
+    background: var(--colorRed);
+}
+
+.fnb .inner {
+    height: 100%;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+/* 공통선언 */
+.fnb .inner a, 
+.fnb .inner span,
+.fnb .inner p {
+    font-weight: 300; 
+    font-style: normal;
+    color: var(--colorFontWhite);
+}
+
+.fnb .inner .top {
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+}
+
+.fnb .inner .top li {
+    margin-right: 100px;
+}
+
+.fnb .inner ul.top::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background: var(--colorFontWhite);
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top: 63px;
+}
+
+.fnb .inner .middle {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fnb .inner .middle .left li span {
+    display: inline-block;
+}
+
+.fnb .inner .middle .left li span:first-child {
+    width: 50px;
+}
+
+.fnb .inner .middle .left li:nth-child(2),
+.fnb .inner .middle .right p:nth-child(2) {
+    margin: 20px 0;
+}
+
+.fnb .inner .middle a {
+    display: block;
+}
+
+.fnb .inner .middle img {
+    width: 300px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.fnb .inner .bottom {
+    padding: 10px 0;
+}
+
+.fnb .inner .bottom a {
+    font-weight: 400;
+    color: var(--colorFontBlack);
 }

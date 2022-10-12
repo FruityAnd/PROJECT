@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 
 body .pageTop{
     position: fixed;
-    right: 5%; bottom: 5%;
+    right: 5%; bottom: 3%;
     width: 50px; height: 50px;
     background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
@@ -225,7 +225,7 @@ nav.inner li > a:hover {
     position: relative;
 }  
 
-.sec02 .contentBox .contents h3::before {
+.sec02 .contentBox .contents::before {
     content: "";
     width: 100%;
     height: 1px;
@@ -236,7 +236,7 @@ nav.inner li > a:hover {
     top: 0%;
 }
 
-.sec02 .contentBox .contents p::after {
+.sec02 .contentBox .contents::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -244,7 +244,7 @@ nav.inner li > a:hover {
     display: block;
     position: absolute;
     left: 0%;
-    top: 100%;
+    bottom: 0%;
 }
 
 .sec02 .contentBox .contents h3 {
@@ -281,7 +281,7 @@ nav.inner li > a:hover {
 .sec03 .inner .ageCard a {
     display: flex;
     flex-direction: column;
-    flex: 0 0 30%;
+    flex: 1 1 auto;
     height: 450px;
     padding: 30px 25px;
     margin-right: 5%;
@@ -368,8 +368,7 @@ nav.inner li > a:hover {
 
 .sec04 .inner .prevention li a {
     display: flex;
-    justify-content: center;
-    gap: 200px;
+    justify-content: space-evenly;
 }
 
 .sec04 .inner .prevention li:nth-child(even) a {
@@ -492,10 +491,10 @@ nav.inner li > a:hover {
 }
 
 .sec06 .inner .promotionCard .card { 
+    flex: 1 1 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
     padding: 30px 25px;
     margin-right: 100px;
     background: #ffffff;
@@ -594,7 +593,6 @@ nav.inner li > a:hover {
     height: 100%;
     flex-direction: column;
     padding: 30px 0;
-    position: relative;
 }
 
 /* 공통선언 */
@@ -609,6 +607,7 @@ nav.inner li > a:hover {
 .fnb .inner .top {
     display: flex;
     padding: 20px 0;
+    position: relative;
 }
 
 .fnb .inner .top li {
@@ -621,9 +620,10 @@ nav.inner li > a:hover {
     height: 1px;
     display: inline-block;
     background: var(--colorFontWhite);
+    opacity: 0.8;
     position: absolute;
     left: 0;
-    top: 94px;
+    top: 63px;
 }
 
 .fnb .inner .middle {

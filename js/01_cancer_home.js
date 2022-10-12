@@ -12,6 +12,6 @@ $(document).ready(function(){
     $(".pageTop").click(function(){
         $("html, body").animate({
             scrollTop: 0
-        },1000);
+        }, 1000);
     });
 });
