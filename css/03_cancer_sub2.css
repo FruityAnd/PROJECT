@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
 }
 
 body {
@@ -21,7 +21,7 @@ body .pageTop{
     position: fixed;
     right: 5%; bottom: 3%;
     width: 50px; height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -106,7 +106,17 @@ h4 {
 p {
     font-size: 1.25rem;
     line-height: 30px;
+    text-align: center;
     color: var(--colorFontBasic);
+}
+
+.source {
+    font-weight: 600;
+    font-size: 1.6875rem;
+    line-height: 30px;
+    text-align: center;
+    color: var(--colorFontBasic);
+    margin: 15px 0 0;
 }
 
 /*main header*/
@@ -114,7 +124,7 @@ header {
     height: 80px;
     width: 100%;
     background: #ffffff;
-    position: sticky;
+    position: absolute;
     left: 0;
     top: 0;
     z-index: 10;
@@ -129,7 +139,7 @@ nav.inner .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 50%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 50%/ cover;
 }
 
 nav.inner .gnb {
@@ -159,8 +169,8 @@ nav.inner li > a:hover {
 /* sub page: title */
 .sec01 {
     height: 450px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 50% 50% / cover;
-    /* transform: scale(1.1); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 50% 50% / cover;
+    margin: 80px 0 0;
 }
 
 .sec01 .inner {
@@ -201,7 +211,7 @@ nav.inner li > a:hover {
     height: 60px;
     background: var(--colorRed);
     position: sticky;
-    top: 80px;
+    top: 0;
     left: 0;
     z-index: 5;
 }
@@ -273,10 +283,14 @@ nav.inner li > a:hover {
     color: var(--colorRed);
 }
 
+.sec03 .inner .textBox p {
+    text-align: left;
+}
+
 /* 대장암의 누적위험도*/
 .sec04 .backTitle {
     height: 400px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub2page/childern_01.png) no-repeat 50% 60% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub2page/childern_01.png) no-repeat 50% 60% / cover;
 }
 
 .sec04 .backTitle .inner {
@@ -304,47 +318,75 @@ nav.inner li > a:hover {
     transform: translate(-50%, 0);
 }
 
-
-
-/* sub page: nav */
-.sub {
-    height: 60px;
-    background: var(--colorRed);
-    position: sticky;
-    top: 80px;
-    left: 0;
-    z-index: 5;
-}
-
-.sub .inner {
-    align-items: center;
-    position: relative;
-}
-
-.sub .inner li {
-    flex: 1 1 0%;
+.sec04 .backTitle .inner strong {
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 41px;
     text-align: center;
+    white-space: pre-line;
 }
 
-.sub .inner li:first-child::after {
-    content: "";
-    width: 2px;
-    height: 20px;
-    display: block;
-    background: var(--colorFontWhite);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.sec04 .backTitle .inner strong > span {
+    color: var(--colorRed);
 }
 
-.sub .inner a {
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 27px;
-    color: var(--colorFontWhite);
+.sec04 > .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    gap: 40px;
 }
 
-.sub .inner a:hover {
-    color: var(--colorFontBlack);
+.sec04 > .inner p {
+    white-space: pre-line;
 }
+
+.sec04 > .inner p:nth-of-type(2) strong {
+    font-weight: 600;
+    font-size: 1.5625rem;
+    line-height: 34px;
+}
+
+.sec04 > .inner p:nth-of-type(2) strong > span {
+    color: var(--colorRed);
+}
+
+.sec04 > .inner .graph img {
+    height: 800px;
+}
+
+/* 주변 검진기관 찾기 */
+.sec05 {
+    height: 450px;
+    background: var(--colorSky);
+}
+
+.sec05 .inner {
+    flex-direction: column;
+    align-items: center;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
+    padding: 35px 140px 35px 160px;
+}
+
+.sec05 .inner .bubble {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 0;
+}
+
+.sec05 .inner .bubble a {
+    display: inline-block;
+}
+
+.sec05 .inner .bubble img{
+    height: 100px;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+ 
+.sec05 .inner .bubble img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
