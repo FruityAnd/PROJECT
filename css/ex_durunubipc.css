@@ -1,0 +1,818 @@
+@charset "utf-8";
+/* goolge free font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+/* google free icon */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+/* 구글머터리얼 커스텀 아이콘 */
+/* <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0" /> */
+/* href 안에있는 주소만 @import url()에 넣어 사용해야함
+   html span 들어가있음 */
+
+
+
+/* 두루누비 pc 레이아웃 */
+
+/* 공통선언 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+    outline: 1px solid red;
+}
+
+body {
+    min-width: 1280px;
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    /* --CSS 속성 변수로 사용하기 - (:root / var) */
+    --colorGreen: #2bc63e;
+    --colorBlue: #347FDF;
+    --colorOrange: #f36938;
+    --colorFontDark: #4a4a4a;
+    --colorFontBasic: #666;
+    --colorFontLight: #969696;
+    --colorFontWhite: #FFFFFF;
+}
+
+/* font awesome -text 숨김 공통선언 */
+i > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.125rem;
+    line-height: 1; 
+}
+/* header */
+
+/* 첫번째 header .global */
+.global {
+    width: 100%;
+    height: 57px;
+    background: #0D2E3B;
+    display: flex;
+    justify-content: space-between;
+}
+
+.global .left,
+.global .right {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.global a:link,
+.global a:visited {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.75rem;
+    color: var(--colorFontLight);
+}
+
+.global a:hover {
+    color: var(--colorFontWhite);
+}
+
+.global a:active {
+    color: var(--colorGreen);
+}
+
+.global a::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0.625rem;
+    background: var(--colorFontLight);
+    margin: 0 5px;
+}
+
+.global a:first-of-type::before {
+    display: none;
+}
+
+/* 백터 아이콘 html에 코드로 넣어 작성하는 방법 */
+/* font awesome-free 사용 */
+.global > .right .ico_wh {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    margin: 0 0 0 20px;
+}
+
+.global > .right .ico_wh:hover {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+}
+
+
+/* .global a.sns {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    width: 40px; height: 40px;
+    text-indent: -1000px;
+    overflow: hidden;
+    border-radius: 20%;
+} */
+
+/* .global a.sns:nth-last-of-type(1) {
+    background:rgba(255, 255, 255, 0.15) url(/img/두루누비/Vector.svg) no-repeat 50% 50% / 24px 24px;
+}
+
+.global a.sns:nth-last-of-type(1):hover {
+    background:rgba(255, 255, 255, 0.5) url(/img/두루누비/Vector.svg) no-repeat 50% 50% / 24px 24px;
+}
+
+.global a.sns:nth-last-of-type(2) {
+    background:rgba(255, 255, 255, 0.15) url(/img/두루누비/Vector2.svg) no-repeat 50% 50% / 24px 24px;
+}
+
+.global a.sns:nth-last-of-type(2):hover {
+    background:rgba(255, 255, 255, 0.5) url(/img/두루누비/Vector2.svg) no-repeat 50% 50% / 24px 24px;
+}
+
+.global a.sns:nth-last-of-type(3) {
+    background:rgba(255, 255, 255, 0.15) url(/img/두루누비/Vector3.svg) no-repeat 50% 50% / 24px 24px;
+}
+
+.global a.sns:nth-last-of-type(3):hover {
+    background:rgba(255, 255, 255, 0.5) url(/img/두루누비/Vector3.svg) no-repeat 50% 50% / 24px 24px;
+} */
+
+/* 공통 선언 */
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 2번째 header .inner */
+nav.inner {
+    height: 90px;
+}
+
+nav.inner a.logo {
+    display: block;
+    width: 145px;
+    height: 50px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background: url(/img/두루누비/두루누비로고.svg) no-repeat 50% 50% / 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.nav ul.gnb {
+    display: inherit;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+.nav ul.gnb > li {
+    font-size: 1.125rem;
+    line-height: 18px;
+    color: var(--colorFontBasic);
+    margin: 0 40px 0 0;
+}
+
+.nav ul > li > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav ul > li > a:hover {
+    color: var(--colorFontDark);
+}
+
+.nav > span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+    font-size: 1.5rem;
+    color: var(--colorFontBasic);
+}
+
+.nav > span:first-of-type {
+    margin: 0;
+}
+
+.nav .ico_red {
+    color: red;
+}
+
+/* full slide */
+/* cdnjs 페이지 → 검색: jquery → 선택: jqeury.min.js 또는 jquery.js */
+/* cdnjs 페이지 → 검색: slick → 선택:slick carousel → slick.js 또는 slick.min.js 주소 복사해오기*/
+/* 두 경로를 스크립트 태그에 적어서 </body>위에 적어둔다 */
+
+/* cdnjs 페이지  */
+
+/* 공통선언 */
+section,
+.section {
+    height: 100%;
+    display: flex;
+}
+
+/* full slide */
+.sec01 {
+    height: 650px;
+    background: radial-gradient(farthest-side at 98% 98%, #9BCC94, #239D9D, #2F87A5, rgba(31, 107, 133, 0.25), rgba(31, 107, 133, 0)), radial-gradient(farthest-side at 10% 0%, #1C3C79, #33A0CB);
+}
+
+.sec01 .inner {
+    padding: 30px 0;
+    gap: 0 60px;
+}
+
+.sec01 .inner > div {
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec01 .inner > div.right {
+    flex: 1 1 0;
+}
+
+div.right .tabButton {
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    /* border-radius 적용하고 곡선밖으로 튀어나온 부분 overflow:hidden으로 숨김 */
+    overflow: hidden;
+}
+
+div.right .tabButton > button {
+    width: 50%;
+    height: 100%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    color: rgba(255, 255, 255, 0.3);
+    background: #558B03;
+    /* button은 기본적으로 보더값 있으므로 없애줌 */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ::before margin-right:10px 줘서 gap 사용 안해도 된다 */
+    /* gap: 0 10px; */
+}
+
+div.right .tabButton > button:first-of-type::before {
+    content: "";
+    width: 19px;
+    height: 30px;
+    display: inline-block;
+    background: url(/img/두루누비/아이콘_걷기길.svg) no-repeat 50% 50% / contain;
+    margin: 0 10px 0 0;
+}
+
+div.right .tabButton > button:last-of-type::before {
+    content: "";
+    width: 35px;
+    height: 20px;
+    display: inline-block;
+    background: url(/img/두루누비/아이콘_자전거길.svg) no-repeat 50% 50% / contain;
+    /* margin: 0 10px 0 0; */
+}
+
+/* 메인 아이콘 메뉴 */
+.sec02 {
+    height: 195px;
+}
+
+.sec02 .inner {
+    padding: 20px 60px;
+    position: relative;
+}
+
+/* 하단 bar */
+.sec02 .inner::after {
+    content:"";
+    width: 1080px;
+    height: 1px;
+    background: #C4C4C4;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    /* transform: translateX(-50%); */
+    transform: translate(-50%, -50%);
+}
+
+.sec02 .inner a {
+    width: 84px;
+    height: 100%;
+    display: block;
+    text-align: center;
+    letter-spacing: -1px;
+    color: var(--colorFontBasic);
+    /* figma에서 icon 높이만큼 padding으로 자리 비워둠, background로 넣을 예정이므로 */
+    padding: 100px 0 0 0;
+}
+
+.sec02 .inner a:hover {
+    color: var(--colorFontDark);
+}
+
+.sec02 .inner a:nth-child(1) {
+    background: url(/img/두루누비/elementor1.svg) no-repeat 50% 25%;
+}
+
+.sec02 .inner a:nth-child(2) {
+    background: url(/img/두루누비/elementor2.svg) no-repeat 50% 25%;
+}
+
+.sec02 .inner a:nth-child(3) {
+    background: url(/img/두루누비/elementor3.svg) no-repeat 50% 25%;
+}
+
+.sec02 .inner a:nth-child(4) {
+    background: url(/img/두루누비/elementor4.svg) no-repeat 50% 25%;
+}
+
+.sec02 .inner a:nth-child(5) {
+    background: url(/img/두루누비/elementor5.svg) no-repeat 50% 25%;
+}
+
+.sec02 .inner a:nth-child(6) {
+    background: url(/img/두루누비/elementor6.svg) no-repeat 50% 25%;
+}
+
+/* 이 달의 추천 걷기길 */
+.sec03 {
+    height: 542px;
+}
+
+.sec03 .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 60px 60px;
+    gap: 10px;
+}
+
+.sec03 .inner h2 {
+    flex-shrink: 0;
+    /* hegith: 아이콘 높이 36px; */
+    height: 36px;
+    /* padding: icon 가로크기 36px + icon과 h2사이의 gap 10px = 46px
+       icon을 background로 넣을 것이기 때문에 gap으로 background와 h2사이의 간격 조정할 수 없음  */
+    padding: 0 0 0 46px;
+    background: url(/img/두루누비/thumbs-up.svg) no-repeat 0 0 / contain;
+    /* background-size
+    auto: 가로-세로 비율 유지, 배경이미지 원래 크기로 배치하고 남는 공간 비움
+    contain: 가로-세로 비율 유지, 배경이미지 잘리지 않도록 배치하고 남는 공간 비움
+    cover: 가로-세로 비율 유지, 배경이미지 빈공간 없이 꽉 채우고 나머지 잘림(클리핑마스크) */
+    font-weight: 500; font-size: 35px; line-height: 1;
+}
+
+.sec03 .inner h2 span {
+    font-size: 0.75rem;
+    letter-spacing: -0.05em;
+    color: var(--colorFontLight);
+    margin: 0 0 0 10px;
+}
+
+.sec03 .inner h3 {
+    width: 100%; height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #8EA9CC;
+    position: relative;
+    /* 줄어들지않겠다고 바꿔주지않으면 recomandRoad때문에 작아지ㅏㅁ */
+    flex-shrink: 0;
+}
+
+.sec03 .inner h3 > a {
+    position: absolute;
+    right: 0;
+}
+
+.sec03 .ico_p {
+    color: var(--colorFontBasic);
+    font-size: 1.5rem;    
+}
+
+.sec03 .inner .recomandRoad {
+    flex: 1 1 100%;
+    width: 100%;
+    display: flex;
+    gap: 0 20px;
+}
+
+.sec03 .inner .recomandRoad a {
+    flex: 1 1 25%;
+    /* padding-top size: 이미지 높이 210px + 이미지와 roadType 사이 간격 15px = 225px;  */
+    padding: 225px 20px 20px;
+    font-size: 0.75rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    border: 1px solid #C4C4C4;
+    position: relative;
+}
+
+.sec03 .inner .recomandRoad a:nth-child(1) {
+    background: url(/img/두루누비/recommendation_04.jpg) no-repeat 50% 0 / auto 210px;
+}
+
+.sec03 .inner .recomandRoad a:nth-child(2) {
+    background: url(/img/두루누비/recommendation_03.jpg) no-repeat 50% 0 / auto 210px;
+}
+
+.sec03 .inner .recomandRoad a:nth-child(3) {
+    background: url(/img/두루누비/recommendation_02.jpg) no-repeat 50% 0 / auto 210px;
+}
+
+.sec03 .inner .recomandRoad a:nth-child(4) {
+    background: url(/img/두루누비/recommendation_01.jpg) no-repeat 50% 0 / auto 210px;
+}
+
+.sec03 .inner .recomandRoad .road {
+    padding: 7px 10px;
+    display: flex;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    transform: translate(0%, -12%);
+    color: var(--colorFontWhite);
+    background: var(--colorBlue);
+}
+
+.sec03 .inner .recomandRoad .road span:first-child::after {
+    content:"";
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    display: inline-block;
+    margin: 0 5px; 
+}
+
+.sec03 .inner .recomandRoad .roadType {
+    color: var(--colorFontLight)
+}
+
+.sec03 .inner .recomandRoad h4 {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: var(--colorFontBasic);
+    margin: 17px 0 11px 0;
+}
+
+.sec03 .inner .recomandRoad .roadLocation {
+    color: var(--colorGreen);
+}
+
+/* 해파랑길 남파랑길 */
+.sec04 {
+    height: 460px;
+    background: linear-gradient(to right, #394841, #354046);
+}
+
+.sec04 .inner {
+    flex-direction: column;
+    
+}
+
+/* 해파랑길 남파랑길 tabButton */
+.sec04 .inner .tabButton {
+    display: flex;
+    width: 100%; 
+    height: 110px;
+    color: var(--colorFontWhite);
+    position: relative;
+}
+
+.sec04 .inner .tabButton h2 {
+    width: 202px; height: 68px;
+    /* 왼쪽 icon크기 28px, icon과 text 사이 gap 10px */
+    /* padding-left: 68px → padding-left 20px + icon width 28px + gap 10px */
+    padding: 20px 30px 20px 68px;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 28px;   
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.sec04 .inner .tabButton h2:first-of-type {
+    background: url(/img/두루누비/icon_해파랑길.svg) no-repeat 30px 50% / auto;
+}
+
+.sec04 .inner .tabButton h2.on:first-of-type {
+    background: #fff url(/img/두루누비/icon_해파랑길.svg) no-repeat 30px 50% / auto;
+    color: var(--colorFontDark);
+}
+
+.sec04 .inner .tabButton h2:last-of-type {
+    background: url(/img/두루누비/icon_남파랑길.svg) no-repeat 30px 50% / auto;
+}
+
+.sec04 .inner .tabButton h2.on:last-of-type {
+    background: #fff url(/img/두루누비/icon_남파랑길.svg) no-repeat 30px 50% / auto;
+    color: var(--colorFontDark);
+}
+
+.sec04 .inner .tabButton a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* display:none; 요소 안보임/ 영역 사라짐  */
+    display: none;
+}
+
+.sec04 .inner .tabButton a.on {
+    display: block;
+}
+
+.sec04 .inner .tabButton a:first-of-type {
+   background: var(--colorOrange); 
+}
+  
+.sec04 .inner .tabButton a:last-of-type {
+    background: var(--colorBlue);
+}
+
+.sec04 .inner .tabContent {
+    display: flex;
+    width: 100%; 
+    height: 350px;
+}
+
+/* 해파랑길 남파랑길 tabContent */
+.sec04 .inner .tabContent {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    height: 350px;
+}
+
+.sec04 .inner .tabContent > div {
+    display: none;
+    align-items: center;
+    gap: 0 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.sec04 .inner .tabContent > div.on {
+    display: flex;
+}
+
+.sec04 .inner .tabContent a {
+    flex: 1 1 200px;
+    /* background 들어갈 자리 150px + padding-top: 15px */
+    padding: 165px 25px 15px 25px;
+    border-radius: 10px;
+}
+
+.sec04 .tabContent > div.hae > a:nth-child(1) {
+    background: #fff url(/img/두루누비/road_hae_01.jpg) no-repeat 50% 0 / auto 150px;
+}
+
+.sec04 .tabContent > div.hae > a:nth-child(2) {
+    background: #fff url(/img/두루누비/road_hae_02.jpg) no-repeat 50% 0 / auto 150px;
+}
+
+.sec04 .tabContent > div.hae > a:nth-child(3) {
+    background: #fff url(/img/두루누비/road_hae_03.jpg) no-repeat 50% 0 / auto 150px;
+}
+
+.sec04 .tabContent > div.hae > a:nth-child(4) {
+    background: #fff url(/img/두루누비/road_hae_04.jpg) no-repeat 50% 0 / auto 150px;
+}
+
+.sec04 .tabContent > div.hae > a:nth-child(5) {
+    background: #fff url(/img/두루누비/road_hae_10.jpg) no-repeat 50% 0 / auto 150px;
+}
+
+
+.sec04 .inner .tabContent div.hae span {
+    color: var(--colorOrange);
+    font-size: 0.75rem;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+}
+
+.sec04 .inner .tabContent div.hae p {
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: var(--colorFontDark);
+    /* 넘치는 text 처리 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* -webkit-box 필수선언 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1.3;
+    /* line-height x -webkit-line-clamp 해서 max-height값 지정함 */
+    max-height: 3.9rem;
+}
+
+/* 인기태그 및 배너 */
+.sec05 {
+    height: 500px;
+}
+
+/* .inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.sec05 .inner {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 40px 0;
+    
+}
+
+.sec05 .inner > * {
+    flex-grow: 1;
+    max-width: 380px; 
+}
+
+.sec05 .inner h2 {
+    /* text 길이에 따라서 길이 자동조절 */
+    width: auto; 
+    /* h2::after부분까지 계산해서, after가 포함되도록 */
+    height: 50px;
+}
+
+.sec05 .inner > h2::after {
+    content:"";
+    width: 100%; height: 4px;
+    display: block;
+    /* 가상요소 선택자 위치조정 margin으로 조정하지말기 */
+    transform: translate(0, 10px);   
+}
+
+.sec05 .inner > h2:nth-of-type(1)::after {
+    background: var(--colorGreen);
+}
+
+.sec05 .inner > h2:nth-of-type(2)::after {
+    background: var(--colorBlue);
+}
+
+.sec05 .inner > h2:nth-of-type(3)::after {
+    background: var(--colorOrange);
+}
+
+.sec05 .inner > div.pTag {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 130px;
+    gap: 10px;
+    margin: 20px 0 0 0;
+}
+
+.sec05 .inner > div.pTag > a {
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: var(--colorFontWhite);
+} 
+
+.sec05 .inner > div.pTag:nth-of-type(1) > a {
+    background: #59BB8E;
+}
+
+.sec05 .inner > div.pTag:nth-of-type(2) > a {
+    background: #6496D4;
+}
+
+.sec05 .inner > ul.pRoad {
+    margin: 20px 0 0 0;
+    color: var(--colorFontBasic);
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+}
+
+.sec05 .inner > ul.pRoad a {
+    display: flex;
+    /* align-items: flex-end; */
+    align-items: baseline;
+}
+
+.sec05 .inner > ul.pRoad a > span:nth-child(1) {
+    /* margin: 0 0 0 0; */
+    font-size: 2.125rem;
+    line-height: 1;
+    color: var(--colorFontDark);
+}
+
+.sec05 .inner > ul.pRoad a > span:nth-child(2) {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 16px;  
+}
+
+.sec05 .inner > ul.pRoad a > span:nth-child(3) {
+    font-size: 1.25rem;
+    line-height: 27px;  
+    margin: 0 0 0 10px;
+}
+
+.sec05 .inner > .banner {
+    height: 100%;
+    background: var(--colorOrange);
+}
+
+/* 게시판 */
+.sec06 {
+    height: 256px;
+    display: flex;
+}
+
+.sec06 > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.sec06 .left {
+    background: #1553a3;
+    color: var(--colorFontWhite);
+    justify-content: flex-end;
+    padding: 0 40px 0 0;
+}
+
+.sec06 .right {
+    background: #F5F7FE;    
+    color: var(--colorFontDark);
+    justify-content: flex-start;
+    padding: 0 0 0 40px;
+
+}
+
+.sec06 .halfinner {
+    width: 560px;
+    padding: 30px 0;
+}
+
+.sec06 .halfinner h2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec06 div.halfinner h2 > a > .ico_p {
+    font-size: 1.5rem;
+}
+
+.sec06 .borderlist {
+    width: 100%;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+

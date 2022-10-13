@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 body {
@@ -288,8 +288,8 @@ nav.inner li > a:hover {
     background: #ffffff;
     border-radius: 15px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-    transform: translate(0, 0);
-    transition: all 0.5s ease-out;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
 }
 
 .sec03 .inner .ageCard a:nth-child(3) {
@@ -297,10 +297,8 @@ nav.inner li > a:hover {
 }
 
 .sec03 .inner .ageCard a:hover {
-    transform: translate(0, 30px);
-    transition: all 0.5s ease-out;
-    /* transition-duration: 0.5s; */
-    /* transition-timing-function: ease-out; */
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
 }
 
 .sec03 .inner .ageCard img {

@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 body {
@@ -97,7 +97,7 @@ header {
     height: 80px;
     width: 100%;
     background: #ffffff;
-    position: absolute;
+    position: sticky;
     left: 0;
     top: 0;
     z-index: 10;
@@ -142,8 +142,8 @@ nav.inner li > a:hover {
 /* sub page: title */
 .sec01 {
     height: 450px;
-    margin: 80px 0 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
+    /* transform: scale(1.1); */
 }
 
 .sec01 .inner {
@@ -183,7 +183,7 @@ nav.inner li > a:hover {
     height: 60px;
     background: var(--colorRed);
     position: sticky;
-    top: 0;
+    top: 80px;
     left: 0;
     z-index: 5;
 }
@@ -236,7 +236,7 @@ nav.inner li > a:hover {
 
 .sec02 .inner .title {
     position: relative;
-    padding: 0 0 35px;
+    padding: 0 0 30px;
 }
 
 .sec02 .inner .title::after {
@@ -340,12 +340,13 @@ nav.inner li > a:hover {
     background: var(--colorRed);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0 40px 0 0;
-    transform: translate(0, 0);
+    transform: scale(1);
     transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 .sec03 .inner .dream div dt:hover {
-    transform: translate(0, -10px);
+    transform: scale(1.2);
     transition: all 0.3s ease-out;
 }
 
@@ -402,18 +403,26 @@ nav.inner li > a:hover {
     background: var(--colorSky);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0 150px 0 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sec04 .inner .content li img:hover {
+    transform: scale(1.15);
+    transition: all 0.3s ease-in-out;
 }
 
 .sec04 .inner .content li:nth-child(1) img {
-    object-position: 7.5% 61%;
+    object-position: 7.5% 44%
 } 
 
 .sec04 .inner .content li:nth-child(2) img {
-    object-position: 48.5% 31%;
+    object-position: 48.5% 28%;
 } 
 
 .sec04 .inner .content li:nth-child(3) img {
-    object-position: 88.5% 32%;
+    object-position: 88.5% 30%;
 } 
 
 .sec04 .inner .content li dl > dt {
@@ -447,10 +456,28 @@ nav.inner li > a:hover {
     padding: 35px 140px 35px 160px;
 }
 
-.sec05 .inner .content .ico_wh{
-    font-size: 100px;
-
+.sec05 .inner .bubble {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 0;
 }
+
+.sec05 .inner .bubble a {
+    display: inline-block;
+}
+
+.sec05 .inner .bubble img{
+    height: 100px;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+ 
+.sec05 .inner .bubble img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
 
 /* 로고 및 캐릭터 */
 .sec06 .inner {
@@ -460,7 +487,7 @@ nav.inner li > a:hover {
 }
 
 .sec06 .inner .title {
-    padding: 0 0 35px;
+    padding: 0 0 30px;
     position: relative;
 }
 

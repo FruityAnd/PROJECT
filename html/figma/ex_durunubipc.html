@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>두루누비</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/css/ex_durunubipc.css">
+
+<body>
+    <!-- header나 footer는 몇번이고 반복해서 입력해도 문제가 되지않음
+         header안에 header / footer안에 footer이 문제가 되는 것 -->
+    <header>
+        <div class="global">
+            <div class="left">
+                <a href="#">즐겨찾기</a>
+                <a href="#">도움말</a>
+                <a href="#">앱다운받기</a>
+                <a href="#">빅맵다운받기</a>
+            </div>
+            <div class="right">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+                <a href="#">고객지원</a>
+                <!-- <a href="#" class="sns">인스타그램</a> -->
+                <!-- <a href="#" class="sns">블로그</a> -->
+                <!-- <a href="#" class="sns">페이스북</a> -->
+                <i class="fa-brands fa-instagram ico_wh"></i>
+                <i class="fa-brands fa-tiktok ico_wh"></i>
+                <i class="fa-brands fa-facebook ico_wh"></i>
+            </div>
+        </div>
+        <nav class="inner">
+            <a href="/" class="logo">두루누비 로고</a>
+            <div class="nav">
+                <ul class="gnb">
+                    <li><a href="#">걷기여행</a></li>
+                    <li><a href="#">자전거여행</a></li>
+                    <li><a href="#">여행후기</a></li>
+                    <li><a href="#">여행안내</a></li>
+                    <li><a href="#">해파랑길</a></li>
+                    <li><a href="#">남파랑길</a></li>
+                    <li><a href="#">DMZ 평화의 길</a></li>
+                </ul>
+                <span class="material-symbols-outlined ico_red" role="button">search</span>
+                <span class="material-symbols-outlined ico_red" role="button">menu</span>
+            </div>
+            <!-- <span class="material-symbols-outlined ico_red">
+                menu
+            </span> -->
+        </nav>
+    </header>
+    <!-- full slide -->
+    <section class="sec01">
+        <div class="inner">
+            <div class="left">
+                <div>
+                    <img src="/img/두루누비/covid.png" alt="코로나 국민행동수칙">
+                    <!-- <img src="/img/두루누비/sec1사진.png" alt="코로나 국민행동수칙">
+                    <img src="/img/두루누비/sec1사진.png" alt="코로나 국민행동수칙"> -->
+                </div>
+            </div>
+            <div class="right">
+                <div class="tabButton">
+                    <button>걷기길</button>
+                    <button>자전거길</button>
+                </div>
+                <div class="tabContent">
+                    <div class="tabBox on">
+                        <h2>
+                            <span>전체</span>
+                            <span>2181개</span>
+                        </h2>
+                        <select>
+                            <option>난이도</option>
+                            <option>쉬움</option>
+                            <option>보통</option>
+                            <option>어려움</option>
+                        </select>
+                        <select>
+                            <option>거리</option>
+                            <option>5km미만</option>
+                            <option>5~10km미만</option>
+                            <option>10km초과</option>
+                        </select>
+                        <select>
+                            <option>소요시간</option>
+                            <option>2시간미만</option>
+                            <option>2~4시간</option>
+                            <option>4시간초과</option>
+                        </select>
+                        <div>지도출력예정</div>
+                        <a href="#">걷기 길 상세검색</a>
+                    </div>
+                    <div class="tabBox">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 메인 아이콘 메뉴 -->
+    <div class="section sec02">
+        <div class="inner">
+            <a href="#">두루누비란?</a>
+            <a href="#">이벤트</a>
+            <a href="#">여행후기</a>
+            <a href="#">자주묻는질문</a>
+            <a href="#">홈페이지<p>이용가이드</p></a>
+            <a href="#">앱다운로드</a>
+        </div>
+    </div>
+    <!-- 이 달의 추천 걷기길 -->
+    <section class="sec03">
+        <div class="inner">
+            <h2>이 달의 추천 걷기길<span>알고 걷는 즐거움이 있는 추천길을 찾아가 보세요.</span></h2>
+            <h3>
+                #역사와 함께하는 길
+                <!-- font awesome 이용방법 -->
+                <!-- css에 i > span 공통선언 -->
+                <a href="#">
+                    <i class="fa-regular fa-plus ico_p"><span>역사와 함께하는 길 더보기</span></i>
+                </a>
+            </h3>
+            <div class="recomandRoad">
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>보통</span>
+                    </div>
+                    <span class="roadType">비순환형</span>
+                    <h4>석굴암-불국사길</h4>
+                    <span class="roadLocation"># 경북 경주시</span>
+                    <!-- roadType: 도로종류 / roadLocation: 도로위치 -->
+                </a>
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>보통</span>
+                    </div>
+                    <span class="roadType">비순환형</span>
+                    <h4>운곡습지생태길 1코스</h4>
+                    <span class="roadLocation"># 전북 고창군</span>
+                    <!-- roadType: 도로종류 / roadLocation: 도로위치 -->
+                </a>
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>보통</span>
+                    </div>
+                    <span class="roadType">비순환형</span>
+                    <h4>부여 사비길</h4>
+                    <span class="roadLocation"># 충남 부여군</span>
+                    <!-- roadType: 도로종류 / roadLocation: 도로위치 -->
+                </a>
+                <a href="#">
+                    <div class="road">
+                        <span>걷기</span>
+                        <span>쉬움</span>
+                    </div>
+                    <span class="roadType">비순환형</span>
+                    <h4>철새나그네길 5코스 해찬솔길</h4>
+                    <span class="roadLocation"># 충남 서천군</span>
+                    <!-- roadType: 도로종류 / roadLocation: 도로위치 -->
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 해파랑길 남파랑길 -->
+    <section class="sec04">
+        <div class="inner">
+            <div class="tabButton">
+                <h2 class="on">해파랑길</h2>
+                <h2>남파랑길</h2>
+                <a href="#" class="on">해파랑 구간 더보기</a>
+                <a href="#">남파랑 구간 더보기</a>
+            </div>
+            <div class="tabContent">
+                <div class="hae on">
+                    <a href="#">
+                        <span class="roadLocation">해파랑길 1코스</span>
+                        <p>해파랑길 전체 770㎞ 중에서 제1선발인 부산은 의외성을 갖는 멋진 길의 변화가 걷는 이들을 시시때때로 감동시킨다. 시작점에 있는 해파랑길 종합안내소에서 이어지는
+                            ‘이기대길’ 구간부터 경탄과 감탄을 자아내는 해식절벽의 비경으로 아름답다. 이기대 해안의 절벽길은 기존 해안순찰로를 정비하여 위험한 곳은 나무데크와 울타리로 안전하게
+                            바꾸어 산책로 수준으로 조성한 명품길이다. 광안리해변은 광안대교의 웅장한 위용과 고운 백사장이 장도를 시작한 나그네의 마음을 쿵쿵 뛰게 한다. 해운대는 신라 최치원이
+                            속세를 버리고 가야산으로 들던 길에 빼어난 경치에 반해 자신의 자(字)인 해운(海雲)을 바위에 새겨 넣은 후 해운대라 불리게 되었다. 지금도 동백섬 바위에 최치원이
+                            새겼다는 해운대 글씨가 또렷하다.</p>
+                    </a>
+                    <a href="#">
+                        <span class="roadLocation">해파랑길 1코스</span>
+                        <p>해파랑길 전체 770㎞ 중에서 제1선발인 부산은 의외성을 갖는 멋진 길의 변화가 걷는 이들을 시시때때로 감동시킨다. 시작점에 있는 해파랑길 종합안내소에서 이어지는
+                            ‘이기대길’ 구간부터 경탄과 감탄을 자아내는 해식절벽의 비경으로 아름답다. 이기대 해안의 절벽길은 기존 해안순찰로를 정비하여 위험한 곳은 나무데크와 울타리로 안전하게
+                            바꾸어 산책로 수준으로 조성한 명품길이다. 광안리해변은 광안대교의 웅장한 위용과 고운 백사장이 장도를 시작한 나그네의 마음을 쿵쿵 뛰게 한다. 해운대는 신라 최치원이
+                            속세를 버리고 가야산으로 들던 길에 빼어난 경치에 반해 자신의 자(字)인 해운(海雲)을 바위에 새겨 넣은 후 해운대라 불리게 되었다. 지금도 동백섬 바위에 최치원이
+                            새겼다는 해운대 글씨가 또렷하다.</p>
+                    </a>
+                    <a href="#">
+                        <span class="roadLocation">해파랑길 1코스</span>
+                        <p>해파랑길 전체 770㎞ 중에서 제1선발인 부산은 의외성을 갖는 멋진 길의 변화가 걷는 이들을 시시때때로 감동시킨다. 시작점에 있는 해파랑길 종합안내소에서 이어지는
+                            ‘이기대길’ 구간부터 경탄과 감탄을 자아내는 해식절벽의 비경으로 아름답다. 이기대 해안의 절벽길은 기존 해안순찰로를 정비하여 위험한 곳은 나무데크와 울타리로 안전하게
+                            바꾸어 산책로 수준으로 조성한 명품길이다. 광안리해변은 광안대교의 웅장한 위용과 고운 백사장이 장도를 시작한 나그네의 마음을 쿵쿵 뛰게 한다. 해운대는 신라 최치원이
+                            속세를 버리고 가야산으로 들던 길에 빼어난 경치에 반해 자신의 자(字)인 해운(海雲)을 바위에 새겨 넣은 후 해운대라 불리게 되었다. 지금도 동백섬 바위에 최치원이
+                            새겼다는 해운대 글씨가 또렷하다.</p>
+                    </a>
+                    <a href="#">
+                        <span class="roadLocation">해파랑길 1코스</span>
+                        <p>해파랑길 전체 770㎞ 중에서 제1선발인 부산은 의외성을 갖는 멋진 길의 변화가 걷는 이들을 시시때때로 감동시킨다. 시작점에 있는 해파랑길 종합안내소에서 이어지는
+                            ‘이기대길’ 구간부터 경탄과 감탄을 자아내는 해식절벽의 비경으로 아름답다. 이기대 해안의 절벽길은 기존 해안순찰로를 정비하여 위험한 곳은 나무데크와 울타리로 안전하게
+                            바꾸어 산책로 수준으로 조성한 명품길이다. 광안리해변은 광안대교의 웅장한 위용과 고운 백사장이 장도를 시작한 나그네의 마음을 쿵쿵 뛰게 한다. 해운대는 신라 최치원이
+                            속세를 버리고 가야산으로 들던 길에 빼어난 경치에 반해 자신의 자(字)인 해운(海雲)을 바위에 새겨 넣은 후 해운대라 불리게 되었다. 지금도 동백섬 바위에 최치원이
+                            새겼다는 해운대 글씨가 또렷하다.</p>
+                    </a>
+                    <a href="#">
+                        <span class="roadLocation">해파랑길 1코스</span>
+                        <p>해파랑길 전체 770㎞ 중에서 제1선발인 부산은 의외성을 갖는 멋진 길의 변화가 걷는 이들을 시시때때로 감동시킨다. 시작점에 있는 해파랑길 종합안내소에서 이어지는
+                            ‘이기대길’ 구간부터 경탄과 감탄을 자아내는 해식절벽의 비경으로 아름답다. 이기대 해안의 절벽길은 기존 해안순찰로를 정비하여 위험한 곳은 나무데크와 울타리로 안전하게
+                            바꾸어 산책로 수준으로 조성한 명품길이다. 광안리해변은 광안대교의 웅장한 위용과 고운 백사장이 장도를 시작한 나그네의 마음을 쿵쿵 뛰게 한다. 해운대는 신라 최치원이
+                            속세를 버리고 가야산으로 들던 길에 빼어난 경치에 반해 자신의 자(字)인 해운(海雲)을 바위에 새겨 넣은 후 해운대라 불리게 되었다. 지금도 동백섬 바위에 최치원이
+                            새겼다는 해운대 글씨가 또렷하다.</p>
+                    </a>
+                </div>
+                <!-- <div class="nam">
+                    <a href="#">
+                        <span>남파랑길 1코스</span>
+                        <p>갈맷길 3-1구간, 3-2구간과 중첩되는 구간으로서 해파랑길 시종점인 오륙도 해맞이 공원에서부터 부산 중구 부산대교까지 이어지는 구간이다. 신선이 노닐던 신선대 및
+                            부산항의 역동적인 파노라마을 만끽할 수 있는 구간이며 세계에서 하나뿐인 UN기념공원 및 부산박물관, 영화 “친구”로 유명한 부산 일대의 명소를 함께 체험할 수 있다.
+                            아름다운 해안경관과 우리나라 제1의 항구도시 부산의 매력을 느낄 수 있는 구간이다.</p>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- 인기태그 및 배너 -->
+    <section class="sec05">
+        <div class="inner">
+            <h2>걷기 인기태그</h2>
+            <div class="pTag">
+                <a href="#">#단체</a>
+                <a href="#">#역사</a>
+                <a href="#">#기차</a>
+                <a href="#">#산</a>
+                <a href="#">#봄꽃</a>
+            </div>
+            <h2>자전거 인기태그</h2>
+            <div class="pTag">
+                <a href="#">#비순환형</a>
+                <a href="#">#버스</a>
+                <a href="#">#가을단풍</a>
+                <a href="#">#순환형</a>
+                <a href="#">#지하철</a>
+            </div>
+            <h2>인기 걷기길</h2>
+            <ul class="pRoad">
+                <li>
+                    <a href="#">
+                        <span>1</span>
+                        <span>위</span>
+                        <span>해파랑길 1코스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>2</span>
+                        <span>위</span>
+                        <span>서울둘레길 5코스 관악산코스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>3</span>
+                        <span>위</span>
+                        <span>해파랑길 2코스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>4</span>
+                        <span>위</span>
+                        <span>서울둘레길 3코스 고덕·일자산코스</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>5</span>
+                        <span>위</span>
+                        <span>서울둘레길 8코스 북한산코스</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="banner">
+                <a href="#">
+                    <img src="/img/두루누비/banner_img01.png" alt="동반여행 가이드">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 게시판 -->
+    <section class="sec06">
+        <div class="left">
+            <div class="halfinner">
+                <h2>
+                    <span>이벤트·행사</span>
+                    <a href="#">
+                        <i class="fa-regular fa-plus ico_p"><span>이벤트·행사 더보기</span></i>
+                    </a>
+                </h2>
+                <ul class="borderlist">
+                    <li>
+                        <a href="#">
+                            <span>2022 JTBC 트레일 코리아</span>
+                            <span>2022-02-23</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>한국관광공사가 추천하는 걷기여행길 E-Book 댓글 이벤트</span>
+                            <span>2021-12-08</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>탬플세트 걷기여행 SNS 콘텐츠 공모전</span>
+                            <span>2021-11-11</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>경기 둘레길 개통기념 이벤트</span>
+                            <span>2021-10-21</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="halfinner">
+                <h2>
+                    <span>공지사항</span>
+                    <a href="#">
+                        <i class="fa-regular fa-plus ico_p"><span>공지사항 더보기</span></i>
+                    </a>
+                </h2>
+                <ul class="borderlist">
+                    <li>
+                        <a href="#">
+                            <span>해파랑길&남파랑길 완보 인증 및 발급방법 안내</span>
+                            <span>2022-11-24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>한국인을 위한 걷기 가이드라인(만 18세-64세)</span>
+                            <span>2021-10-25</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>해파랑길 21코스 일부구간 통행제한 안내</span>
+                            <span>2021-04-22</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>[등록안내] 경상남도 밀양시, 밀양강 자전거길</span>
+                            <span>2021-04-09</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="inner">
+            <div class="left">
+                <a href="#">위치기반서비스 이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">회원약관</a>
+                <a href="#">두루누비소개</a>
+            </div>
+            <div class="selectBox">
+                패밀리사이트 바로가기
+            </div>
+        </div>
+    </footer>
+    <footer>
+        <div class="inner">
+            <div class="left">
+                <p>(26464)강원도 원주시 세계로 10(반곡동) 한국관광공사</p>
+                <p>사업자등록번호:202-81-50707 통신판매업신고:제2009-서울중구-1234호</p>
+                <p>Copyright by KTO.ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="/js/ex_durunubipc.js"></script>
+</body>
+
+</html>

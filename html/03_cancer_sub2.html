@@ -10,6 +10,94 @@
 </head>
 
 <body>
+    <!-- main header -->
+    <header>
+        <nav class="inner">
+            <a href="/html/01_cancer_home.html" class="logo">드림프로젝트 로고</a>
+            <ul class="gnb">
+                <li><a href="/html/02_cancer_sub1.html">대장암 예방캠페인</a></li>
+                <li><a href="/html/03_cancer_sub2.html">대장암 알아보기</a></li>
+                <li><a href="/html/04_cancer_sub3.html">대장암 예방정보</a></li>
+                <li><a href="/html/05_cancer_sub4.html">대장암 검진</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- sub page: title-->
+    <section class="sec01">
+        <div class="inner">
+            <p>ABOUT CANCER</p>
+            <h1>대장암 알아보기</h1>
+            <div class="textBox">
+                <i class="fa-sharp fa-solid fa-house ico_wh"><span>홈 아이콘</span></i>
+                <i class="fa-solid fa-angle-right ico_wh"><span>오른쪽 화살표 아이콘</span></i>
+                <span>대장암 알아보기</span>
+            </div>
+        </div>
+    </section>
+    <!-- sub page: tab -->
+    <section class="sec02">
+        <div class="tabButton">
+            <ul class="inner">
+                <li class="on" id="tab01"><h2>대장암?</h2></li>
+                <li id="tab02"><h2>대장암의 발생</h2></li>
+                <li id="tab03"><h2>증상 및 병기</h2></li>
+                <li id="tab04"><h2>치료 및 예후</h2></li>
+            </ul>
+        </div>
+        <ul class="tabContent">
+            <li class="about on" data-id="tab01">
+                <!-- 대장암이란? -->
+                <section class="sec03">
+                    <div class="inner">
+                        <img src="/img/드림프로젝트/sub2page/colorectal_cancer.png" alt="대장과 대장암의 위치 사진">
+                        <div class="textBox">
+                            <div class="title">
+                                <h2>대장암이란?</h2>
+                            </div>
+                            <h4>대장에 <span>악성 종양이 발생한 것</span>으로<br>
+                                대장암이 발생하는 위치에 따라 명칭을 다르게 부릅니다.</h4>
+                            <p>좌측 대장암: 대장의 왼쪽 부분인 하행결장과 S자 결장에 생기는 암<br>
+                                우측 대장암: 대장의 오른 부분인 상행결장과 맹장에 생기는 암<br>
+                                직장암: 대장의 마지막 부위로 항문과 연결되는 부분인 직장에 생기는 암</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- 대장암의 누적위험도 -->
+                <section class="sec04">
+                    <div class="backTitle">
+                        <div class="inner">
+                            <div class="title">
+                                <h2>대장암의 누적위험도</h2>
+                            </div>
+                            <strong>‘신생아 100명 중 75세 이전에 특정 암이 발병하거나 사망할 것으로 추정되는 수’를 
+                                나타낸 것을 <span>누적위험도(Cumulative Risk)</span>라고 합니다.</strong>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <p>앞으로 태어나는 아이들이 75세가 되기 전에, 어떤 특정 암에 걸릴 가능성과 해당 암 때문에 사망할 가능성을 나타낸 것이 ‘누적위험도’ 입니다.</p>
+                        <p>즉, 누적위험도는 현재 성인들에 대한 위험도가 아닌 아이들의 미래에 대한 위험도를 나타내는 수치이며,<span>대한민국은 ‘대장암의 누적위험도가 세계에서 가장 높은 나라’ 입니다.</span></p>
+                        <div class="graph">
+                            <img src="#" alt="전세계 대장암 누적위험도 비교 사진">
+                            <p class="source">참고1. [2012, 전세계 대장암 누적위험도 비교 (연령표준화발생률)]</p>
+                        </div>
+                        <p>결론적으로 우리나라의 대장암 발생률은 앞으로도 더 높아질 것으로 예상합니다. 
+                            높은 대장암 발생률은 비단 현세대만의 문제가 아니라 아이들의 미래에도 똑같이 적용된다는 점에서보다 적극적인 대책이 필요합니다.</p>
+                    </div>
+                </section>
+            </li>
+            <li class="occur" data-id="tab02">
+
+            </li>
+            <li class="symptom" data-id="tab03">
+
+            </li>
+            <li class="treatment" data-id="tab04">
+
+            </li>
+        </ul>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/js/03_cancer_sub2.js"></script>
 </body>
 

@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
 /* 공통선언 */
 * {
@@ -9,4 +11,340 @@
     padding: 0;
     word-break: keep-all;
     outline: 1px solid blue;
+}
+
+body {
+    min-width: 1500px;
+}
+
+body .pageTop{
+    position: fixed;
+    right: 5%; bottom: 3%;
+    width: 50px; height: 50px;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    z-index: 5;
+    border: none;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --colorRed: #DD454F;
+    --colorPink: #FF9C9C;
+    --colorLightpink: #FFF8F8;
+    --colorSky: #DDF3FF;  
+    --colorFontBlack: #000000;
+    --colorFontBasic: #383838;
+    --colorFontLight: #808080;
+    --colorFontWhite: #ffffff;    
+}
+
+section,
+.section {
+    width: 100%;
+}
+
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+i > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
+    padding: 0 0 30px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4.375rem;
+    line-height: 95px;
+    color: var(--colorFontWhite);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+} 
+
+h3 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.6875rem;
+    line-height: 37px;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--colorFontBasic);
+}
+
+/*main header*/
+header {
+    height: 80px;
+    width: 100%;
+    background: #ffffff;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+nav.inner {
+    justify-content: space-between;
+}
+
+nav.inner .logo {
+    width: 110px; height: 80px;
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 50%/ cover;
+}
+
+nav.inner .gnb {
+    display: flex; 
+    align-items: center;
+}
+
+nav.inner .gnb li {
+    margin-right: 55px;
+}
+
+nav.inner .gnb li:nth-child(4) {
+    margin-right: 0;
+}
+
+nav.inner li > a {
+    padding: 10px 5px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+nav.inner li > a:hover {
+    color: var(--colorRed);
+}
+
+/* sub page: title */
+.sec01 {
+    height: 450px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 50% 50% / cover;
+    /* transform: scale(1.1); */
+}
+
+.sec01 .inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0;
+}
+
+.sec01 .inner p {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 41px;
+    letter-spacing: -0.05em;
+    color: var(--colorFontWhite);
+    margin: 10px 0 4px;
+}
+
+.sec01 .inner .textBox {
+    margin: 50px 0 0;
+}
+
+.sec01 .inner .textBox > .ico_wh {
+    margin: 0 15px 0 0;
+    font-size: 20px; 
+    color: var(--colorFontWhite);
+}
+
+.sec01 .inner .textBox > span{
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--colorFontWhite);
+}
+
+
+/* sub page: tab */
+.sec02 .tabButton {
+    height: 60px;
+    background: var(--colorRed);
+    position: sticky;
+    top: 80px;
+    left: 0;
+    z-index: 5;
+}
+
+.sec02 .tabButton .inner {
+    align-items: center;
+}
+
+.sec02 .tabButton .inner li {
+    flex: 1 1 25%;
+    position: relative;
+}
+
+.sec02 .tabButton .inner li::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    display: block;
+    background: var(--colorFontWhite);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.sec02 .tabButton .inner li:last-child::after {
+    display: none;
+}
+
+.sec02 .tabButton .inner li h2 {
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 27px;
+    text-align: center;
+    color: var(--colorFontWhite);
+}
+
+.sec02 .tabButton .inner li h2:hover {
+    color: var(--colorFontBlack);
+}
+
+/* 대장암이란? */
+.sec03 .inner img {
+    width: 525px;
+    object-fit: contain;
+}
+
+.sec03 .inner .textBox {
+    padding: 100px 0;
+    margin: 0 0 0 50px;
+}
+
+.sec03 .inner .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.sec03 .inner .textBox h4 {
+    margin: 50px 0;
+}
+
+.sec03 .inner .textBox h4 > span {
+    color: var(--colorRed);
+}
+
+/* 대장암의 누적위험도*/
+.sec04 .backTitle {
+    height: 400px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub2page/childern_01.png) no-repeat 50% 60% / cover;
+}
+
+.sec04 .backTitle .inner {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding: 0 0 80px;
+    color: var(--colorFontWhite);
+}
+
+.sec04 .backTitle .inner .title {
+    position: relative;
+}
+
+.sec04 .backTitle .inner .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+
+
+/* sub page: nav */
+.sub {
+    height: 60px;
+    background: var(--colorRed);
+    position: sticky;
+    top: 80px;
+    left: 0;
+    z-index: 5;
+}
+
+.sub .inner {
+    align-items: center;
+    position: relative;
+}
+
+.sub .inner li {
+    flex: 1 1 0%;
+    text-align: center;
+}
+
+.sub .inner li:first-child::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    display: block;
+    background: var(--colorFontWhite);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub .inner a {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 27px;
+    color: var(--colorFontWhite);
+}
+
+.sub .inner a:hover {
+    color: var(--colorFontBlack);
 }

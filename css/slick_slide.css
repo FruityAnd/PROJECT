@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* 문단 관련 css ▶ word-break: 줄 끝에서 단어 끊어주는 방식
+       normal(기본값-box 높이고정)
+       /break-all(글자 넘치면 높이 자동으로 늘리고 강제 줄바꿈)
+       /keep-all(단어 끊어서 줄바꿈하지 않음, 알아서 단어마다 줄바꿈) */
+    word-break:keep-all;
+    outline: 1px solid red;
+}
+
+:root {
+    background: lightgray;
+}
+
+.slide {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.slide img{
+    height: 500px;
+}
