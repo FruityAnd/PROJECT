@@ -26,7 +26,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -171,7 +171,7 @@ nav.inner .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
 }
 
 nav.inner .gnb {
@@ -198,7 +198,7 @@ nav.inner li>a:hover {
 /* sub page: title */
 .sec01 {
     height: 350px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 50% 55% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 50% 55% / cover;
     margin: 50px 0 0;
 }
 
@@ -346,19 +346,19 @@ nav.inner li>a:hover {
 }
 
 .art1_1 .inner .content > div:nth-child(1) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square01.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square01.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(2) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square02.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square02.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(3) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square03.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square03.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(4) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square04.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square04.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div .textBox strong {
@@ -373,27 +373,27 @@ nav.inner li>a:hover {
 }
 
 .art1_1 .inner .content > div:nth-child(1) .textBox strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_run_man.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_run_man.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(2) .textBox > .box:nth-of-type(1) strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_meat.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_meat.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(2) .textBox > .box:nth-of-type(2) strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_kiwi.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_kiwi.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(2) .textBox > .box:nth-of-type(3) strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_milk.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_milk.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(3) .textBox strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_medicines.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_medicines.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div:nth-child(4) .textBox strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_intestinal_pain.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_intestinal_pain.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .inner .content > div .textBox p {   
@@ -404,7 +404,7 @@ nav.inner li>a:hover {
 /* 암의 예방 */
 .art1_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub3page/question_1.png) no-repeat 50% 20% / cover;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/question_1.png) no-repeat 50% 20% / cover;
 }
 
 .art1_2 .backTitle .inner {
@@ -424,11 +424,11 @@ nav.inner li>a:hover {
 }
 
 .art1_2 .backTitle .inner .title h2:nth-child(1) {
-    background: url(/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
 }
 
 .art1_2 .backTitle .inner .title h2:nth-child(2) {
-    background: url(/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
 }
 
 .art1_2 > .inner {
