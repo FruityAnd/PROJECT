@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* font awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+/* google icons */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
 
 /* 공통선언 */
 * {
@@ -17,11 +20,13 @@ body {
     min-width: 1500px;
 }
 
-body .pageTop{
+body .pageTop {
     position: fixed;
-    right: 5%; bottom: 3%;
-    width: 50px; height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    right: 5%;
+    bottom: 3%;
+    width: 50px;
+    height: 50px;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -31,18 +36,25 @@ body .pageTop{
 
 :root {
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
     --colorRed: #DD454F;
     --colorPink: #FF9C9C;
     --colorLightpink: #FFF8F8;
-    --colorSky: #DDF3FF;  
+    --colorSky: #DDF3FF;
+    --colorTable: #f9f9f9;
     --colorFontBlack: #000000;
     --colorFontBasic: #383838;
     --colorFontLight: #808080;
-    --colorFontWhite: #ffffff;    
+    --colorFontWhite: #ffffff;
 }
 
 section,
 .section {
+    width: 100%;
+}
+
+article,
+.article {
     width: 100%;
 }
 
@@ -57,7 +69,7 @@ li {
     list-style-type: none;
 }
 
-a:link, 
+a:link,
 a:visited {
     text-decoration: none;
     color: inherit;
@@ -71,30 +83,41 @@ i > span {
     overflow: hidden;
 }
 
+.title {
+    position: relative;
+    padding: 0 0 20px;
+}
+
 h1 {
     font-weight: 700;
-    font-size: 4.375rem;
-    line-height: 95px;
+    font-size: 3.75rem;
+    line-height: 82px;
     color: var(--colorFontWhite);
 }
 
 h2 {
     font-weight: 700;
-    font-size: 3.125rem;
-    line-height: 50px;
+    font-size: 2.8125rem;
+    line-height: 45px;
     letter-spacing: 0.02em;
 }
 
 h3 {
     font-weight: 500;
-    font-size: 2.5rem;
-    line-height: 54px;
+    font-size: 2rem;
+    line-height: 44px;
     letter-spacing: 0.02em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.6875rem;
+    line-height: 37px;
 }
 
 /*main header*/
 header {
-    height: 80px;
+    height: 50px;
     width: 100%;
     background: #ffffff;
     position: absolute;
@@ -108,20 +131,19 @@ nav.inner {
 }
 
 nav.inner .logo {
-    width: 110px; height: 80px;
+    width: 110px; 
+    height: 50px;
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 50%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
 }
 
 nav.inner .gnb {
+    width: 60%;
     display: flex; 
     align-items: center;
-}
-
-nav.inner .gnb li {
-    margin-right: 55px;
+    justify-content: space-around;
 }
 
 nav.inner .gnb li:nth-child(4) {
@@ -129,9 +151,8 @@ nav.inner .gnb li:nth-child(4) {
 }
 
 nav.inner li > a {
-    padding: 10px 5px;
-    font-weight: 700;
-    font-size: 1.25rem;
+    font-weight: 600;
+    font-size: 1.1875rem;
     text-align: center;
 }
 
@@ -141,16 +162,15 @@ nav.inner li > a:hover {
 
 /* sub page: title */
 .sec01 {
-    height: 450px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
-    margin: 80px 0 0;
+    height: 350px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
+    margin: 50px 0 0;
 }
 
 .sec01 .inner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 110px 0;
 }
 
 .sec01 .inner p {
@@ -163,7 +183,7 @@ nav.inner li > a:hover {
 }
 
 .sec01 .inner .textBox {
-    margin: 50px 0 0;
+    margin: 30px 0 0;
 }
 
 .sec01 .inner .textBox > .ico_wh {
@@ -178,9 +198,9 @@ nav.inner li > a:hover {
     color: var(--colorFontWhite);
 }
 
-/* sub page: nav */
-.sub {
-    height: 60px;
+/* sub page: tab */
+.sec02 .tabButton {
+    height: 45px;
     background: var(--colorRed);
     position: sticky;
     top: 0;
@@ -188,58 +208,58 @@ nav.inner li > a:hover {
     z-index: 5;
 }
 
-.sub .inner {
+.sec02 .tabButton .inner {
     align-items: center;
+}
+
+.sec02 .tabButton .inner li {
+    flex: 1 1 50%;
     position: relative;
 }
 
-.sub .inner li {
-    flex: 1 1 0%;
-    text-align: center;
-}
-
-.sub .inner li:first-child::after {
+.sec02 .tabButton .inner li::after {
     content: "";
     width: 2px;
     height: 20px;
     display: block;
     background: var(--colorFontWhite);
     position: absolute;
-    left: 50%;
+    right: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
 }
 
-.sub .inner a {
-    font-weight: 700;
+.sec02 .tabButton .inner li:last-child::after {
+    display: none;
+}
+
+.sec02 .tabButton .inner li h2 {
+    cursor: pointer;
     font-size: 1.25rem;
     line-height: 27px;
+    text-align: center;
     color: var(--colorFontWhite);
 }
 
-.sub .inner a:hover {
+.sec02 .tabButton .inner li h2:hover {
     color: var(--colorFontBlack);
 }
 
+/* tab Content - tab01 */
 /* DREAM project? */
-.sec02 {
-    height: 850px;
+.art1_1 {
+    height: 700px;
     background: var(--colorLightpink);
 }
 
-.sec02 .inner {
+.art1_1 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 100px 0;
-    gap: 70px;
+    padding: 80px 0;
+    gap: 50px;
 }
 
-.sec02 .inner .title {
-    position: relative;
-    padding: 0 0 30px;
-}
-
-.sec02 .inner .title::after {
+.art1_1 .inner .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -251,46 +271,64 @@ nav.inner li > a:hover {
     transform: translate(-50%, 0%);
 }
 
-.sec02 .inner .content {
+.art1_1 .inner .content {
     width: 100%;
-    padding: 0 300px 0 0;
-    position: relative;
+    display: flex;
 }
 
-.sec02 .inner .textBox {
+.art1_1 .inner .content .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 450px;
-    padding: 40px 50px 60px;
+    flex: 1 1 75%;
+    height: 100%;
+    padding: 60px 50px;
     background: var(--colorRed);
 }
 
-.sec02 .inner .textBox p {
+.art1_1 .inner .content .left p {
     white-space: pre-line;
     color: var(--colorFontWhite);
 }
 
-.sec02 .inner .textBox p:nth-child(1) {
+.art1_1 .inner .content .left p:nth-child(1) {
     font-size: 1.6875rem;
     line-height: 37px;
 }
 
-.sec02 .inner .textBox p:nth-child(1) span {
+.art1_1 .inner .content .left p:nth-child(1) span {
     font-weight: 700;
 }
 
-.sec02 .inner .textBox p:nth-child(2) {
+.art1_1 .inner .content .left p:nth-child(2) {
     margin: 50px 0 15px;
 }
 
-.sec02 .inner .textBox p:nth-child(2),
-.sec02 .inner .textBox p:nth-child(3) {
+.art1_1 .inner .content .left p:nth-child(2),
+.art1_1 .inner .content .left p:nth-child(3) {
     font-size: 1.25rem;
     line-height: 27px;
 }
 
-.sec02 .inner img {
+.art1_1 .inner .content .right {
+    position: relative;
+    flex: 1 1 25%;
+    height: 100%;
+}
+
+.art1_1 .inner .content .right .sprout {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 8%;
+    right: 40%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub1page/sprout.png) no-repeat 50% 50% / cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.art1_1 .inner img {
     width: 350px;
     height: 300px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -300,42 +338,35 @@ nav.inner li > a:hover {
 }
 
 /* 대장암 예방법 'DREAM' */
-.sec03 {
-    height: 920px;
-}
-
-.sec03 .inner {
+.art1_2 .inner {
     flex-direction: column;
     justify-content: space-between;
-    padding: 100px 0;
+    padding: 80px 0;
+    gap: 50px;
 }
 
-.sec03 .inner h3 > span {
+.art1_2 .inner h3 > span {
     display: block;
     font-weight: 600;
 }
 
-.sec03 .inner .dream {
-    padding: 10px 0;
-}
-
-.sec03 .inner .dream div {
+.art1_2 .inner .dream div {
     display: flex;
     margin: 0 0 25px;
 }
 
-.sec03 .inner .dream div:last-child {
+.art1_2 .inner .dream div:last-child {
     margin: 0;
 }
 
-.sec03 .inner .dream div dt {
+.art1_2 .inner .dream div dt {
     font-weight: 700;
     font-size: 2.8125rem;
-    line-height: 82px;
+    line-height: 78px;
     text-align: center;
     color: var(--colorFontWhite);
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
     border-radius: 25px;
     background: var(--colorRed);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -345,87 +376,93 @@ nav.inner li > a:hover {
     cursor: pointer;
 }
 
-.sec03 .inner .dream div dt:hover {
-    transform: scale(1.2);
+.art1_2 .inner .dream div dt:hover {
+    transform: scale(1.1);
     transition: all 0.3s ease-out;
 }
 
-
-.sec03 .inner .dream div dd {
+.art1_2 .inner .dream div dd {
     font-weight: 600;
-    line-height: 85px;
+    line-height: 80px;
 }
 
-
-.sec03 .inner .dream div dd > span {
+.art1_2 .inner .dream div dd > span {
     color: var(--colorRed);
 }
 
-.sec03 .inner .dream div dd:nth-child(2) {
+.art1_2 .inner .dream div dd:nth-child(2) {
     font-size: 2.1875rem;
     margin: 0 15px 0 0;
 }
 
-.sec03 .inner .dream div dd:nth-child(3) {
+.art1_2 .inner .dream div dd:nth-child(3) {
     font-size: 1.5625rem;
     color: var(--colorFontBasic);
 }
 
 /* 모두에게 적용되는 프로젝트 */
-.sec04 .inner {
+.art1_3 .inner {
     flex-direction: column;
-    padding: 100px 0 120px;
-    gap: 100px;
+    padding: 80px 0;
+    gap: 80px;
 }
 
-.sec04 .inner h3 > span {
-    display: inline-block;
+.art1_3 .inner h3 {
+    white-space: pre-line;
+}
+
+.art1_3 .inner h3 > span {
     font-weight: 600;
+    color: var(--colorRed);
 }
 
-.sec04 .inner .content {
+.art1_3 .inner .content {
     display: flex;
     flex-direction: column;
     padding: 0 150px;
-    gap: 150px;
+    align-items: center;
+    gap: 100px;
 }
 
-.sec04 .inner .content li {
+.art1_3 .inner .content li {
     display: flex;
     align-items: center;
+    gap: 15%;
 }
 
-.sec04 .inner .content li img {
-    min-width: 200px;
+.art1_3 .inner .content li img {
+    width: 25%;
     height: 250px;
     object-fit: none;
     border-radius: 15px;
     background: var(--colorSky);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0 150px 0 0;
     transform: scale(1);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.sec04 .inner .content li img:hover {
-    transform: scale(1.15);
+.art1_3 .inner .content li img:hover {
+    transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
 
-.sec04 .inner .content li:nth-child(1) img {
-    object-position: 7.5% 44%
+.art1_3 .inner .content li:nth-child(1) img {
+    object-position: 5% 44%
 } 
 
-.sec04 .inner .content li:nth-child(2) img {
+.art1_3 .inner .content li:nth-child(2) img {
     object-position: 48.5% 28%;
 } 
 
-.sec04 .inner .content li:nth-child(3) img {
-    object-position: 88.5% 30%;
+.art1_3 .inner .content li:nth-child(3) img {
+    object-position: 90% 30%;
 } 
 
-.sec04 .inner .content li dl > dt {
+.art1_3 .inner .content li dl {
+    flex: 1 1 60%;
+}
+.art1_3 .inner .content li dl > dt {
     font-weight: 700;
     font-size: 2.1875rem;
     line-height: 48px;
@@ -433,65 +470,60 @@ nav.inner li > a:hover {
     margin: 0 0 30px;
 }
 
-.sec04 .inner .content li dl > dd {
+.art1_3 .inner .content li dl > dd {
     font-size: 1.25rem;
     line-height: 30px;
     color: var(--colorFontBasic);
 }
 
-.sec04 .inner .content li dl > dd:nth-child(2) {
+.art1_3 .inner .content li dl > dd:nth-child(2) {
     margin: 0 0 10px;
 }
 
 /* 주변 검진기관 찾기 */
-.sec05 {
+.art1_4 {
     height: 450px;
     background: var(--colorSky);
 }
 
-.sec05 .inner {
+.art1_4 .inner {
     flex-direction: column;
     align-items: center;
-    background: url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
     padding: 35px 140px 35px 160px;
 }
 
-.sec05 .inner .bubble {
+.art1_4 .inner .bubble {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 100px 0 0;
 }
 
-.sec05 .inner .bubble a {
+.art1_4 .inner .bubble a {
     display: inline-block;
 }
 
-.sec05 .inner .bubble img{
+.art1_4 .inner .bubble img{
     height: 100px;
     transform: scale(1);
     transition: all 0.2s ease-in-out;
 }
  
-.sec05 .inner .bubble img:hover {
-    transform: scale(1.2);
+.art1_4 .inner .bubble img:hover {
+    transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
 
 
 /* 로고 및 캐릭터 */
-.sec06 .inner {
+.art2_1 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
-.sec06 .inner .title {
-    padding: 0 0 30px;
-    position: relative;
-}
-
-.sec06 .inner .title::after {
+.art2_1 .inner .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -503,24 +535,24 @@ nav.inner li > a:hover {
     transform: translate(-50%, 0%);
 }
 
-.sec06 .inner ul {
+.art2_1 .inner ul {
     display: flex;
     flex-direction: column;
-    gap: 80px 0;
+    gap: 60px 0;
     width: 100%;
-    margin: 60px 0 0;
-}
-
-.sec06 .inner ul li {
-    position: relative;
-}
-
-.sec06 .inner ul li:nth-child(2) {
     margin: 50px 0 0;
 }
 
-.sec06 .inner ul li:nth-child(1)::after,
-.sec06 .inner ul li:nth-child(2)::after {
+.art2_1 .inner ul li {
+    position: relative;
+}
+
+.art2_1 .inner ul li:nth-child(2) {
+    margin: 50px 0 0;
+}
+
+.art2_1 .inner ul li:nth-child(1)::after,
+.art2_1 .inner ul li:nth-child(2)::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -531,37 +563,36 @@ nav.inner li > a:hover {
     bottom: 0%;
 }
 
-.sec06 .inner ul li:nth-child(1)::after {
+.art2_1 .inner ul li:nth-child(1)::after {
     position: absolute;
     left: 0;
-    bottom: -80px;
+    bottom: -60px;
 }
 
-.sec06 .inner ul li h4 {
+.art2_1 .inner ul li h4 {
     font-weight: 500;
     font-size: 1.875rem;
     line-height: 41px;
 }
 
-.sec06 .inner ul li:nth-child(1) h4,
-.sec06 .inner ul li:nth-child(3) h4 {
+.art2_1 .inner ul li:nth-child(1) h4,
+.art2_1 .inner ul li:nth-child(3) h4 {
     margin: 0 0 30px;
 }
 
-.sec06 .inner ul li p {
+.art2_1 .inner ul li p {
     font-size: 1.25rem;
     line-height: 30px;
     white-space: pre-line;
     color: var(--colorFontBasic);
 }
 
-.sec06 .inner ul .color {
+.art2_1 .inner ul .color {
     display: flex;
     margin: 50px 0;
-    padding: 0 0 30px;
 }
 
-.sec06 .inner ul .color > span {
+.art2_1 .inner ul .color > span {
     flex: 1 1 50%;
     height: 200px;
     font-weight: 700;
@@ -572,44 +603,43 @@ nav.inner li > a:hover {
     border-radius: 15px;
 }
 
-.sec06 .inner ul .color > span:nth-child(1) {
+.art2_1 .inner ul .color > span:nth-child(1) {
     background: #A0C9AF;
     margin: 0 50px 0 0;
 }
 
-.sec06 .inner ul .color > span:nth-child(2) {
+.art2_1 .inner ul .color > span:nth-child(2) {
     background: var(--colorRed);
     margin: 0 0 0 50px;
 }
 
-.sec06 .inner ul .design {
+.art2_1 .inner ul .design {
     display: flex;
     flex-direction: column;
 }
 
-.sec06 .inner ul .design > img {
+.art2_1 .inner ul .design > img {
     height: 400px;
 }
 
-.sec06 .inner ul li:nth-child(1) .design img {
+.art2_1 .inner ul li:nth-child(1) .design img {
     object-fit: contain;
     object-position: 50% 50%;
 }
 
-.sec06 .inner ul li:nth-child(3) .design img {
+.art2_1 .inner ul li:nth-child(3) .design img {
     object-fit: cover;
     object-position: 50% 22%;
 }
 
-.sec06 .inner ul li:nth-child(1) .design img, 
-.sec06 .inner ul li:nth-child(3) .design img {
-    margin: 40px 0;
+.art2_1 .inner ul li:nth-child(1) .design img, 
+.art2_1 .inner ul li:nth-child(3) .design img {
+    margin: 30px 0;
 }
 
-.sec06 .inner ul .design > a {
+.art2_1 .inner ul .design > a {
     align-self: center;
-    width: 250px;
-    padding: 10px 0;
+    padding: 5px 25px;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 34px;
@@ -618,52 +648,71 @@ nav.inner li > a:hover {
     border: 1px solid var(--colorRed);
 }
 
-.sec06 .inner ul .design > a:hover {
+.art2_1 .inner ul .design > a:hover {
     color: var(--colorFontWhite);
     background: var(--colorRed);
 }
 
 /* footer */
 .fnb {
-    height: 340px;
     background: var(--colorRed);
 }
 
 .fnb .inner {
     height: 100%;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 }
 
-/* 공통선언 */
-.fnb .inner a, 
-.fnb .inner span,
-.fnb .inner p {
-    font-weight: 300; 
+.fnb > .inner a, 
+.fnb > .inner span,
+.fnb > .inner p {
+    font-weight: 300;
+    font-size: 1rem;
     font-style: normal;
+    line-height: normal;
+    text-align: left;
     color: var(--colorFontWhite);
 }
 
 .fnb .inner .top {
     display: flex;
-    padding: 20px 0;
+    justify-content: space-between;
+    padding: 15px 0;
     position: relative;
 }
 
-.fnb .inner .top li {
-    margin-right: 100px;
-}
-
-.fnb .inner ul.top::after {
+.fnb .inner .top::after {
     content: "";
     width: 100%;
     height: 1px;
-    display: inline-block;
     background: var(--colorFontWhite);
     opacity: 0.8;
     position: absolute;
     left: 0;
-    top: 63px;
+    bottom: 0;
+}
+
+.fnb .inner .top li {
+    flex: 1 1 50%;
+    display: flex;
+    align-content: center;
+}
+
+.fnb .inner .top .list a {
+    margin: 0 40px 0 0;
+}
+
+.fnb .inner .top .sns {
+    justify-content: flex-end;
+}
+
+.fnb .inner .top .sns a {
+    margin: 0 0 0 40px;
+}
+
+.fnb .inner .top .sns .ico_wh {
+    font-size: 15px;
 }
 
 .fnb .inner .middle {
@@ -672,6 +721,14 @@ nav.inner li > a:hover {
     justify-content: space-between;
     align-items: center;
 }
+
+.fnb .inner .middle .left {
+    flex: 1 1 40%;
+}
+
+.fnb .inner .middle .right {
+    flex: 1 1 60%;
+} 
 
 .fnb .inner .middle .left li span {
     display: inline-block;
@@ -683,7 +740,7 @@ nav.inner li > a:hover {
 
 .fnb .inner .middle .left li:nth-child(2),
 .fnb .inner .middle .right p:nth-child(2) {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .fnb .inner .middle a {
@@ -691,13 +748,8 @@ nav.inner li > a:hover {
 }
 
 .fnb .inner .middle img {
-    width: 300px;
     height: 60px;
     object-fit: contain;
-}
-
-.fnb .inner .bottom {
-    padding: 10px 0;
 }
 
 .fnb .inner .bottom a {
