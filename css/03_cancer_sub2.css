@@ -41,7 +41,7 @@ body .pageTop {
     --colorPink: #FF9C9C;
     --colorLightpink: #FFF8F8;
     --colorSky: #DDF3FF;
-    --colorTable: #f9f9f9;
+    --colorTable: #fbfbfb;
     --colorFontBlack: #000000;
     --colorFontBasic: #383838;
     --colorFontLight: #808080;
@@ -281,6 +281,15 @@ nav.inner li>a:hover {
     color: var(--colorFontBlack);
 }
 
+/* tab Content */
+.sec02 .tabContent .pages {
+    display: none;
+}
+
+.sec02 .tabContent .pages.on {
+    display: block;
+}
+
 /* tab Content - tab01 */
 /* 대장암이란? */
 .art1_1 .inner img {
@@ -376,7 +385,8 @@ nav.inner li>a:hover {
 }
 
 .art1_2  >  .inner .graph img {
-    height: 800px;
+    width: 800px;
+    background: var(--colorTable);
 }
 
 /* 주변 검진기관 찾기 */
@@ -641,17 +651,14 @@ nav.inner li>a:hover {
 }
 
 .art2_3 .inner .graphcard .card:nth-child(2) {
-    margin: 0 auto;
-}
-
-.art2_3 .inner .graphcard .card:nth-child(3) {
     margin: 0 0 0 auto;
 }
 
 .art2_3 .inner .graphcard .card img {
     height: 400px;
+    object-fit: contain;
     margin: 0 0 30px;
-    background: var(--colorSky);
+    background: var(--colorTable);
     border-radius: 15px;
 }
 

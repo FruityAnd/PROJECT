@@ -41,7 +41,7 @@ body .pageTop {
     --colorPink: #FF9C9C;
     --colorLightpink: #FFF8F8;
     --colorSky: #DDF3FF;
-    --colorTable: #f9f9f9;
+    --colorTable: #fbfbfb;
     --colorFontBlack: #000000;
     --colorFontBasic: #383838;
     --colorFontLight: #808080;
@@ -279,6 +279,15 @@ nav.inner li>a:hover {
 
 .sec02 .tabButton .inner li h2:hover {
     color: var(--colorFontBlack);
+}
+
+/* tab Content */
+.sec02 .tabContent .pages {
+    display: none;
+}
+
+.sec02 .tabContent .pages.on {
+    display: block;
 }
 
 /* tab Content - tab01 */
