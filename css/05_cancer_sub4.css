@@ -26,7 +26,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -171,7 +171,7 @@ nav.inner .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
 }
 
 nav.inner .gnb {
@@ -191,14 +191,14 @@ nav.inner li > a {
     text-align: center;
 }
 
-nav.inner li>a:hover {
+nav.inner li > a:hover {
     color: var(--colorRed);
 }
 
 /* sub page: title */
 .sec01 {
     height: 350px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub4page/sub4_title.png) no-repeat 50% 45% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub4page/sub4_title.png) no-repeat 50% 45% / cover;
     margin: 50px 0 0;
 }
 
@@ -221,13 +221,13 @@ nav.inner li>a:hover {
     margin: 30px 0 0;
 }
 
-.sec01 .inner .textBox>.ico_wh {
+.sec01 .inner .textBox > .ico_wh {
     margin: 0 15px 0 0;
     font-size: 20px;
     color: var(--colorFontWhite);
 }
 
-.sec01 .inner .textBox>span {
+.sec01 .inner .textBox > span {
     font-size: 1.25rem;
     line-height: 30px;
     color: var(--colorFontWhite);
@@ -294,8 +294,8 @@ nav.inner li>a:hover {
 .art1_1 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 80px 0 50px 0;
+    gap: 40px;
 }
 
 .art1_1 .inner .title::after {
@@ -314,21 +314,25 @@ nav.inner li>a:hover {
     text-align: center;
 }
 
-.art1_1 .inner .content .slidecard {
+/* swiper: slide card */
+.art1_1 .slideTest {
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
     margin: 40px 0 0;
 }
 
-.art1_1 .inner .content .card {
+.art1_1 .slideTest .slideCard{
     position: relative;
-    flex: 1 1 50%;
+    width: 50%;
+    /* flex: 1 1 50%; */
 }
 
-.art1_1 .inner .content .card img {
+.art1_1 .slideTest .slideCard > img {
     width: 100%;
 }
-.art1_1 .inner .content .card .c_gradient {
+
+.art1_1 .slideTest .slideCard > .c_gradient {
     display: block;
     position: absolute;
     left: 0;
@@ -339,32 +343,32 @@ nav.inner li>a:hover {
     overflow: hidden;
 }
 
-.art1_1 .inner .content .card:nth-child(1) .c_gradient {
-    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(222, 237, 249, 1) 55%);
+.art1_1 .slideTest .slideCard:nth-child(1) > .c_gradient {
+    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(222, 237, 249, 1) 60%);
 }
 
-.art1_1 .inner .content .card:nth-child(2) .c_gradient {
-    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(207, 233, 242, 1) 55%);
+.art1_1 .slideTest .slideCard:nth-child(2) > .c_gradient {
+    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(207, 233, 242, 1) 60%);
 }
 
-.art1_1 .inner .content .card:nth-child(3) .c_gradient {
-    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(219, 209, 210, 1) 55%);
+.art1_1 .slideTest .slideCard:nth-child(3) > .c_gradient {
+    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(219, 209, 210, 1) 60%);
 }
 
-.art1_1 .inner .content .card:nth-child(4) .c_gradient {
-    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(225, 194, 185, 1) 55%);
+.art1_1 .slideTest .slideCard:nth-child(4) > .c_gradient {
+    background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(225, 194, 185, 1) 60%);
 }
 
-.art1_1 .inner .content .card dl {
+.art1_1 .slideTest .slideCard dl {
     position: absolute;
     bottom: 0;
     display: block;
     width: 100%;
     color: #fff;
-    padding: 0 30px 40px
+    padding: 0 30px 25px;
 }
 
-.art1_1 .inner .content .card dt {
+.art1_1 .slideTest .slideCard dt {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 30px;
@@ -372,7 +376,7 @@ nav.inner li>a:hover {
     color: var(--colorFontBasic);
 }
 
-.art1_1 .inner .content .card dd {
+.art1_1 .slideTest .slideCard dd {
     font-size: 1.125rem;
     line-height: 25px;
     color: #525252;
@@ -381,16 +385,43 @@ nav.inner li>a:hover {
     position: relative;
 }
 
-.art1_1 .inner .content .card dd::before {
+.art1_1 .slideTest .slideCard dd::before {
     display: inline-block;
     content: "";
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--colorRed);
+    background: var(--colorTable);
     position: absolute;
     top: 9px;
     left: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, 
+.swiper-pagination-fraction {
+    margin: 20px 0 0;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 15px 0 0;
+}
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    margin: 0 5px 0 0;
+}
+
+.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
 }
 
 
@@ -398,25 +429,34 @@ nav.inner li>a:hover {
 /* 전세계 20~40대 대장암 발생률*/
 .art2_1 .inner {
     flex-direction: column;
-    padding: 50px 0 80px 0;
+    align-items: center;
+    padding: 80px 0;
+    gap: 50px;
 }
 
-.art2_1 .inner > p {
+.art2_1 .inner .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
+.art2_1 .inner .content p {
     font-weight: 500;
-    font-size: 1.7rem;
-    text-align: left;
-    white-space: pre-line;
 }
 
-.art2_1 .inner > p > span {
+.art2_1 .inner .content p > span {
     color: var(--colorRed);
 }
 
-.art2_1 .inner .content {
-    margin: 80px 0 0;
-}   
 
 .art2_1 .inner .content .ranking {
+    margin: 80px 0 0;
     display: flex;
     justify-content: space-evenly;
 }
@@ -429,16 +469,16 @@ nav.inner li>a:hover {
     position: relative;
     border-radius: 15px;
     background: var(--colorLightpink);
-    box-shadow: 4px 4px 10px rgb(0 0 0 / 20%);
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
 }
 
-.art2_1 .inner .content .ranking .r_card:nth-child(1),
+/* .art2_1 .inner .content .ranking .r_card:nth-child(1),
 .art2_1 .inner .content .ranking .r_card:nth-child(3) {
     transform: translateY(10px);
-}
+} */
 
 .art2_1 .inner .content .ranking .r_card:nth-child(2) {
-    transform: translateY(-30px);
+    transform: translateY(-35px);
 }
 
 .art2_1 .inner .content .ranking .r_card img {
@@ -471,7 +511,7 @@ nav.inner li>a:hover {
 /* 대장암 브레이크 */
 .art2_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub4page/sub4_sec01.png) no-repeat 50% 48% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/드림프로젝트/sub4page/sub4_sec01.png) no-repeat 50% 48% / cover;
 }
 
 .art2_2 .backTitle .inner {
@@ -489,7 +529,7 @@ nav.inner li>a:hover {
 
 .art2_2 .backTitle .inner strong {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .art2_2 .backTitle .inner h2 > span {
@@ -508,6 +548,31 @@ nav.inner li>a:hover {
     padding: 80px 0;
 }
 
+.art2_2 > .inner .table_content {
+    width: 90%;
+    padding: 40px 0;
+}
+
+.art2_2 > .inner .table_content table::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background: var(--colorFontWhite);
+}
+
+.art2_2 > .inner .table_content table::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    background: var(--colorFontWhite);
+}
+
 .art2_2 > .inner .table_content table .c1 {
     width: 20%;
 }
@@ -516,37 +581,79 @@ nav.inner li>a:hover {
     width: 10%;
 }
 
+.art2_2 > .inner .table_content table th {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 0;
+    background: var(--colorTable);
+}
+
+.art2_2 > .inner .table_content table td {
+    padding: 15px 0;
+    font-size: 1.125rem;
+    line-height: 25px;
+    text-align: center;
+    color: var(--colorFontBasic)
+}
+
+.art2_2 > .inner > p:nth-of-type(1) {
+    font-weight: 600;
+    color: var(--colorRed);
+}
+
+/* 암검진 미수검 이유 */
+.art2_3 .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 50px;
+}
+
+.art2_3 .inner .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
 /* 주변 검진기관 찾기 */
-.art2_3 {
+.art2_4 {
     height: 450px;
     background: var(--colorSky);
 }
 
-.art2_3 .inner {
+.art2_4 .inner {
     flex-direction: column;
     align-items: center;
-    background: url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
     padding: 35px 140px 35px 160px;
 }
 
-.art2_3 .inner .bubble {
+.art2_4 .inner .bubble {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: auto 0;
 }
 
-.art2_3 .inner .bubble a {
+.art2_4 .inner .bubble a {
     display: inline-block;
 }
 
-.art2_3 .inner .bubble img {
+.art2_4 .inner .bubble img {
     height: 100px;
     transform: scale(1);
     transition: all 0.2s ease-in-out;
 }
 
-.art2_3 .inner .bubble img:hover {
+.art2_4 .inner .bubble img:hover {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
@@ -601,6 +708,10 @@ nav.inner li>a:hover {
     margin: 0 40px 0 0;
 }
 
+.fnb .inner .top .list a:hover {
+    color: var(--colorFontBlack);
+}
+
 .fnb .inner .top .sns {
     justify-content: flex-end;
 }
@@ -610,7 +721,11 @@ nav.inner li>a:hover {
 }
 
 .fnb .inner .top .sns .ico_wh {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+.fnb .inner .top .sns .ico_wh:hover {
+    color: var(--colorFontBlack);
 }
 
 .fnb .inner .middle {

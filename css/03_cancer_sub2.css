@@ -26,7 +26,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -171,7 +171,7 @@ nav.inner .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
 }
 
 nav.inner .gnb {
@@ -198,7 +198,7 @@ nav.inner li>a:hover {
 /* sub page: title */
 .sec01 {
     height: 350px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 50% 50% / cover;
     margin: 50px 0 0;
 }
 
@@ -328,7 +328,7 @@ nav.inner li>a:hover {
 /* 대장암의 누적위험도*/
 .art1_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub2page/childern_01.png) no-repeat 50% 57% / cover
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub2page/childern_01.png) no-repeat 50% 57% / cover
 }
 
 .art1_2 .backTitle .inner {
@@ -398,7 +398,7 @@ nav.inner li>a:hover {
 .art1_3 .inner {
     flex-direction: column;
     align-items: center;
-    background: url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
     padding: 35px 140px 35px 160px;
 }
 
@@ -503,8 +503,7 @@ nav.inner li>a:hover {
     line-height: 25px;
     text-align: left;
     padding: 0 0 0 10px;
-    word-wrap: break-word;
-    white-space: pre-line;
+    word-break: keep-all;
     color: var(--colorFontBasic);
 }
 
@@ -797,7 +796,7 @@ nav.inner li>a:hover {
 /* 대장암의 병기 */
 .art3_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/tab3_background.png) no-repeat 50% 10% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub2page/tab3_background.png) no-repeat 50% 10% / cover;
 }
 
 .art3_2 .backTitle .inner {
@@ -861,19 +860,19 @@ nav.inner li>a:hover {
 }
 
 .art3_2 > .inner .right .textBox:nth-of-type(1) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square1.png) no-repeat 0% 50% / contain;
+    background: url(/img/드림프로젝트/sub2page/number_square1.png) no-repeat 0% 50% / contain;
 }
 
 .art3_2 > .inner .right .textBox:nth-of-type(2) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square2.png) no-repeat 0% 50% / contain;
+    background: url(/img/드림프로젝트/sub2page/number_square2.png) no-repeat 0% 50% / contain;
 }
 
 .art3_2 > .inner .right .textBox:nth-of-type(3) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square3.png) no-repeat 0% 50% / contain;
+    background: url(/img/드림프로젝트/sub2page/number_square3.png) no-repeat 0% 50% / contain;
 }
 
 .art3_2 > .inner .right .textBox:nth-of-type(4) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square4.png) no-repeat 0% 50% / contain;
+    background: url(/img/드림프로젝트/sub2page/number_square4.png) no-repeat 0% 50% / contain;
 }
 
 /* 병기에 따른 대장암의 분류 */
@@ -1078,7 +1077,7 @@ nav.inner li>a:hover {
 /* 대장암의 예후 */
 .art4_3 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/tab4_background.png) no-repeat 0% 58% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub2page/tab4_background.png) no-repeat 0% 58% / cover;
 }
 
 .art4_3 .backTitle .inner {
@@ -1196,22 +1195,22 @@ nav.inner li>a:hover {
 }
 
 .art4_3 > .inner .table_content table .img_c:nth-of-type(1) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률1.png) no-repeat 45% 0% / auto;
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률1.png) no-repeat 45% 0% / auto;
 }
 
 .art4_3 > .inner .table_content table .img_c:nth-of-type(2) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률2.png) no-repeat 50% 0% / auto;
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률2.png) no-repeat 50% 0% / auto;
 }
 
 .art4_3 > .inner .table_content table .img_c:nth-of-type(3) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률3.png) no-repeat 50% 0% / auto;
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률3.png) no-repeat 50% 0% / auto;
 }
 .art4_3 > .inner .table_content table .img_c:nth-of-type(4) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률4.png) no-repeat 50% 0% / auto;
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률4.png) no-repeat 50% 0% / auto;
 }
 
 .art4_3 > .inner .table_content table .img_c:nth-of-type(5) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률5.png) no-repeat 55% 0% / auto;
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률5.png) no-repeat 55% 0% / auto;
 }
 
 /* footer */
@@ -1264,6 +1263,10 @@ nav.inner li>a:hover {
     margin: 0 40px 0 0;
 }
 
+.fnb .inner .top .list a:hover {
+    color: var(--colorFontBlack);
+}
+
 .fnb .inner .top .sns {
     justify-content: flex-end;
 }
@@ -1273,7 +1276,11 @@ nav.inner li>a:hover {
 }
 
 .fnb .inner .top .sns .ico_wh {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+.fnb .inner .top .sns .ico_wh:hover {
+    color: var(--colorFontBlack);
 }
 
 .fnb .inner .middle {

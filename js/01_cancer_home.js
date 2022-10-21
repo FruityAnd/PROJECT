@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    // slick: 자동 넘김slide 
-    $(".sec01 .slickBanner").slick({
-        dots: true,
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500
-    });
+    $(window).scroll(function () {
+        var height = $(this).scrollTop();
+        if (height >= $(".sec03").offset().top - $(window).height() / 2) {
+            $(".sec03").addClass("show");
+        }
+        if (height >= $(".sec04").offset().top - $(window).height() / 2) {
+            $(".sec04").addClass("show");
+        }
+      });
 
     // button: scrollTop (클릭 이벤트)
     $(".pageTop").click(function(){
@@ -15,4 +15,25 @@ $(document).ready(function(){
             scrollTop: 0
         }, 1000);
     });
+
+    var swiper = new Swiper(".slideBanner", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 });
+
+
+
+  

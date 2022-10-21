@@ -26,7 +26,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -136,7 +136,7 @@ nav.inner .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
 }
 
 nav.inner .gnb {
@@ -163,7 +163,7 @@ nav.inner li > a:hover {
 /* sub page: title */
 .sec01 {
     height: 350px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
     margin: 50px 0 0;
 }
 
@@ -171,6 +171,7 @@ nav.inner li > a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0 20px 0;
 }
 
 .sec01 .inner p {
@@ -197,6 +198,8 @@ nav.inner li > a:hover {
     line-height: 30px;
     color: var(--colorFontWhite);
 }
+
+
 
 /* sub page: tab */
 .sec02 .tabButton {
@@ -335,7 +338,7 @@ nav.inner li > a:hover {
     position: absolute;
     top: 8%;
     right: 40%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub1page/sprout.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub1page/sprout.png) no-repeat 50% 50% / cover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-indent: -1000px;
     overflow: hidden;
@@ -502,7 +505,7 @@ nav.inner li > a:hover {
 .art1_4 .inner {
     flex-direction: column;
     align-items: center;
-    background: url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
     padding: 35px 140px 35px 160px;
 }
 
@@ -716,6 +719,10 @@ nav.inner li > a:hover {
     margin: 0 40px 0 0;
 }
 
+.fnb .inner .top .list a:hover {
+    color: var(--colorFontBlack);
+}
+
 .fnb .inner .top .sns {
     justify-content: flex-end;
 }
@@ -725,7 +732,11 @@ nav.inner li > a:hover {
 }
 
 .fnb .inner .top .sns .ico_wh {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+.fnb .inner .top .sns .ico_wh:hover {
+    color: var(--colorFontBlack);
 }
 
 .fnb .inner .middle {
