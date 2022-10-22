@@ -177,7 +177,7 @@ nav.inner li > a:hover {
 .sec01 .slideBanner .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    background: var(--colorSky);
+    background: var(--colorRed);
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, 
@@ -413,7 +413,7 @@ nav.inner li > a:hover {
 /* 대장암 바로알기 */
 .sec05 {
     height: 600px;
-    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/PROJECT/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
 }
 
 .sec05 .inner {
