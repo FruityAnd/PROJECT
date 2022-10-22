@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 /* body {
