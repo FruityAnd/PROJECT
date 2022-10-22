@@ -12,13 +12,12 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
 }
 
-body {
+/* body {
     min-width: 1500px;
-}
-
+} */
 
 body .pageTop{
     position: fixed;
@@ -109,6 +108,7 @@ header {
 }
 
 nav.inner {
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -121,15 +121,17 @@ nav.inner .logo {
     background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ auto 100px;
 }
 
-nav.inner .gnb {
-    width: 60%;
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;
+nav.inner span {
+    display: none;
 }
 
-nav.inner .gnb li:nth-child(4) {
-    margin-right: 0;
+nav.inner .gnb {
+    display: flex; 
+    align-items: center;
+}
+
+nav.inner .gnb li {
+    margin: 0 0 0 30px; 
 }
 
 nav.inner li > a {
@@ -161,7 +163,7 @@ nav.inner li > a:hover {
 .sec01 .slideBanner img {
     display: block;
     width: 100%;
-    height: 700px;
+    max-height: 70vh;
     object-fit: contain;
 }
 
@@ -176,6 +178,13 @@ nav.inner li > a:hover {
     width: 10px;
     height: 10px;
     background: var(--colorSky);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    position: relative;
+    bottom: 0;
 }
 
 /* Dream Project */
