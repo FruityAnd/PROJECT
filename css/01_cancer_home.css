@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
 }
 
 /* body {
@@ -279,13 +279,16 @@ nav.inner li > a:hover {
     padding: 80px 0;
 }
 
+.sec03 .title h2 {
+    text-align: right;
+}
 
-.sec03 .inner .ageCard {
+.sec03 .ageCard {
     display: flex;
     margin: 60px 0 0;
 }
 
-.sec03 .inner .ageCard a {
+.sec03 .ageCard a {
     display: flex;
     flex-direction: column;
     flex: 1 1 33.33%;
@@ -296,11 +299,11 @@ nav.inner li > a:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.sec03 .inner .ageCard a:nth-child(3) {
+.sec03 .ageCard a:nth-child(3) {
     margin-right: 0;
 }
 
-.sec03 .inner .ageCard img {
+.sec03 .ageCard img {
     width: 100%;
     height: 200px;
     object-fit: none;
@@ -308,29 +311,29 @@ nav.inner li > a:hover {
     background: var(--colorSky);
 }
 
-.sec03 .inner .ageCard a:nth-child(1) img {
+.sec03 .ageCard a:nth-child(1) img {
     object-position: -1% 32%;
 }
 
-.sec03 .inner .ageCard a:nth-child(2) img {
+.sec03 .ageCard a:nth-child(2) img {
     object-position: 48% 20%;
 }
 
-.sec03 .inner .ageCard a:nth-child(3) img {
+.sec03 .ageCard a:nth-child(3) img {
     object-position: 96% 22%;
 }
 
 
-.sec03 .inner .ageCard .textBox {
+.sec03 .ageCard .textBox {
     margin: 20px 0 0;
 }
 
-.sec03 .inner .ageCard .textBox h3 {
+.sec03 .ageCard .textBox h3 {
     text-align: center;
     color: var(--colorRed);
 }
 
-.sec03 .inner .ageCard .textBox p {
+.sec03 .ageCard .textBox p {
     margin: 10px 0 0;
     font-weight: 500;
     font-size: 1.5rem;
@@ -345,11 +348,7 @@ nav.inner li > a:hover {
     padding: 20px 0;
 }
 
-.sec04 .inner .title {
-    text-align: right;
-}
-
-.sec04 .inner .prevention {
+.sec04 .prevention {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -357,37 +356,42 @@ nav.inner li > a:hover {
     margin: 80px 0;
 }
 
-.sec04 .inner .prevention li a {
+.sec04 .prevention li a {
     display: flex;
     justify-content: space-evenly;
 }
 
-.sec04 .inner .prevention li:nth-child(even) a {
+.sec04 .prevention li:nth-child(odd) a {
     flex-direction: row-reverse;
 } 
 
-.sec04 .inner .prevention li a img {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    box-shadow: 5px 5px 8px rgb(0 0 0 / 25%);
-    object-fit: cover;
+.sec04 .prevention .icon {
+    width: 270px;
+    height: 270px;
+    text-indent: -500px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.sec04 .inner .prevention li:nth-child(1) a img {
-    object-position: 0% 50%;
+.sec04 .prevention li:nth-child(1) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50%;
 }
 
-.sec04 .inner .prevention li:nth-child(3) a img {
-    object-position: 40% 50%;
+.sec04 .prevention li:nth-child(2) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50%;
 }
 
-.sec04 .inner .prevention li:nth-child(4) a img {
-    object-position: 50% 60%;
+.sec04 .prevention li:nth-child(3) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50%;
 }
 
-.sec04 .inner .prevention .textBox {
-    width: 300px;
+.sec04 .prevention li:nth-child(4) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50%;
+}
+
+.sec04 .prevention .textBox {
+    /* width: 300px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
