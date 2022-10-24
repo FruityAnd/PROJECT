@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+body .pageTop{
+    right: 20px; 
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+.inner {
+    width: auto;
+    margin: 0 40px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2 > strong {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+
+/* main header */
+nav.inner .gnb {
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    padding: 50px 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(221, 69, 79, 0.8);
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+nav.inner .gnb.on {
+    height: 100vh;
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+nav.inner .gnb li {
+    margin: 0;
+    padding: 15px;
+}
+
+nav.inner li > a {
+    font-size: 1.8rem;
+    color: var(--colorFontWhite);
+}
+
+nav.inner li > a:hover {
+    color: var(--colorFontBlack);
+}
+
+nav.inner .more_bt {
+    display: block;
+    position: absolute;
+    top: auto;
+    right: 40px;
+}
+
+/* swiper slide */
+.sec01 .slideBanner .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+}
+
+/* 성별 나이 상관없는 전국민 프로젝트 */
+.sec03 .inner,
+.sec04 .inner {
+    padding: 50px 0;
+}
+
+.title .jumping_dots > span::before {
+    top: -7px;
+    width: 7px;
+    height: 7px;
+}
+
+.sec03 .ageCard img {
+    border-radius: 10px;
+}
+
+.sec03 .ageCard .textBox p {
+    font-size: 1.2rem;
+}
+
+/* 대장암 예방방법 */
+.sec04 .prevention {
+    gap: 80px;
+    margin: 50px 0 20px 0;
+}
+
+.sec04 .prevention .icon {
+    width: 200px;
+    height: 200px;
+}
+
+.sec04 .prevention li:nth-child(1) .icon {
+    background-size: 60%;
+}
+
+.sec04 .prevention li:nth-child(2) .icon {
+    background-size: 60%;
+}
+
+.sec04 .prevention li:nth-child(3) .icon {
+    background-size: 47%;
+}
+
+.sec04 .prevention li:nth-child(4) .icon {
+    background-size: 60%;
+}
+
+.sec04 .inner .prevention .textBox p {
+    font-size: 1.1rem;
+    line-height: 27px;
+}
+
+
+/* 대장암 바로알기 */
+.sec05 .inner {
+    padding: 80px 0;
+}
+
+.sec05 .textBox { 
+    gap: 30px; 
+}
+
+.sec05 .textBox h2 {
+    font-size: 2rem;
+    line-height: normal;
+}
+
+.sec05 .textBox h2 > strong {
+    font-size: 3.0rem;
+    line-height: 55px;
+}
+
+.sec05 .textBox p {
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+/* 대장암 홍보자료 */
+.sec06 .inner {
+    padding: 50px 0 0;
+}
+
+.sec06 .s_promoCard {
+    padding: 0 20px;
+}
+
+.sec06 .s_promoCard .slide_card img {
+    height: 250px;
+}
+
+.sec06 .s_promoCard .slide_card:nth-child(3) img {
+    object-position: 50% 35%;
+}
+
+.sec06 .s_promoCard .slide_card a {
+    font-size: 1rem;
+}
+
+/* 가로: 무한 롤링 text */
+.rollingtext .track span {
+    font-size: 5.0rem;
+}
+

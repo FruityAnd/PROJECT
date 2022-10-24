@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+body .pageTop{
+    right: 5px; 
+    width: 25px;
+    height: 25px;
+
+}
+
+.inner {
+    width: auto;
+    margin: 0 20px;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h2 > strong {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* swiper slide */
+.sec01 .slideBanner .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+}
+
+/* 성별 나이 상관없는 전국민 프로젝트 */
+.sec03 .inner,
+.sec04 .inner {
+    padding: 30px 0;
+}
+
+.sec03 .title {
+    padding: 0;    
+}
+
+.title .jumping_dots > span::before {
+    top: -5px;
+    width: 5px;
+    height: 5px;
+}
+
+.sec03 .ageCard {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 0;
+}
+
+.sec03 .ageCard a {
+    max-width: 250px;
+    padding: 20px;
+    margin-right: 0;
+    margin-bottom: 5%;
+}
+
+.sec03 .ageCard a:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.sec03 .ageCard .textBox p {
+    font-size: 1rem;
+}
+/* 대장암 예방방법 */
+.sec04 .prevention {
+    gap: 50px;
+    margin: 30px 0 0 0;
+}
+
+.sec04 .prevention .icon {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.sec04 .inner .prevention .textBox span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.sec04 .inner .prevention .textBox p {
+    font-size: 0.9rem;
+    line-height: normal;
+    margin: 10px 0 0;
+}
+
+.sec04 .prevention li:nth-child(odd) .textBox {
+    padding: 0 30px 0 0;
+}
+
+.sec04 .prevention li:nth-child(even) .textBox {
+    padding: 0 0 0 30px;
+}
+
+/* 대장암 바로알기 */
+.sec05 .inner {
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.sec05 .textBox {
+    padding: 0 0 10px 0;
+    gap: 20px;
+}
+
+.sec05 .textBox h2 {
+    font-size: 1.5rem;
+}
+
+.sec05 .textBox h2 > strong {
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.sec05 .textBox p {
+    font-size: 1.1rem;
+    line-height: normal;
+}
+
+/* 대장암 홍보자료 */ 
+.sec06 .inner {
+    padding: 30px 0 0 0;
+}
+
+.sec06 .title h2 {
+    text-align: center;
+}
+
+.sec06 .s_promoCard {
+    margin: 30px 0 0;
+    padding: 0 15px;
+}
+
+.sec06 .s_promoCard .slide_card {
+    padding: 25px;
+}
+
+.sec06 .s_promoCard .slide_card img {
+    height: 200px;
+}
+
+/* 가로: 무한 롤링 text */
+.rollingtext .track span {
+    font-size: 3.5rem;
+}
+
+/* footer */
+.fnb a, 
+.fnb span,
+.fnb p { 
+    font-size: 0.9rem;
+}
+
+.fnb .inner {
+    padding: 25px 0;
+}
+

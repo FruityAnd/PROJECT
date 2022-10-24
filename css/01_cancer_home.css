@@ -1,0 +1,734 @@
+@charset "utf-8";
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+/* google icons */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+/* 공통선언 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+    outline: 1px solid blue;
+}
+
+/* body {
+    min-width: 1500px;
+} */
+
+body .pageTop{
+    position: fixed;
+    right: 5%; bottom: 3%;
+    width: 50px; height: 50px;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    z-index: 5;
+    border: none;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    --colorRed: #DD454F;
+    --colorPink: #FF9C9C;
+    --colorLightpink: #FFF8F8;
+    --colorSky: #DDF3FF;  
+    --colorFontBlack: #000000;
+    --colorFontBasic: #383838;
+    --colorFontLight: #808080;
+    --colorFontWhite: #ffffff;    
+}
+
+section,
+.section {
+    width: 100%;
+}
+
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link, 
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+i > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.8125rem;
+    color: var(--colorBlack);
+}
+
+h2 > strong {
+    display: block; 
+    font-size: 2.8125rem;
+    color: var(--colorRed);
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 44px;
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--colorFontBasic);
+}
+
+/*main header*/
+header {
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+nav.inner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.inner .logo {
+    width: 100px; 
+    height: 50px;
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+}
+
+nav.inner .gnb {
+    display: flex; 
+    align-items: center;
+}
+
+nav.inner .gnb li {
+    margin: 0 0 0 30px; 
+}
+
+nav.inner li > a {
+    font-weight: 600;
+    font-size: 1.1875rem;
+    text-align: center;
+}
+
+nav.inner li > a:hover {
+    color: var(--colorRed);
+}
+
+nav.inner .more_bt {
+    cursor: pointer;
+    display: none;
+}
+
+/* swiper slide */
+.sec01 {
+    margin: 50px 0 0 0;
+}
+
+.sec01 .slideBanner {
+    width: 100%;
+}
+
+.sec01 .slideBanner a:nth-of-type(1) {
+    background: #ffffff;
+}
+.sec01 .slideBanner a:nth-of-type(2) {
+    background: #9F9F9F;
+}
+
+.sec01 .slideBanner img {
+    display: block;
+    width: 100%;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+/* 화살표 커스텀 */
+.sec01 .slideBanner .swiper-button-next::after,
+.sec01 .slideBanner .swiper-button-prev::after {
+    display: none;
+}
+
+/* pagination 변경 */
+.sec01 .slideBanner .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--colorRed);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    position: relative;
+    bottom: 0;
+}
+
+/* Dream Project */
+.sec02 {
+    background: var(--colorRed);
+}
+
+.sec02 .inner {
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.sec02 .inner p {
+    font-size: 1.50rem;
+    color: var(--colorFontWhite);
+}
+
+.sec02 .inner .contentBox {
+    width: 100%;
+    padding: 0 100px;
+    color: var(--colorFontWhite);
+}
+
+.sec02 .contentBox .title {
+    padding: 0 0 10px;
+}
+
+.sec02 .contentBox .title p {
+    font-weight: 600;
+}
+
+.sec02 .contentBox .title h2 {
+    color: var(--colorFontWhite);
+}
+
+.sec02 .contentBox .contents {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    position: relative;
+}  
+
+.sec02 .contentBox .contents::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.sec02 .contentBox .contents::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.sec02 .contentBox .contents h3 {
+    font-size: 1.875rem;
+    line-height: 41px;
+}
+
+.sec02 .contentBox .contents p:nth-of-type(1) {
+    margin: 10px 0 0;
+}
+
+/* 성별 나이 상관없는 전국민 프로젝트 */
+.sec03 {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s linear;
+}
+
+.sec03.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s linear;
+}
+
+.sec03 .inner {
+    height: 100%;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.sec03 .title {
+    padding: 0 5px;    
+}
+.sec03 .title h2 {
+    text-align: right;
+}
+
+.title .jumping_dots {
+    font-style: normal;
+}
+
+
+.title .jumping_dots > span {
+    position: relative;
+}
+
+.title .jumping_dots > span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 35%;
+    transform: translate(-50%, 0);
+    animation: jumping 1s linear infinite;
+}
+
+.title .jumping_dots > span:nth-child(1)::before {
+    animation-delay: 100ms;
+    background-color: #FAC586;
+}
+
+.title .jumping_dots > span:nth-child(2)::before {
+    animation-delay: 200ms;
+    background-color: #FAF087;
+}
+
+.title .jumping_dots > span:nth-child(3)::before {
+    animation-delay: 300ms;
+    background-color: #D0FA9C;
+}
+
+.title .jumping_dots > span:nth-child(4)::before {
+    animation-delay: 400ms;
+    background-color: #97E8F0;
+}
+
+@keyframes jumping {
+	0%, 60%, 100% {
+		transform: initial;
+	}
+
+	30% {
+		transform: translateY(-10px);
+	}
+ }
+
+.sec03 .ageCard {
+    display: flex;
+    margin: 60px 0 0;
+}
+
+.sec03 .ageCard a {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33.33%;
+    padding: 25px 20px;
+    margin-right: 5%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.sec03 .ageCard a:nth-child(3) {
+    margin-right: 0;
+}
+
+.sec03 .ageCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background: var(--colorSky);
+}
+
+.sec03 .ageCard .textBox {
+    margin: 20px 0 0;
+}
+
+.sec03 .ageCard .textBox h3 {
+    text-align: center;
+    color: var(--colorRed);
+}
+
+.sec03 .ageCard .textBox p {
+    margin: 10px 0 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: pre-line;
+    color: var(--colorFontBasic);
+}
+
+/* 대장암 예방방법 */
+.sec04 .inner {
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sec04 .prevention {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 80px 0;
+}
+
+.sec04 .prevention li a {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec04 .prevention li:nth-child(odd) a {
+    flex-direction: row-reverse;
+} 
+
+.sec04 .prevention .icon {
+    width: 250px;
+    height: 250px;
+    text-indent: -500px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.sec04 .prevention li:nth-child(1) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50% / auto;
+}
+
+.sec04 .prevention li:nth-child(2) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50% / auto;
+}
+
+.sec04 .prevention li:nth-child(3) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50% / auto;
+}
+
+.sec04 .prevention li:nth-child(4) .icon {
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50% / auto;
+}
+
+.sec04 .prevention .textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec04 .prevention li:nth-child(odd) .textBox {
+    text-align: right;
+}
+
+.sec04 .inner .prevention .textBox span {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sec04 .inner .prevention .textBox p {
+    white-space: pre-line;
+    font-size: 1.20rem;
+    line-height: 30px;
+    color: var(--colorFontBasic);
+    margin: 30px 0 0;
+}
+
+/* 대장암 바로알기 */
+.sec05 {
+    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/PROJECT/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
+}
+
+.sec05 .inner {
+    height: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.sec05 .textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 10px 0;
+}
+
+.sec05 .textBox h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 54px;
+    color: var(--colorFontWhite);   
+}
+
+.sec05 .textBox h2 > strong {
+    font-size: 3.2rem;
+    line-height: 70px;
+    color: var(--colorFontWhite); 
+}
+
+.sec05 .textBox p {
+    font-size: 1.5625rem;
+    line-height: 34px;
+    white-space: pre-line;
+    color: var(--colorFontWhite);   
+}
+
+.sec05 a img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 대장암 홍보자료 */
+.sec06 {
+    background-color: #F6FCFF;
+}
+
+.sec06 .inner {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 80px 0 0 0;
+}
+
+.sec06 .title h2 > strong {
+    display: inline-block;
+}
+
+.sec06 .s_promoCard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 0;
+    padding: 0 30px;
+}
+
+.sec06 .s_promoCard .slide_card {
+    /* flex: 1 1 50%; */
+    width: 50%;
+    padding: 30px 25px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec06 .s_promoCard .slide_card img {
+    width: 100%;
+    height: 350px;
+    border: 2px solid #E8E8E8;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+.sec06 .s_promoCard .slide_card:nth-child(3) img, 
+.sec06 .s_promoCard .slide_card:nth-child(4) img {
+    object-fit: cover;
+}
+
+.sec06 .s_promoCard .slide_card .textBox {
+    margin: 20px 0;
+}
+
+.sec06 .s_promoCard .slide_card .textBox h3 {
+    font-weight: 600;
+    text-align: center;
+    color: var(--colorRed);
+    margin: 0 0 10px;
+}
+
+.sec06 .s_promoCard .slide_card .textBox h3 > span {
+    color: var(--colorFontBlack);
+}
+
+.sec06 .s_promoCard .slide_card .textBox p {
+    font-weight: 500;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.sec06 .s_promoCard .slide_card a {
+    padding: 5px 15px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--colorRed);
+    border: 1px solid var(--colorRed);
+    border-radius: 10px;
+}
+
+.sec06 .s_promoCard .slide_card a:hover {
+    border: 1px solid var(--colorRed);
+    padding: 5px 15px;
+    background: var(--colorRed);
+    color: var(--colorFontWhite);
+} 
+
+.sec06 .swiper-horizontal > .swiper-pagination-bullets,
+.sec06 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.sec06 .swiper-pagination-custom, 
+.sec06 .swiper-pagination-fraction {
+    margin: 20px 0 ;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec06 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.sec06 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 15px 0 0;
+}
+
+.sec06 .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    margin: 0 5px 0 0;
+}
+
+.sec06 .swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+}
+
+/* 가로: 무한 롤링 text */
+.rollingtext {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    background-color: #F6FCFF;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0);}
+    to { transform: translateX(-100%);}
+}
+
+.rollingtext .track {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.rollingtext .track span {
+    font-weight: 700;
+    font-size: 6.0rem;
+    letter-spacing: 0.3em;
+    color: rgba(171, 171, 171, 0.2);
+}
+
+
+/* footer */
+.fnb {
+    background: var(--colorRed);
+}
+
+.fnb a, 
+.fnb span,
+.fnb p {
+    font-weight: 300;
+    font-size: 0.95rem;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    color: var(--colorFontWhite);
+}
+
+.fnb .inner {
+    height: 100%;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.fnb .top {
+    margin: 0 auto;
+}
+
+.fnb .top a {
+    display: inline-block;
+}
+
+.fnb .top .sns {
+    text-align: center;
+}
+
+.fnb .top .sns a {
+    margin: 0 5% ;
+}
+
+.fnb .top .sns .ico_wh {
+    font-size: 15px;
+    line-height: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba(235, 73, 84, 0.8);
+}
+
+.fnb .top .sns .ico_wh:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fnb .top .logo {
+    margin: 5px 0 0;
+}
+
+.fnb .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0;
+}
+
+.fnb .bottom p > a {
+    font-weight: 400;
+    color: var(--colorFontBlack);
+}
+
+.fnb .bottom address a {
+    position: relative;
+    margin: 0 15px 0 0;
+}
+
+.fnb .bottom address a::before {
+    content: "";
+    width: 2px;
+    height: 15px;
+    display: block;
+    background: var(--colorFontWhite);
+    opacity: 0.8;
+    position: absolute;
+    top: 3px;
+    left: -10px;
+}
+
+.fnb .bottom address a:nth-child(1)::before {
+    display: none;
+}    
