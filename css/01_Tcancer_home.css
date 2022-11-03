@@ -27,11 +27,20 @@ h3 {
 
 
 /* main header */
+header {
+    height: 45px;
+}
+
+nav.inner .logo {
+    width: 90px;
+    height: 45px;
+}
+
 nav.inner .gnb {
     flex-direction: column;
     align-items: flex-end;
     position: fixed;
-    top: 50px;
+    top: 45px;
     right: 0;
     padding: 50px 20px;
     width: 100%;
@@ -69,6 +78,54 @@ nav.inner .more_bt {
 }
 
 /* swiper slide */
+.sec01 {
+    margin: 45px 0 0 0;
+}
+
+/* Dream Project */ 
+.sec02 {
+    height: auto;
+}
+
+.sec02 .inner {
+    padding: 50px 0;
+}
+
+.sec02 p {
+    font-size: 1.3rem;
+}
+
+.sec02 .title > h2 {
+    font-size: 3.0rem;
+    line-height: 47px;
+}
+
+.sec02 .textShow {
+    height: 77px;
+}
+
+.sec02 .textShow .showBox p {
+    font-size: 1.5rem;
+    height: 41px;
+    margin-bottom: 41px;
+}
+
+@keyframes show {
+    0% {margin-top:-410px;}
+    10% {margin-top:-328px;}
+    20% {margin-top:-328px;}
+    30% {margin-top:-246px;}
+    40% {margin-top:-246px;}
+    50% {margin-top:-164px;}
+    60% {margin-top:-164px;}
+    70% {margin-top:-82px;}
+    80% {margin-top:-82px;}
+    90% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-410px;}
+}
+
+/* swiper slide */
 .sec01 .slideBanner .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
@@ -84,6 +141,10 @@ nav.inner .more_bt {
     top: -7px;
     width: 7px;
     height: 7px;
+}
+
+.sec03 .ageCard {
+    margin: 50px 0 0;
 }
 
 .sec03 .ageCard img {
@@ -157,7 +218,7 @@ nav.inner .more_bt {
 }
 
 .sec06 .s_promoCard {
-    padding: 0 20px;
+    padding: 5px 20px 0 20px;
 }
 
 .sec06 .s_promoCard .slide_card img {

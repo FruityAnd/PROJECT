@@ -26,7 +26,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -120,7 +120,7 @@ header {
     height: 50px;
     width: 100%;
     background: #ffffff;
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
     z-index: 10;
@@ -137,7 +137,7 @@ nav.inner .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
 nav.inner .gnb {
@@ -167,8 +167,7 @@ nav.inner .more_bt {
 /* sub page: title */
 .sec01 {
     height: 350px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
-    margin: 50px 0 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 50% 22% / cover;
 }
 
 .sec01 .inner {
@@ -269,7 +268,6 @@ nav.inner .more_bt {
 /* DREAM project? */
 .art1_1 {
     height: 700px;
-    background: var(--colorLightpink);
 }
 
 .art1_1 .inner {
@@ -342,7 +340,7 @@ nav.inner .more_bt {
     position: absolute;
     top: 8%;
     right: 40%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub1page/sprout.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub1page/sprout.png) no-repeat 50% 50% / cover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-indent: -1000px;
     overflow: hidden;
@@ -358,6 +356,10 @@ nav.inner .more_bt {
 }
 
 /* 대장암 예방법 'DREAM' */
+.art1_2 {
+    background: var(--colorLightpink);
+}
+
 .art1_2 .inner {
     flex-direction: column;
     justify-content: space-between;
@@ -496,7 +498,7 @@ nav.inner .more_bt {
 .art1_4 .inner {
     flex-direction: column;
     align-items: center;
-    background: url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
     padding: 35px 140px 35px 160px;
 }
 

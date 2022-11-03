@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
 }
 
 /* body {
@@ -23,7 +23,7 @@ body .pageTop{
     position: fixed;
     right: 5%; bottom: 3%;
     width: 50px; height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -118,7 +118,7 @@ nav.inner .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
 nav.inner .gnb {
@@ -184,95 +184,101 @@ nav.inner .more_bt {
 .swiper-horizontal > .swiper-pagination-bullets, 
 .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .swiper-pagination-custom, .swiper-pagination-fraction {
-    position: relative;
+    /* position: relative; */
     bottom: 0;
 }
 
 /* Dream Project */
 .sec02 {
-    background: var(--colorRed);
+    height: 400px;
+    /* background: linear-gradient(90deg, skyblue 0%, steelblue 100%); */
+    background: linear-gradient(90deg, #FEAE96 0%, #e05c65 100%);
 }
 
 .sec02 .inner {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
-.sec02 .inner p {
-    font-size: 1.50rem;
+.sec02 p, 
+.sec02 h2 {
+    text-align: center;
+    text-transform: uppercase;
     color: var(--colorFontWhite);
+    
 }
 
-.sec02 .inner .contentBox {
-    width: 100%;
-    padding: 0 100px;
-    color: var(--colorFontWhite);
+.sec02 p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-.sec02 .contentBox .title {
-    padding: 0 0 10px;
+.sec02 .title > h2 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 55px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.sec02 .contentBox .title p {
+.sec02 .textShow {
+    /* 높이 개발자 도구에서 맞추기 */
+    height: 90px; 
+    margin: 20px 0 0;
+    overflow: hidden;
+}
+
+.sec02 .textShow .showBox {
+    padding: 10px 0 0;
+    animation: show 7s linear infinite;
+}
+
+.sec02 .textShow .showBox p {
     font-weight: 600;
-}
-
-.sec02 .contentBox .title h2 {
-    color: var(--colorFontWhite);
-}
-
-.sec02 .contentBox .contents {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    position: relative;
-}  
-
-.sec02 .contentBox .contents::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #ffffff;
-    display: block;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-}
-
-.sec02 .contentBox .contents::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #ffffff;
-    display: block;
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-}
-
-.sec02 .contentBox .contents h3 {
     font-size: 1.875rem;
-    line-height: 41px;
+    padding: 3px 20px;
+    height: 50px;
+    margin-bottom: 50px;
 }
 
-.sec02 .contentBox .contents p:nth-of-type(1) {
-    margin: 10px 0 0;
+.sec02 .textShow .showBox p:nth-child(1) {
+    background: #FCD9FC;
+}
+
+.sec02 .textShow .showBox p:nth-child(2) {
+    background: #97E8F0; 
+}
+
+.sec02 .textShow .showBox p:nth-child(3) {
+    background: #D0FA9C;
+}
+
+.sec02 .textShow .showBox p:nth-child(4) {
+    background: #FAF087;
+}
+
+.sec02 .textShow .showBox p:nth-child(5) {
+    background: #FAC586;
+}
+
+@keyframes show {
+    0% {margin-top:-500px;}
+    10% {margin-top:-400px;}
+    20% {margin-top:-400px;}
+    30% {margin-top:-300px;}
+    40% {margin-top:-300px;}
+    50% {margin-top:-200px;}
+    60% {margin-top:-200px;}
+    70% {margin-top:-100px;}
+    80% {margin-top:-100px;}
+    90% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-500px;}
 }
 
 /* 성별 나이 상관없는 전국민 프로젝트 */
-.sec03 {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: all 1s linear;
-}
-
-.sec03.show {
-    opacity: 1;
-    transform: translateX(0);
-    transition: all 1s linear;
-}
-
 .sec03 .inner {
     height: 100%;
     flex-direction: column;
@@ -362,6 +368,7 @@ nav.inner .more_bt {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
+    
     background: var(--colorSky);
 }
 
@@ -416,29 +423,25 @@ nav.inner .more_bt {
 }
 
 .sec04 .prevention li:nth-child(1) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(2) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(3) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(4) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention .textBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.sec04 .prevention li:nth-child(odd) .textBox {
-    text-align: right;
 }
 
 .sec04 .inner .prevention .textBox span {
@@ -456,7 +459,7 @@ nav.inner .more_bt {
 
 /* 대장암 바로알기 */
 .sec05 {
-    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/PROJECT/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
 }
 
 .sec05 .inner {
@@ -502,9 +505,6 @@ nav.inner .more_bt {
 }
 
 /* 대장암 홍보자료 */
-.sec06 {
-    background-color: #F6FCFF;
-}
 
 .sec06 .inner {
     flex-direction: column;
@@ -521,8 +521,8 @@ nav.inner .more_bt {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0 0;
-    padding: 0 30px;
+    margin: 45px 0 0;
+    padding: 5px 30px 0 30px;
 }
 
 .sec06 .s_promoCard .slide_card {
@@ -621,7 +621,6 @@ nav.inner .more_bt {
     display: flex;
     height: auto;
     overflow: hidden;
-    background-color: #F6FCFF;
 }
 
 @keyframes marquee {
@@ -632,7 +631,7 @@ nav.inner .more_bt {
 .rollingtext .track {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 10s linear infinite;
+    animation: marquee 20s linear infinite;
     animation-fill-mode: forwards;
 }
 

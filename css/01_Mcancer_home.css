@@ -28,6 +28,71 @@ p {
     font-size: 1rem;
 }
 
+/*main header*/
+header {
+    height: 35px;
+}
+
+nav.inner .gnb {
+    top: 35px;
+}
+
+nav.inner .logo {
+    width: 70px;
+    height: 35px;
+}
+
+/* swiper slide */
+.sec01 {
+    margin: 35px 0 0 0;
+}
+
+/* Dream Project */ 
+.sec02 .inner {
+    padding: 30px 0;
+}
+
+.sec02 p {
+    font-size: 1.1rem;
+    text-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.sec02 .title > h2 {
+    font-size: 2rem;
+    line-height: 35px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.sec02 .textShow {
+    height: 67px;
+    margin: 10px 0 0;
+}
+
+.sec02 .textShow .showBox {
+    padding: 5px 0 0;
+}
+.sec02 .textShow .showBox p {
+    font-size: 1.25rem;
+    padding: 2px 15px;
+    height: 33px;
+    margin-bottom: 33px;
+}
+
+@keyframes show {
+    0% {margin-top:-330px;}
+    10% {margin-top:-264px;}
+    20% {margin-top:-264px;}
+    30% {margin-top:-198px;}
+    40% {margin-top:-198px;}
+    50% {margin-top:-132px;}
+    60% {margin-top:-132px;}
+    70% {margin-top:-66px;}
+    80% {margin-top:-66px;}
+    90% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-330px;}
+}
+
 /* swiper slide */
 .sec01 .slideBanner .swiper-pagination-bullet {
     width: 5px;
@@ -83,13 +148,13 @@ p {
 
 .sec04 .inner .prevention .textBox span {
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .sec04 .inner .prevention .textBox p {
     font-size: 0.9rem;
     line-height: normal;
-    margin: 10px 0 0;
+    margin: 8px 0 0;
 }
 
 .sec04 .prevention li:nth-child(odd) .textBox {
@@ -113,11 +178,12 @@ p {
 
 .sec05 .textBox h2 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .sec05 .textBox h2 > strong {
     font-size: 2rem;
-    line-height: 40px;
+    line-height: 38px;
 }
 
 .sec05 .textBox p {
@@ -135,16 +201,21 @@ p {
 }
 
 .sec06 .s_promoCard {
-    margin: 30px 0 0;
-    padding: 0 15px;
+    margin: 25px 0 0;
+    padding: 5px 15px 0 15px;
 }
 
 .sec06 .s_promoCard .slide_card {
-    padding: 25px;
+    padding: 20px;
 }
 
 .sec06 .s_promoCard .slide_card img {
-    height: 200px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.sec06 .s_promoCard .slide_card .textBox {
+    margin: 15px 0;
 }
 
 /* 가로: 무한 롤링 text */

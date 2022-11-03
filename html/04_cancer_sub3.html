@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <meta name="robots" content="noindex">
     <title>대장암: 예방정보</title>
-    <link rel="stylesheet" type="text/css" href="/PROJECT/css/04_cancer_sub3.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="/PROJECT/css/04_Tcancer_sub3.css">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="/PROJECT/css/04_Mcancer_sub3.css">
+    <link rel="stylesheet" type="text/css" href="/css/04_cancer_sub3.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 1199px)" href="/css/04_Tcancer_sub3.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 760px)" href="/css/04_Mcancer_sub3.css">
 </head>
 
 <body>
     <!-- main header -->
     <header>
         <nav class="inner">
-            <a href="/PROJECT/html/01_cancer_home.html" class="logo">드림프로젝트 로고</a>
+            <a href="/html/01_cancer_home.html" class="logo">드림프로젝트 로고</a>
             <span class="material-symbols-outlined more_bt" role="button">menu</span>
             <ul class="gnb">
-                <li><a href="/PROJECT/html/02_cancer_sub1.html">대장암 예방캠페인</a></li>
-                <li><a href="/PROJECT/html/03_cancer_sub2.html">대장암 알아보기</a></li>
-                <li><a href="/PROJECT/html/04_cancer_sub3.html">대장암 예방정보</a></li>
-                <li><a href="/PROJECT/html/05_cancer_sub4.html">대장암 검진</a></li>
+                <li><a href="/html/02_cancer_sub1.html">대장암 예방캠페인</a></li>
+                <li><a href="/html/03_cancer_sub2.html">대장암 알아보기</a></li>
+                <li><a href="/html/04_cancer_sub3.html">대장암 예방정보</a></li>
+                <li><a href="/html/05_cancer_sub4.html">대장암 검진</a></li>
             </ul>
         </nav>
     </header>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="content">
                             <div>
-                                <img src="/PROJECT/img/드림프로젝트/sub3page/prevention_01.png" alt="운동하는 사진">
+                                <img src="/img/드림프로젝트/sub3page/prevention_01.png" alt="운동하는 사진">
                                 <div class="textBox">
                                     <h4>운동</h4>
                                     <div class="box">
@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="/PROJECT/img/드림프로젝트/sub3page/prevention_02_1.png" alt="채소 사진">
+                                <img src="/img/드림프로젝트/sub3page/prevention_02_1.png" alt="채소 사진">
                                 <div class="textBox">
                                     <h4>식생활</h4>
                                     <div class="box">
@@ -90,7 +90,7 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="/PROJECT/img/드림프로젝트/sub3page/prevention_03.png" alt="소염제 사진">
+                                <img src="/img/드림프로젝트/sub3page/prevention_03.png" alt="소염제 사진">
                                 <div class="textBox">
                                     <h4>화학요법</h4>
                                     <div class="box">
@@ -101,7 +101,7 @@
                                 </div>
                             </div>
                             <div>
-                                <img src="/PROJECT/img/드림프로젝트/sub3page/prevention_04_1.png" alt="대장 내시경 검사 사진">
+                                <img src="/img/드림프로젝트/sub3page/prevention_04_1.png" alt="대장 내시경 검사 사진">
                                 <div class="textBox">
                                     <h4>대장내시경 검사</h4>
                                     <div class="box">
@@ -209,7 +209,105 @@
             </li>
             <li id="tab2" class="pages">
                 <!-- 대장암 O,X 퀴즈 -->
-                <article></article>
+                <article class="art2_1">
+                    <!-- 퀴즈 시작화면 -->
+                    <div class="home-box">
+                        <h3>대장암 fact check!</h3>
+                        <div>
+                            <img src="/img/드림프로젝트/sub3page/icon.png" alt="OX퀴즈 사진">
+                            <p>퀴즈</p>
+                        </div>
+                        <button type="button" onclick="startQuiz()">
+                            <i class="fa-solid fa-play"></i> start
+                        </button>
+                    </div>
+                    <!-- 퀴즈 -->
+                    <div class="quiz-box hide">
+                        <div>
+                            <div class="question-number"></div>
+                            <div class="question-text"></div>
+                        </div>
+                        <form action="#" method="post">
+                            <input type="radio" name="answer" value="true" class="answer-select" onclick="next()">
+                            <input type="radio" name="answer" value="false" class="answer-select" onclick="next()">
+                        </form>
+                    </div>
+                    <!-- 퀴즈 결과화면 -->
+                    <div class="result-box hide">
+                        <p>퀴즈 점수</p>
+                        <div class="quiz-score">
+                            <i class="fa-solid fa-quote-left ico_b"></i>
+                            80점
+                            <i class="fa-solid fa-quote-right ico_b"></i>
+                        </div>
+                        <div class="result-strongtext">완벽해요!</div>
+                        <div class="result-text">이 기세를 이어 대장내시경 검진도 받아볼까요?</div>
+                        <div class="buttonBox">
+                            <button type="button" onclick="returnToQuiz()">
+                                <i class="fa-solid fa-rotate-right"></i> 처음으로
+                            </button>
+                            <button type="button" onclick="checkTheAnswer()">
+                                <i class="fa-regular fa-square-check"></i> 정답확인
+                             </button>
+                        </div>
+                    </div>
+                    <!-- 퀴즈 정답 및 해설 -->
+                    <div class="answer-box hide">
+                        <div class="quiz-box">
+                            <div>
+                                <div class="question-text">
+                                    20~40대거나, 아무 증상없이 건강하다면
+                                    대장내시경 검사를 받지 않아도 된다.  
+                                </div>
+                            </div>
+                            <strong class="quiz-answer">정답: X</strong>
+                            <p class="quiz-commentary">대한민국 20~40대의 대장암 발생률은 인구 10만명당 12.9명으로 조사 대상 42국 중 1위입니다. 
+                                또한 대장암은 초기 증상이 없는 암으로, 증상이 나타난 경우 3~4기까지 대장암이 진행된 상태입니다. 
+                                대장암은 누구에게나 나타날 수 있기에 정기적인 대장내시경 검사를 통해 대장암을 예방해야 합니다.</p>
+                        </div>
+                        <div class="quiz-box">
+                            <div>
+                                <div class="question-text">
+                                    피가 섞인 혈변을 보면 대장암에 걸린 것이다.
+                                </div>
+                            </div>
+                            <strong class="quiz-answer">정답: X</strong>
+                            <p class="quiz-commentary">혈변 중에서도 변의 끝에 혈액이 묻어있거나 피가 떨어지는 경우, 휴지로 항문을 닦았을 때 피가 묻어나는 경우는 치질같은 항문 질환으로 분류 할 수 있고 이는 암과는 무관한 경우가 대부분입니다. 그러나 점액이 섞인 끈적끈적한 혈변이거나 밤색 변인 경우에는 장에 용종이 생겼거나 어디선가 출혈이 있었다는 뜻이므로 대장암을 의심해볼 수 있는 위험 신호입니다.</p>
+                        </div>
+                        <div class="quiz-box">
+                            <div>
+                                <div class="question-text">
+                                    대장 내에서 용종이 발견되면 반드시 제거해야 한다.
+                                </div>
+                            </div>
+                            <strong class="quiz-answer">정답: O</strong>
+                            <p class="quiz-commentary">대장암의 90% 이상은 ‘대장암의 씨앗’이라고 불리는 대장 용종으로부터 발생합니다. 대장 용종은 대장암으로 진행되기까지 약 3~10년의 시간이 걸리므로, 대장 용종만 철저히 제거하면 대장암을 예방할 수 있습니다.
+                                대장용종 병력이 있는 경우에는 다시 용종이 발생할 확률이 높으므로 정기적으로 대장내시경 검사를 받아야합니다.</p>
+                        </div>
+                        <div class="quiz-box">
+                            <div>
+                                <div class="question-text">
+                                    대장암 가족력이 없는 경우, 대장암에 걸릴 확률이 거의 없다.
+                                </div>
+                            </div>
+                            <strong class="quiz-answer">정답: X</strong>
+                            <p class="quiz-commentary">대장암의 5%는 명확히 유전에 의해 발병하며, 이 외에도 5~15% 정도는 유전적 소인과 관계가 있습니다.
+                                직계 가족 중 대장암 환자가 1명일 경우 발생 위험도가 약 1.5배 증가하고, 2명일 경우 2.5배 증가합니다. 
+                                대장암 가족력이 있으면 전문의를 찾아가 자신의 대장내시경 검사시작 시점에 대해 꼭 상담받아야 합니다.</p>
+                        </div>
+                        <div class="quiz-box">
+                            <div>
+                                <div class="question-text">
+                                    대장내시경은 대장암의 진단에 효과적이지
+                                    대장암 예방에는 도움이되지 않는다.
+                                </div>
+                            </div>
+                            <strong class="quiz-answer">정답: X</strong>
+                            <p class="quiz-commentary">대장내시경 암의 ‘1차 예방’에 해당하는 검사로, 대장암 예방에 가장 효과적인 검사입니다.
+                                대장암의 90% 이상은 ‘대장암의 씨앗’이라고 불리는 대장 용종으로 발생하는데, 대장내시경은 대장 용종을 발견하고 바로 제거할 수 있습니다. 이외에도 이상이 있는 부위를 바로 조직검사 할 수 있으며, 출혈이 있을 시 지혈도 가능하기 때문에 ‘대장의 치료’ 및 ‘대장암 예방·진단’이 전부 가능한 검사입니다.</p>
+                        </div>
+                    </div>
+                </article>
             </li>
         </ul>
     </section>
@@ -220,15 +318,19 @@
             <div class="top">
                 <div class="sns">
                     <a href="#"><i class="fa-brands fa-instagram ico_wh"><span>인스타그램</span></i></a>
-                    <a href="https://www.youtube.com/channel/UCAwdkm3I-ly4Fs9mQnLad3A"><i class="fa-brands fa-youtube ico_wh"><span>유튜브</span></i></a>
+                    <a href="https://www.youtube.com/channel/UCAwdkm3I-ly4Fs9mQnLad3A"><i
+                            class="fa-brands fa-youtube ico_wh"><span>유튜브</span></i></a>
                     <a href="#"><i class="fa-brands fa-twitter ico_wh"><span>트위터</span></i></a>
                 </div>
-                <a href="https://giendo.or.kr/KSDE4.0/main/" target="_blank" class="logo"><img src="/PROJECT/img/드림프로젝트/mainpage/logo_society2.png" alt="대한위대장내시경학회 로고"></a>
+                <a href="https://giendo.or.kr/KSDE4.0/main/" target="_blank" class="logo"><img
+                        src="/img/드림프로젝트/mainpage/logo_society2.png" alt="대한위대장내시경학회 로고"></a>
             </div>
             <div class="bottom">
-                <p>All Right Researved<a href="https://giendo.or.kr/KSDE4.0/main/" target="_blank"> 대한위대장내시경학회 </a>@2022</p>
+                <p>All Right Researved<a href="https://giendo.or.kr/KSDE4.0/main/" target="_blank"> 대한위대장내시경학회 </a>@2022
+                </p>
                 <address>
-                    <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%ED%98%B8%EB%A1%9C%20201%20%EC%A0%9C%EC%84%B1%EB%B9%8C%EB%94%A9%204%EC%B8%B5/address/14138629.348212343,4516870.379867947,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%ED%98%B8%EB%A1%9C%20201,new?c=14138598.6583058,4516871.0443298,19,0,0,0,dh&isCorrectAnswer=true" target="_blank">서울특별시 중구 동호로 201 제성빌딩 4층</a>
+                    <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%ED%98%B8%EB%A1%9C%20201%20%EC%A0%9C%EC%84%B1%EB%B9%8C%EB%94%A9%204%EC%B8%B5/address/14138629.348212343,4516870.379867947,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%ED%98%B8%EB%A1%9C%20201,new?c=14138598.6583058,4516871.0443298,19,0,0,0,dh&isCorrectAnswer=true"
+                        target="_blank">서울특별시 중구 동호로 201 제성빌딩 4층</a>
                     <a href="tel:02-582-9265">Tel. 02-582-9265</a>
                     <a href="fax:02-582-9266">Fax. 02-582-9266</a>
                     <a href="mailto:kpa@physician.or.kr">Email. kpa@physician.or.kr</a>
@@ -241,7 +343,8 @@
     <button class="pageTop">top</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="/PROJECT/js/04_cancer_sub3.js"></script>
+    <script src="/js/04_cancer_sub3.js"></script>
+    <script src="/js/ox_quiz.js"></script>
 </body>
 
 </html>

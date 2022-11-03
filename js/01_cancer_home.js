@@ -63,6 +63,9 @@ $(document).ready(function () {
         return text === 'close' ? 'menu' : 'close'
       });
   });
+
+  
+  AOS.init();
 });
 
 

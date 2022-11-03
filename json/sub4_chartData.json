@@ -1,0 +1,82 @@
+{"reason_notTest": [
+    {
+        "year": 2009, 
+        "health": 56.9,
+        "time": 22.2,
+        "hard": 6.8,
+        "money": 5.6,
+        "fear": 4
+    },
+    {
+        "year": 2010,
+        "health": 45.8,
+        "time": 23.1,
+        "hard": 12.2,
+        "money": 11.3,
+        "fear": 4.9
+    },
+    {
+        "year": 2011,
+        "health": 45.7,
+        "time": 23.1,
+        "hard": 12.4,
+        "money": 10.9,
+        "fear": 4.8
+    },
+    {
+        "year": 2012,
+        "health": 42,
+        "time": 28.3,
+        "hard": 12.9,
+        "money": 8.3,
+        "fear": 3.1
+    },
+    {
+        "year": 2013,
+        "health": 43.9,
+        "time": 19.7,
+        "hard": 16.5,
+        "money": 7.6,
+        "fear": 8.5
+    },
+    {
+        "year": 2014,
+        "health": 40.2,
+        "time": 21.5,
+        "hard": 16.4,
+        "money": 7.5,
+        "fear": 9.6
+    },
+    {
+        "year": 2015,
+        "health": 42.2,
+        "time": 23.4,
+        "hard": 16.1,
+        "money": 6.3,
+        "fear": 7.6
+    },
+    {
+        "year": 2016,
+        "health": 48.7,
+        "time": 18.1,
+        "hard": 14.2,
+        "money": 6.2,
+        "fear": 7.5
+    },
+    {
+        "year": 2017,
+        "health": 44.5,
+        "time": 22.1,
+        "hard": 11.3,
+        "money": 8.4,
+        "fear": 7.8
+    },
+    {
+        "year": 2018,
+        "health": 42.5,
+        "time": 19.7,
+        "hard": 15.5,
+        "money": 6.1,
+        "fear": 6.2
+    }
+]}

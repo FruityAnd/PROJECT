@@ -31,4 +31,8 @@ $(document).ready(function () {
           return text === 'close' ? 'menu' : 'close'
       });
   });
+
+  // Chart.js 
+  // Line-chart
+  
 });
