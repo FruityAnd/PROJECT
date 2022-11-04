@@ -217,7 +217,7 @@
                             <img src="/PROJECT/img/드림프로젝트/sub3page/icon.png" alt="OX퀴즈 사진">
                             <p>퀴즈</p>
                         </div>
-                        <button type="button" onclick="startQuiz()">
+                        <button type="button" class="quiz-button">
                             <i class="fa-solid fa-play"></i> start
                         </button>
                     </div>
@@ -228,8 +228,10 @@
                             <div class="question-text"></div>
                         </div>
                         <form action="#" method="post">
-                            <input type="radio" name="answer" value="true" class="answer-select" onclick="next()">
-                            <input type="radio" name="answer" value="false" class="answer-select" onclick="next()">
+                            <!-- O 버튼 -->
+                            <input type="radio" name="answer" value="1" class="answer-select"> 
+                            <!-- X 버튼 -->
+                            <input type="radio" name="a nswer" value="0" class="answer-select">
                         </form>
                     </div>
                     <!-- 퀴즈 결과화면 -->
@@ -243,12 +245,12 @@
                         <div class="result-strongtext">완벽해요!</div>
                         <div class="result-text">이 기세를 이어 대장내시경 검진도 받아볼까요?</div>
                         <div class="buttonBox">
-                            <button type="button" onclick="returnToQuiz()">
+                            <button type="button" class="quiz-button">
                                 <i class="fa-solid fa-rotate-right"></i> 처음으로
                             </button>
-                            <button type="button" onclick="checkTheAnswer()">
-                                <i class="fa-regular fa-square-check"></i> 정답확인
-                             </button>
+                            <button type="button" class="quiz-button">
+                                <i class="fa-regular fa-square-check"></i> 정답보기
+                            </button>
                         </div>
                     </div>
                     <!-- 퀴즈 정답 및 해설 -->
