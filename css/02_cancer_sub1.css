@@ -16,9 +16,9 @@
     /* outline: 1px solid blue; */
 }
 
-body {
+/* body {
     min-width: 1500px;
-}
+} */
 
 body .pageTop {
     position: fixed;
@@ -131,7 +131,7 @@ nav.inner {
     justify-content: space-between;
 }
 
-nav.inner .logo {
+header .logo {
     width: 100px; 
     height: 50px;
     display: block;
@@ -140,28 +140,29 @@ nav.inner .logo {
     background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
-nav.inner .gnb {
+header .more_bt {
+    cursor: pointer;
+    display: none;
+}
+
+header .gnb {
     display: flex; 
     align-items: center;
 }
 
-nav.inner .gnb li {
+header .gnb li {
     margin: 0 0 0 30px; 
 }
 
-nav.inner li > a {
+header .gnb a.c{
     font-weight: 600;
     font-size: 1.1875rem;
     text-align: center;
+    color: black;
 }
 
-nav.inner li > a:hover {
+header .gnb a.c.on{
     color: var(--colorRed);
-}
-
-nav.inner .more_bt {
-    cursor: pointer;
-    display: none;
 }
 
 /* sub page: title */
@@ -247,7 +248,7 @@ nav.inner .more_bt {
     color: var(--colorFontWhite);
 }
 
-.sec02 .tabButton .inner li h2:hover {
+.sec02 .tabButton .inner li.on h2 {
     color: var(--colorFontBlack);
 }
 

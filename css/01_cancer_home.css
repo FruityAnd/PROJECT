@@ -12,18 +12,14 @@
     margin: 0;
     padding: 0;
     word-break: keep-all;
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
 }
-
-/* body {
-    min-width: 1500px;
-} */
 
 body .pageTop{
     position: fixed;
     right: 5%; bottom: 3%;
     width: 50px; height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -112,37 +108,38 @@ nav.inner {
     justify-content: space-between;
 }
 
-nav.inner .logo {
+header .logo {
     width: 100px; 
     height: 50px;
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
-nav.inner .gnb {
+header .more_bt {
+    cursor: pointer;
+    display: none;
+}
+
+header .gnb {
     display: flex; 
     align-items: center;
 }
 
-nav.inner .gnb li {
+header .gnb li {
     margin: 0 0 0 30px; 
 }
 
-nav.inner li > a {
+header .gnb a.c{
     font-weight: 600;
     font-size: 1.1875rem;
     text-align: center;
+    color: black;
 }
 
-nav.inner li > a:hover {
+header .gnb a.c.on{
     color: var(--colorRed);
-}
-
-nav.inner .more_bt {
-    cursor: pointer;
-    display: none;
 }
 
 /* swiper slide */
@@ -423,19 +420,19 @@ nav.inner .more_bt {
 }
 
 .sec04 .prevention li:nth-child(1) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(2) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(3) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(4) .icon {
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention .textBox {
@@ -459,7 +456,7 @@ nav.inner .more_bt {
 
 /* 대장암 바로알기 */
 .sec05 {
-    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/PROJECT/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
 }
 
 .sec05 .inner {
@@ -602,7 +599,7 @@ nav.inner .more_bt {
 
 .sec06 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
 .sec06 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 15px 0 0;
+    margin: 0 10px;
 }
 
 .sec06 .swiper-pagination-bullet {
@@ -678,7 +675,7 @@ nav.inner .more_bt {
 }
 
 .fnb .top .sns a {
-    margin: 0 5% ;
+    margin: 0 5%;
 }
 
 .fnb .top .sns .ico_wh {

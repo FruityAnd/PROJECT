@@ -17,23 +17,6 @@ $(document).ready(function () {
     },
   });
 
-  // $(window).scroll(function () {
-  //     var height = $(this).scrollTop();
-  //     if (height >= $(".sec03").offset().top - $(window).height() / 2) {
-  //         $(".sec03").addClass("show");
-  //     }
-  //     if (height >= $(".sec04").offset().top - $(window).height() / 2) {
-  //         $(".sec04").addClass("show");
-  //     }
-  //   });
-
-  // button: scrollTop (클릭 이벤트)
-  $(".pageTop").click(function () {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 1000);
-  });
-
   // 대장암 홍보자료 - swiper: 1200px 이하 해상도에만 적용
   var swiper = new Swiper(".s_promoCard", {
     slidesPerView: 1, //모바일 기준
@@ -54,17 +37,6 @@ $(document).ready(function () {
     }
   });
 
-  //모바일 header
-  $(".more_bt").click(function () {
-    
-      $(".gnb").toggleClass("on");
-      // 메뉴아이콘 사용했을 시 적용
-      $(this).text(function (e, text) {
-        return text === 'close' ? 'menu' : 'close'
-      });
-  });
-
-  
   AOS.init();
 });
 

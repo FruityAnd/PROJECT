@@ -3,27 +3,22 @@
 // (1) 퀴즈 데이터 생성
 let quizData = [
     {
-        //quizData[0]
         q: "20~40대거나, 아무 증상없이 건강하다면<br> 대장내시경 검사를 받지 않아도 된다.",
         answer: 0
     },
     {
-        //quizData[1]
         q: "피가 섞인 혈변을 보면<br> 대장암에 걸린 것이다.",
         answer: 0
     },
     {
-        //quizData[2]
         q: "대장 내에서 용종이 발견되면<br> 반드시 제거해야 한다.",
         answer: 1
     },
     {
-        //quizData[3]
         q: "대장암 가족력이 없는 경우,<br> 대장암에 걸릴 확률이 거의 없다.",
         answer: 0
     },
     {
-        //quizData[4]
         q: "대장내시경은 대장암의 진단에 효과적이지<br> 대장암 예방에는 도움이되지 않는다.",
         answer: 0
     }
@@ -37,6 +32,9 @@ const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
 const answerBox = document.querySelector(".answer-box");
+let quizScore = document.querySelector("quiz-score");
+let resultText1 = document.querySelector("result-text1");
+let resultText2 = document.querySelector("result-text2");
 const answerSelect = document.querySelectorAll(".answer-select");
 const quizButton = document.querySelectorAll(".quiz-button");
 
@@ -47,7 +45,6 @@ let Questions = []; //변수 배열 선언
 // (2) 퀴즈 질문번호 설정
 function setQuestions() {
     const totalQuestion = quizData.length; // 5
-    // console.log(quizData.length); 
     for (let i = 0; i < totalQuestion; i++) {
         Questions.push(quizData[i]); //push() 메서드 마지막 배열 추가
     }
@@ -63,8 +60,8 @@ function getNewQuestion() {
     questionText.innerHTML = currentQuestion.q;
 
     //퀴즈내용 중복 출력 방지
-    const stopDuplication = Questions.indexOf(currentQuestion);
-    Questions.splice(stopDuplication, 1);
+    const duplication = Questions.indexOf(currentQuestion);
+    Questions.splice(duplication, 1);
     // console.log(currentQuestion);
     // console.log(Questions);
 
@@ -72,12 +69,15 @@ function getNewQuestion() {
     countQuestion++;
 };
 
+answerSelect[0].addEventListener("click", getResultOfQuiz);
+answerSelect[1].addEventListener("click", getResultOfQuiz);
+
 // (4) 퀴즈 정답 구분
-var checkAnswer = []; 
+var checkAnswer = [];
 function getResultOfQuiz() {
     for (let i = 0; i < answerSelect.length; i++) { //answerSelect.lenght = 2
         if (answerSelect[i].checked == true) { //사용자가 체크한 answerSelect의
-            if (answerSelect[i].value == 1) {
+            if (answerSelect[i].value == currentQuestion.answer) { //[확인] 현재 퀴즈의 답과 사용자가 선택한 값을 비교해야 될꺼 같네요~
                 //value값과 랜덤으로 나온 퀴즈의 answer값이 일치하면
                 checkAnswer.push(1);
             }
@@ -87,8 +87,34 @@ function getResultOfQuiz() {
             }
         }
     }
-    // console.log(currentQuestion);
+    // console.log(currentQuestion.answer);
     console.log(checkAnswer);
+};
+
+var score;
+var totalscore;
+function getTotalScore() {
+    score = checkAnswer.map(el => el * 20); // 배열 곱셈
+    totalscore = score.reduce(function (total, val) { //배열 더하기
+        console.log("total:", total);
+        console.log("val :", val);
+        return total + val;
+    }, 0);
+    console.log(totalscore);
+
+    // if (0 <= totalscore && 20 >= totalscore) {
+    //     quizScore.innerHTML = `${totalscore}점`;
+    //     resultText1 = `완벽해요!`;
+    //     resultText2 = `이 기세를 이어 대장내시경 검진도 받아볼까요?`;
+    // } else if (40 <= totalscore && 60 >= totalscore) {
+    //     quizScore = `${totalscore}점`;
+    //     resultText1 = `아쉬워요!`;
+    //     resultText2 = `대장암에 대해 조금 더 알아볼까요?`;
+    // } else {
+    //     quizScore = `${totalscore}점`;
+    //     resultText1 = `이대로는 안돼요!`;
+    //     resultText2 = `대장암이 무엇인지 처음부터 차근차근 알아볼까요?`;
+    // }
 };
 
 
@@ -97,9 +123,7 @@ quizButton[0].addEventListener("click", startQuiz);
 quizButton[1].addEventListener("click", returnToQuiz);
 quizButton[2].addEventListener("click", lookAnswer);
 answerSelect[0].addEventListener("click", next);
-answerSelect[0].addEventListener("click", getResultOfQuiz);
 answerSelect[1].addEventListener("click", next);
-answerSelect[1].addEventListener("click", getResultOfQuiz);
 
 function next() {
     if (countQuestion === quizData.length) {
@@ -113,12 +137,14 @@ function next() {
 
 function quizOver() { //퀴즈 끝나면
     quizBox.classList.add("hide"); //퀴즈 화면 숨김
-    resultBox.classList.remove("hide"); //퀴즈 결과화면 보임
+    resultBox.classList.remove("hide"); //퀴즈 결과화면 보임   
+    //총점수 계산  
+    getTotalScore();
 };
 
 function resetQuiz() { //처음으로 버튼 누르면 리셋되는 것
     countQuestion = 0;
-    checkAnswer = []; 
+    checkAnswer = [];
 };
 
 function returnToQuiz() { //처음으로 버튼 누르면
@@ -140,3 +166,4 @@ function startQuiz() { //시작버튼 누르면
     setQuestions();
     getNewQuestion();
 };
+

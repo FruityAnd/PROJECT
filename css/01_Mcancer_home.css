@@ -33,11 +33,11 @@ header {
     height: 35px;
 }
 
-nav.inner .gnb {
+header .gnb {
     top: 35px;
 }
 
-nav.inner .logo {
+header .logo {
     width: 70px;
     height: 35px;
 }

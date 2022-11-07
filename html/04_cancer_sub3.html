@@ -18,10 +18,18 @@
             <a href="/PROJECT/html/01_cancer_home.html" class="logo">드림프로젝트 로고</a>
             <span class="material-symbols-outlined more_bt" role="button">menu</span>
             <ul class="gnb">
-                <li><a href="/PROJECT/html/02_cancer_sub1.html">대장암 예방캠페인</a></li>
-                <li><a href="/PROJECT/html/03_cancer_sub2.html">대장암 알아보기</a></li>
-                <li><a href="/PROJECT/html/04_cancer_sub3.html">대장암 예방정보</a></li>
-                <li><a href="/PROJECT/html/05_cancer_sub4.html">대장암 검진</a></li>
+                <li>
+                    <a href="/PROJECT/html/02_cancer_sub1.html" class="c">대장암 예방캠페인</a>
+                </li>
+                <li>
+                    <a href="/PROJECT/html/03_cancer_sub2.html" class="c">대장암 알아보기</a>
+                </li>
+                <li>
+                    <a href="/PROJECT/html/04_cancer_sub3.html" class="c">대장암 예방정보</a>
+                </li>
+                <li>
+                    <a href="/PROJECT/html/05_cancer_sub4.html" class="c">대장암 검진</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -42,7 +50,7 @@
         <div class="tabButton">
             <ul class="inner">
                 <li class="on" data-id="tab1">
-                    <h2>대장암 예방정보</h2>
+                    <h2>대장암 예방방법</h2>
                 </li>
                 <li data-id="tab2">
                     <h2>대장암 예방퀴즈</h2>
@@ -231,19 +239,19 @@
                             <!-- O 버튼 -->
                             <input type="radio" name="answer" value="1" class="answer-select"> 
                             <!-- X 버튼 -->
-                            <input type="radio" name="a nswer" value="0" class="answer-select">
+                            <input type="radio" name="answer" value="0" class="answer-select">
                         </form>
                     </div>
                     <!-- 퀴즈 결과화면 -->
                     <div class="result-box hide">
                         <p>퀴즈 점수</p>
-                        <div class="quiz-score">
+                        <div class="scoretext">
                             <i class="fa-solid fa-quote-left ico_b"></i>
-                            80점
+                            <span class="quiz-score"></span>
                             <i class="fa-solid fa-quote-right ico_b"></i>
                         </div>
-                        <div class="result-strongtext">완벽해요!</div>
-                        <div class="result-text">이 기세를 이어 대장내시경 검진도 받아볼까요?</div>
+                        <div class="result-text1"></div>
+                        <div class="result-text2"></div>
                         <div class="buttonBox">
                             <button type="button" class="quiz-button">
                                 <i class="fa-solid fa-rotate-right"></i> 처음으로
@@ -345,7 +353,7 @@
     <button class="pageTop">top</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="/PROJECT/js/04_cancer_sub3.js"></script>
+    <script src="/PROJECT/js/cancer_common.js"></script>
     <script src="/PROJECT/js/ox_quiz.js"></script>
 </body>
 

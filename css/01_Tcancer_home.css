@@ -31,12 +31,19 @@ header {
     height: 45px;
 }
 
-nav.inner .logo {
+header .logo {
     width: 90px;
     height: 45px;
 }
 
-nav.inner .gnb {
+header .more_bt {
+    display: block;
+    position: absolute;
+    top: auto;
+    right: 40px;
+}
+
+header .gnb {
     flex-direction: column;
     align-items: flex-end;
     position: fixed;
@@ -50,31 +57,25 @@ nav.inner .gnb {
     transition: transform 0.5s;
 }
 
-nav.inner .gnb.on {
+header .gnb.on {
     height: 100vh;
     transform: translateX(0%);
     transition: transform 0.5s;
 }
 
-nav.inner .gnb li {
+header .gnb li {
     margin: 0;
     padding: 15px;
 }
 
-nav.inner li > a {
+
+header .gnb a.c {
     font-size: 1.8rem;
     color: var(--colorFontWhite);
 }
 
-nav.inner li > a:hover {
+header .gnb a.c:hover {
     color: var(--colorFontBlack);
-}
-
-nav.inner .more_bt {
-    display: block;
-    position: absolute;
-    top: auto;
-    right: 40px;
 }
 
 /* swiper slide */

@@ -166,7 +166,7 @@ nav.inner {
     justify-content: space-between;
 }
 
-nav.inner .logo {
+header .logo {
     width: 100px; 
     height: 50px;
     display: block;
@@ -175,30 +175,30 @@ nav.inner .logo {
     background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
-nav.inner .gnb {
-    display: flex; 
-    align-items: center;
-}
-
-nav.inner .gnb li {
-    margin: 0 0 0 30px; 
-}
-
-nav.inner li > a {
-    font-weight: 600;
-    font-size: 1.1875rem;
-    text-align: center;
-}
-
-nav.inner li > a:hover {
-    color: var(--colorRed);
-}
-
-nav.inner .more_bt {
+header .more_bt {
     cursor: pointer;
     display: none;
 }
 
+header .gnb {
+    display: flex; 
+    align-items: center;
+}
+
+header .gnb li {
+    margin: 0 0 0 30px; 
+}
+
+header .gnb a.c{
+    font-weight: 600;
+    font-size: 1.1875rem;
+    text-align: center;
+    color: black;
+}
+
+header .gnb a.c.on{
+    color: var(--colorRed);
+}
 
 /* sub page: title */
 .sec01 {
@@ -281,7 +281,7 @@ nav.inner .more_bt {
     color: var(--colorFontWhite);
 }
 
-.sec02 .tabButton .inner li h2:hover {
+.sec02 .tabButton .inner li.on h2 {
     color: var(--colorFontBlack);
 }
 
@@ -416,7 +416,7 @@ nav.inner .more_bt {
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 15px 0 0;
+    margin: 0 10px;
 }
 .swiper-pagination-bullet {
     width: 7px;
@@ -617,7 +617,6 @@ nav.inner .more_bt {
     flex-direction: column;
     align-items: center;
     padding: 80px 0;
-    gap: 50px;
 }
 
 .art2_3 .title {
@@ -627,7 +626,7 @@ nav.inner .more_bt {
 .art2_3 .content .chart {
     width: 900px;
     height: 500px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 30px 38px 30px 40px;
     background-color: #fff;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);

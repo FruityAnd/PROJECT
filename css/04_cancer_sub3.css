@@ -166,7 +166,7 @@ nav.inner {
     justify-content: space-between;
 }
 
-nav.inner .logo {
+header .logo {
     width: 100px; 
     height: 50px;
     display: block;
@@ -175,29 +175,31 @@ nav.inner .logo {
     background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
-nav.inner .gnb {
+header .more_bt {
+    cursor: pointer;
+    display: none;
+}
+
+header .gnb {
     display: flex; 
     align-items: center;
 }
 
-nav.inner .gnb li {
+header .gnb li {
     margin: 0 0 0 30px; 
 }
 
-nav.inner li > a {
+header .gnb a.c{
     font-weight: 600;
     font-size: 1.1875rem;
     text-align: center;
+    color: black;
 }
 
-nav.inner li > a:hover {
+header .gnb a.c.on{
     color: var(--colorRed);
 }
 
-nav.inner .more_bt {
-    cursor: pointer;
-    display: none;
-}
 
 /* sub page: title */
 .sec01 {
@@ -281,7 +283,7 @@ nav.inner .more_bt {
     color: var(--colorFontWhite);
 }
 
-.sec02 .tabButton .inner li h2:hover {
+.sec02 .tabButton .inner li.on h2 {
     color: var(--colorFontBlack);
 }
 
@@ -576,7 +578,7 @@ nav.inner .more_bt {
     width: 1000px;
     margin: 50px auto;
     border-radius: 15px;
-    background: #DD454F; /*url(/img/드림프로젝트/sub3page/quiz_background.png); */
+    background: #DD454F; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -712,7 +714,7 @@ nav.inner .more_bt {
     letter-spacing: 0.05em;
 }
 
-.art2_1 .result-box .quiz-score > .ico_b {
+.art2_1 .result-box .ico_b {
     font-size: 20px;
     transform: translateY(-40px);
 }
@@ -722,7 +724,7 @@ nav.inner .more_bt {
     font-size: 1.3rem;
 }
 
-.art2_1 .result-box .result-strongtext {
+.art2_1 .result-box .result-text1 {
     font-weight: 700;
     color: var(--colorRed);
     margin: 80px 0 0;
