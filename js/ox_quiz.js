@@ -96,8 +96,8 @@ var totalscore;
 function getTotalScore() {
     score = checkAnswer.map(el => el * 20); // 배열 곱셈
     totalscore = score.reduce(function (total, val) { //배열 더하기
-        console.log("total:", total);
-        console.log("val :", val);
+        // console.log("total:", total);
+        // console.log("val :", val);
         return total + val;
     }, 0);
     console.log(totalscore);
