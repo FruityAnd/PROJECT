@@ -1,0 +1,699 @@
+@charset "utf-8";
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+/* google icons */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+
+/* 공통선언 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+    /* outline: 1px solid blue; */
+}
+
+body .pageTop {
+    position: fixed;
+    right: 5%;
+    bottom: 3%;
+    width: 50px;
+    height: 50px;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    z-index: 5;
+    border: none;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    --colorRed: #DD454F;
+    --colorPink: #FF9C9C;
+    --colorLightpink: #FFF8F8;
+    --colorSky: #DDF3FF;
+    --colorTable: #fbfbfb;
+    --colorFontBlack: #000000;
+    --colorFontBasic: #383838;
+    --colorFontLight: #808080;
+    --colorFontWhite: #ffffff;
+}
+
+section,
+.section {
+    width: 100%;
+}
+
+article,
+.article {
+    width: 100%;
+}
+
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+i > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
+    padding: 0 0 20px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 60px;
+    color: var(--colorFontWhite);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+/*main header*/
+header {
+    height: 45px;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+nav.inner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 100px; 
+    height: 45px;
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+}
+
+header .more_bt {
+    cursor: pointer;
+    display: none;
+}
+
+header .gnb {
+    display: flex; 
+    align-items: center;
+}
+
+header .gnb li {
+    margin: 0 0 0 40px; 
+}
+
+header .gnb a.c{
+    font-weight: 600;
+    font-size: 1.15rem;
+    text-align: center;
+    color: black;
+}
+
+header .gnb a.c.on{
+    color: var(--colorRed);
+}
+
+/* sub page: title */
+.sec01 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 0% 58% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/드림프로젝트/sub1page/sub1_title1.png) no-repeat 0% 58% / cover;
+}
+
+.sec01 .inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.sec01 .inner p {
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    color: var(--colorFontWhite);
+}
+
+.sec01 .textBox {
+    margin: 30px 0 0;
+}
+
+.sec01 .textBox > .ico_wh {
+    margin: 0 10px 0 0;
+    color: var(--colorFontWhite);
+}
+
+.sec01 .textBox > span{
+    font-size: 1.1rem;
+    color: var(--colorFontWhite);
+}
+
+
+/* sub page: tab */
+.sec02 .tabButton {
+    height: 40px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
+.sec02 .tabButton .inner {
+    align-items: center;
+}
+
+.sec02 .tabButton .inner li {
+    flex: 1 1 50%;
+    height: 100%
+}
+
+.sec02 .tabButton .inner li.on {
+    background-color: var(--colorRed);
+}
+
+.sec02 .tabButton .inner li:last-child::after {
+    display: none;
+}
+
+.sec02 .tabButton .inner li h2 {
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: center;
+    color: var(--colorFontBlack);
+}
+
+.sec02 .tabButton .inner li.on h2 {
+    color: var(--colorFontWhite);
+}
+
+.sec02 .tabButton .pages {
+    display: none;
+}
+
+/* tab Content */
+.sec02 .tabContent .pages {
+    display: none;
+}
+
+.sec02 .tabContent .pages.on {
+    display: block;
+}
+
+/* tab Content - tab01 */
+/* DREAM project? */
+.art1_1 .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 70px 0;
+    gap: 50px;
+}
+
+.art1_1 .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
+.art1_1 .content {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.art1_1 .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 75%;
+    height: 100%;
+    padding: 60px 50px;
+    background: var(--colorRed);
+}
+
+.art1_1 .left p {
+    white-space: pre-line;
+    color: var(--colorFontWhite);
+}
+
+.art1_1 .left p:nth-child(1) {
+    font-size: 1.6875rem;
+    line-height: 37px;
+}
+
+.art1_1 .left p:nth-child(1) span {
+    font-weight: 700;
+}
+
+.art1_1 .left p:nth-child(2) {
+    margin: 50px 0 15px;
+}
+
+.art1_1 .left p:nth-child(2),
+.art1_1 .left p:nth-child(3) {
+    font-size: 1.25rem;
+    line-height: 27px;
+}
+
+.art1_1 .right {
+    flex: 1 1 25%;
+    height: 100%;
+}
+
+.art1_1 .right .sprout {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub1page/sprout.png) no-repeat 50% 50% / cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.art1_1 img {
+    width: 350px;
+    height: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute; 
+    top: 75px;
+    right: 65px;
+}
+
+/* 대장암 예방법 'DREAM' */
+.art1_2 {
+    background: var(--colorLightpink);
+}
+
+.art1_2 .inner {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.art1_2 .inner h3 > span {
+    display: block;
+    font-weight: 600;
+}
+
+.art1_2 .dream div {
+    display: flex;
+    margin: 0 0 20px;
+}
+
+.art1_2 .dream div:last-child {
+    margin: 0;
+}
+
+.art1_2 .dream div dt {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 66px;
+    text-align: center;
+    color: var(--colorFontWhite);
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    background: var(--colorRed);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 40px 0 0;
+    transform: scale(1);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.art1_2 .dream div dt:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
+.art1_2 .dream div dd {
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.art1_2 .dream div dd > span {
+    color: var(--colorRed);
+}
+
+.art1_2 .dream div dd:nth-child(2) {
+    font-size: 2rem;
+    margin: 0 15px 0 0;
+}
+
+.art1_2 .dream div dd:nth-child(3) {
+    font-size: 1.5rem;
+    color: var(--colorFontBasic);
+}
+
+/* 모두에게 적용되는 프로젝트 */
+.art1_3 .inner {
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 60px;
+}
+
+.art1_3 .inner h3 {
+    white-space: pre-line;
+}
+
+.art1_3 .inner h3 > span {
+    font-weight: 600;
+    color: var(--colorRed);
+}
+
+.art1_3 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 150px;
+    margin: 0 0 10px 0;
+    gap: 80px;
+}
+
+.art1_3 .content li {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+.art1_3 .content li img {
+    width: 25%;
+    height: 250px;
+    border-radius: 15px;
+    background: var(--colorSky);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.art1_3 .content li img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.art1_3 .content li dl {
+    flex: 1 1 60%;
+}
+.art1_3 .content li dl > dt {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 48px;
+    color: var(--colorRed);
+    margin: 0 0 30px;
+}
+
+.art1_3 .content li dl > dd {
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--colorFontBasic);
+}
+
+.art1_3 .content li dl > dd:nth-child(2) {
+    margin: 0 0 10px;
+}
+
+/* 로고 및 캐릭터 */
+.art2_1 .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.art2_1 .inner .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
+.art2_1 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 60px 0;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.art2_1 ul li {
+    position: relative;
+}
+
+.art2_1 ul li:nth-child(2) {
+    margin: 50px 0 0;
+}
+
+.art2_1 ul li:nth-child(1)::after,
+.art2_1 ul li:nth-child(2)::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: #D2D2D2;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.art2_1 ul li:nth-child(1)::after {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+}
+
+.art2_1 ul li h4 {
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 41px;
+}
+
+.art2_1 ul li:nth-child(1) h4,
+.art2_1 ul li:nth-child(3) h4 {
+    margin: 0 0 30px;
+}
+
+.art2_1 ul li p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    white-space: pre-line;
+    color: var(--colorFontBasic);
+}
+
+.art2_1 .color {
+    display: flex;
+    padding: 30px 0 50px;
+}
+
+.art2_1 .color > span {
+    flex: 1 1 50%;
+    height: 200px;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 200px;
+    text-align: center;
+    color: var(--colorFontWhite);
+    border-radius: 15px;
+}
+
+.art2_1 .color > span:nth-child(1) {
+    background: #A0C9AF;
+    margin: 0 50px 0 0;
+}
+
+.art2_1 .color > span:nth-child(2) {
+    background: var(--colorRed);
+    margin: 0 0 0 50px;
+}
+
+.art2_1 .design {
+    display: flex;
+    flex-direction: column;
+}
+
+.art2_1 .design > img {
+    height: 400px;
+}
+
+.art2_1 ul li:nth-child(1) .design img {
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+.art2_1 ul li:nth-child(3) .design img {
+    object-fit: cover;
+    object-position: 50% 22%;
+}
+
+.art2_1 ul li:nth-child(1) .design img, 
+.art2_1 ul li:nth-child(3) .design img {
+    margin: 30px 0;
+}
+
+.art2_1 .design > a {
+    align-self: center;
+    padding: 5px 25px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 34px;
+    text-align: center;
+    color: var(--colorRed);
+    border: 1px solid var(--colorRed);
+}
+
+.art2_1 .design > a:hover {
+    color: var(--colorFontWhite);
+    background: var(--colorRed);
+}
+
+/* footer */
+.fnb {
+    background: var(--colorRed);
+}
+
+.fnb a, 
+.fnb span,
+.fnb p,
+.fnb .copy-right {
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    text-align: left;
+    color: var(--colorFontWhite);
+}
+
+.fnb .inner {
+    height: 100%;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.fnb .top {
+    margin: 0 auto;
+}
+
+.fnb .top a {
+    display: inline-block;
+}
+
+.fnb .top .sns {
+    text-align: center;
+}
+
+.fnb .top .sns a {
+    margin: 0 5%;
+}
+
+.fnb .top .sns .ico_wh {
+    font-size: 15px;
+    line-height: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba(235, 73, 84, 0.8);
+}
+
+.fnb .top .sns .ico_wh:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fnb .top .logo {
+    margin: 5px 0 0;
+}
+
+.fnb .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0;
+}
+
+.fnb .bottom .copy-right > a {
+    font-weight: 400;
+    color: var(--colorFontBlack);
+}
+
+.fnb .bottom address a {
+    position: relative;
+    margin: 0 15px 0 0;
+}
+
+.fnb .bottom address a::before {
+    content: "";
+    width: 2px;
+    height: 15px;
+    display: block;
+    background: var(--colorFontWhite);
+    opacity: 0.8;
+    position: absolute;
+    top: 3px;
+    left: -10px;
+}
+
+.fnb .bottom address a:nth-child(1)::before {
+    display: none;
+}     
