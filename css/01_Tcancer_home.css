@@ -21,22 +21,25 @@ h2 > strong {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: normal;
 }
 
 
 /* main header */
-header {
-    height: 45px;
-}
-
-nav.inner .logo {
+header .logo {
     width: 90px;
     height: 45px;
 }
 
-nav.inner .gnb {
+header .more_bt {
+    display: block;
+    position: absolute;
+    top: auto;
+    right: 40px;
+}
+
+header .gnb {
     flex-direction: column;
     align-items: flex-end;
     position: fixed;
@@ -50,31 +53,25 @@ nav.inner .gnb {
     transition: transform 0.5s;
 }
 
-nav.inner .gnb.on {
+header .gnb.on {
     height: 100vh;
     transform: translateX(0%);
     transition: transform 0.5s;
 }
 
-nav.inner .gnb li {
+header .gnb li {
     margin: 0;
     padding: 15px;
 }
 
-nav.inner li > a {
+
+header .gnb a.c {
     font-size: 1.8rem;
     color: var(--colorFontWhite);
 }
 
-nav.inner li > a:hover {
+header .gnb a.c:hover {
     color: var(--colorFontBlack);
-}
-
-nav.inner .more_bt {
-    display: block;
-    position: absolute;
-    top: auto;
-    right: 40px;
 }
 
 /* swiper slide */
@@ -83,10 +80,6 @@ nav.inner .more_bt {
 }
 
 /* Dream Project */ 
-.sec02 {
-    height: auto;
-}
-
 .sec02 .inner {
     padding: 50px 0;
 }
@@ -101,7 +94,7 @@ nav.inner .more_bt {
 }
 
 .sec02 .textShow {
-    height: 77px;
+    height: 51px;
 }
 
 .sec02 .textShow .showBox p {
@@ -147,8 +140,16 @@ nav.inner .more_bt {
     margin: 50px 0 0;
 }
 
+.sec03 .ageCard a {
+    padding: 20px;
+}
+
 .sec03 .ageCard img {
     border-radius: 10px;
+}
+
+.sec03 .ageCard .textBox {
+    margin: 15px 0 0;
 }
 
 .sec03 .ageCard .textBox p {
@@ -182,7 +183,7 @@ nav.inner .more_bt {
     background-size: 60%;
 }
 
-.sec04 .inner .prevention .textBox p {
+.sec04 .prevention .textBox p {
     font-size: 1.1rem;
     line-height: 27px;
 }
@@ -190,7 +191,7 @@ nav.inner .more_bt {
 
 /* 대장암 바로알기 */
 .sec05 .inner {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .sec05 .textBox { 
@@ -198,39 +199,75 @@ nav.inner .more_bt {
 }
 
 .sec05 .textBox h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: normal;
 }
 
 .sec05 .textBox h2 > strong {
-    font-size: 3.0rem;
-    line-height: 55px;
+    font-size: 2.5rem;
+    line-height: 50px;
 }
 
 .sec05 .textBox p {
-    font-size: 1.3rem;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: normal;
 }
+
+.sec05 a {
+    max-width: 55%;
+}
+
+.sec05 a img {
+    width: 100%
+}
+
 
 /* 대장암 홍보자료 */
 .sec06 .inner {
     padding: 50px 0 0;
 }
 
-.sec06 .s_promoCard {
-    padding: 5px 20px 0 20px;
+.sec06 .swiper-wrapper {
+    flex-wrap: nowrap;
+    gap: 0;
 }
 
-.sec06 .s_promoCard .slide_card img {
+.sec06 .destorySwiper {
+    padding: 10px;
+}
+
+.sec06 .destorySwiper .slide_card {
+    flex: none;
+    padding: 25px 20px;
+}
+
+.sec06 .destorySwiper .slide_card img {
     height: 250px;
 }
 
-.sec06 .s_promoCard .slide_card:nth-child(3) img {
+.sec06 .destorySwiper .slide_card:nth-child(3) img {
     object-position: 50% 35%;
 }
 
-.sec06 .s_promoCard .slide_card a {
+.sec06 .destorySwiper .slide_card a {
     font-size: 1rem;
+}
+
+.sec06 .swiper-pagination-bullet {
+    display: inline-block;
+}
+
+.sec06 .swiper-horizontal > .swiper-pagination-bullets,
+.sec06 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.sec06 .swiper-pagination-custom, 
+.sec06 .swiper-pagination-fraction {
+    position: relative;
+    bottom: -5px;
+}
+
+.sec06 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.sec06 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
 }
 
 /* 가로: 무한 롤링 text */

@@ -2,8 +2,8 @@
 
 /** javascript로 JSON 데이터 가져오기 
     → XMLHttpRequest 객체 생성 **/
-var chartData = new XMLHttpRequest();
-var url = "/PROJECT/json/sub4_chartData.json";
+const chartData = new XMLHttpRequest();
+const url = "/json/sub4_chartData.json";
 
 //XMLHttpRequest 내장 함수
 chartData.open("get", url, true); //XMLHttpRequest의 open()메서드 : .open(전송방식, 전송위치, sync방식)
@@ -14,46 +14,46 @@ chartData.onreadystatechange = function () {
         /** property 통신상태) readyState → 4: 모든 응답 데이터 취득완료 (통신 완료)
             property 응답) status → 200: 처리 성공 (통신 성공) **/
 
-        var data = JSON.parse(chartData.responseText);
+        let data = JSON.parse(chartData.responseText);
         // console.log(data);
         /** 서버로부터 응답 취득하는 property → responseText / responseXML / response
             일반적인 텍스트 취득 → responseText **/
         
-        var year = data.reason_notTest.map(function (elements) {
+        let year = data.reason_notTest.map(function (elements) {
             return elements.year;
         });
         // console.log(year);
 
-        var health = data.reason_notTest.map(function (elements) {
+        let health = data.reason_notTest.map(function (elements) {
             return elements.health;
         });
         // console.log(health);
 
-        var time = data.reason_notTest.map(function (elements) {
+        let time = data.reason_notTest.map(function (elements) {
             return elements.time;
         });
         // console.log(time);
 
-        var hard = data.reason_notTest.map(function (elements) {
+        let hard = data.reason_notTest.map(function (elements) {
             return elements.hard;
         });
         // console.log(hard);
 
-        var money = data.reason_notTest.map(function (elements) {
+        let money = data.reason_notTest.map(function (elements) {
             return elements.money;
         });
         // console.log(money);
 
-        var fear = data.reason_notTest.map(function (elements) {
+        let fear = data.reason_notTest.map(function (elements) {
             return elements.fear;
         });
         // console.log(fear);
 
 
         //차트 그리기
-        var ctx = document.getElementById('line_chart').getContext("2d");
+        let ctx = document.getElementById('line_chart').getContext("2d");
 
-        var myChart = new Chart(ctx, {
+        let myChart = new Chart(ctx, {
             type: 'line', // 차트 종류
             data: { 
                 labels: year, //차트 x축 
@@ -98,6 +98,13 @@ chartData.onreadystatechange = function () {
             options: {
                 maintainAspectRatio: false, // canvas요소 부모에 사이즈 지정할때
                 // responsive: false, //canvas요소 본인에 사이즈 지정할때
+                // plugins: {
+                //     legend: {
+                //        labels: {
+                //             usePointStyle: true,
+                //        },
+                //     }
+                // },
                 elements: {
                     line: {
                         tension: 0.1 //line 곡선의 정도(직선은 0)
@@ -126,4 +133,7 @@ chartData.onreadystatechange = function () {
         console.log(myChart)
     }
 };
+
+
+
 

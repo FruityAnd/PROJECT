@@ -1,38 +1,33 @@
-$(document).ready(function () {
-  var swiper = new Swiper(".slideTest", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+//해상도 size에 따른 반응형 swiper: 1200px부터 swiper 제거
+const breakpoint = window.matchMedia('(min-width: 1200px)');
+let mySwiper;
 
-  // tabButton: sub page
-  $("ul.inner li").click(function () {
-    $(this).addClass('on').siblings().removeClass('on');
-    $("#" + $(this).data('id')).addClass('on').siblings().removeClass('on');
-  });
+const breakpointChecker = function () {
+    if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+    }
+    else if (breakpoint.matches === false) {
+        return useSwiper();
+    }
+};
+// swiper slide 옵션
+const useSwiper = function () {
+    mySwiper = new Swiper('.destorySwiper', {
+        slidesPerView: 1, //모바일 기준
+        spaceBetween: 30, //모바일 기준
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            760: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        }
+    });
+};
 
-  // button: scrollTop (클릭 이벤트)
-  $(".pageTop").click(function () {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 1000);
-  });
-
-   //모바일 header
-   $(".more_bt").click(function () {
-
-      $(".gnb").toggleClass("on");
-      // 메뉴아이콘 사용했을 시 적용
-      $(this).text(function (e, text) {
-          return text === 'close' ? 'menu' : 'close'
-      });
-  });
-
-  // Chart.js 
-  // Line-chart
-  
-});
+breakpoint.addEventListener('change', breakpointChecker);
+breakpointChecker();

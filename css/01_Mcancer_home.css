@@ -13,19 +13,19 @@ body .pageTop{
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 h2 > strong {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /*main header*/
@@ -33,11 +33,11 @@ header {
     height: 35px;
 }
 
-nav.inner .gnb {
+header .gnb {
     top: 35px;
 }
 
-nav.inner .logo {
+header .logo {
     width: 70px;
     height: 35px;
 }
@@ -49,28 +49,32 @@ nav.inner .logo {
 
 /* Dream Project */ 
 .sec02 .inner {
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .sec02 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-shadow: 0px 1.5px 1.5px rgba(0, 0, 0, 0.2);
 }
 
 .sec02 .title > h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 35px;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.sec02 .inner > p {
+    margin-top: 10px;
+}
+
 .sec02 .textShow {
-    height: 67px;
-    margin: 10px 0 0;
+    height: 39px;
 }
 
 .sec02 .textShow .showBox {
     padding: 5px 0 0;
 }
+
 .sec02 .textShow .showBox p {
     font-size: 1.25rem;
     padding: 2px 15px;
@@ -122,14 +126,18 @@ nav.inner .logo {
 }
 
 .sec03 .ageCard a {
-    max-width: 250px;
-    padding: 20px;
+    max-width: 200px;
+    padding: 15px;
     margin-right: 0;
     margin-bottom: 5%;
 }
 
 .sec03 .ageCard a:nth-child(3) {
     margin-bottom: 0;
+}
+
+.sec03 .ageCard .textBox {
+    margin: 10px 0 0;
 }
 
 .sec03 .ageCard .textBox p {
@@ -146,12 +154,12 @@ nav.inner .logo {
     max-height: 130px;
 }
 
-.sec04 .inner .prevention .textBox span {
+.sec04 .prevention .textBox span {
     font-weight: 500;
     font-size: 0.85rem;
 }
 
-.sec04 .inner .prevention .textBox p {
+.sec04 .prevention .textBox p {
     font-size: 0.9rem;
     line-height: normal;
     margin: 8px 0 0;
@@ -167,27 +175,25 @@ nav.inner .logo {
 
 /* 대장암 바로알기 */
 .sec05 .inner {
-    justify-content: center;
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .sec05 .textBox {
     padding: 0 0 10px 0;
-    gap: 20px;
+    gap: 15px;
 }
 
 .sec05 .textBox h2 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.3rem;
 }
 
 .sec05 .textBox h2 > strong {
-    font-size: 2rem;
-    line-height: 38px;
+    font-size: 1.7rem;
+    line-height: normal;
 }
 
 .sec05 .textBox p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: normal;
 }
 
@@ -200,27 +206,33 @@ nav.inner .logo {
     text-align: center;
 }
 
-.sec06 .s_promoCard {
+.sec06 .destorySwiper {
     margin: 25px 0 0;
-    padding: 5px 15px 0 15px;
 }
 
-.sec06 .s_promoCard .slide_card {
-    padding: 20px;
+.sec06 .destorySwiper .slide_card {
+    padding: 20px 15px;
+    border-radius: 10px;
 }
 
-.sec06 .s_promoCard .slide_card img {
+.sec06 .destorySwiper .slide_card img {
     height: 180px;
     border-radius: 10px;
 }
 
-.sec06 .s_promoCard .slide_card .textBox {
+.sec06 .destorySwiper .slide_card .textBox {
     margin: 15px 0;
 }
 
+.sec06 .destorySwiper .slide_card a {
+    font-size: 0.9rem;
+    padding: 3px 10px;
+}
+
+
 /* 가로: 무한 롤링 text */
 .rollingtext .track span {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 /* footer */

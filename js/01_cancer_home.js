@@ -17,56 +17,41 @@ $(document).ready(function () {
     },
   });
 
-  // $(window).scroll(function () {
-  //     var height = $(this).scrollTop();
-  //     if (height >= $(".sec03").offset().top - $(window).height() / 2) {
-  //         $(".sec03").addClass("show");
-  //     }
-  //     if (height >= $(".sec04").offset().top - $(window).height() / 2) {
-  //         $(".sec04").addClass("show");
-  //     }
-  //   });
-
-  // button: scrollTop (클릭 이벤트)
-  $(".pageTop").click(function () {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 1000);
-  });
-
-  // 대장암 홍보자료 - swiper: 1200px 이하 해상도에만 적용
-  var swiper = new Swiper(".s_promoCard", {
-    slidesPerView: 1, //모바일 기준
-    spaceBetween: 30, //모바일 기준
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      760: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 50,
-      },
-    }
-  });
-
-  //모바일 header
-  $(".more_bt").click(function () {
-    
-      $(".gnb").toggleClass("on");
-      // 메뉴아이콘 사용했을 시 적용
-      $(this).text(function (e, text) {
-        return text === 'close' ? 'menu' : 'close'
-      });
-  });
-
-  
-  AOS.init();
 });
 
+//(5)해상도 size에 따른 반응형 swiper: 1200px부터 swiper 제거
+const breakpoint = window.matchMedia('(min-width: 1200px)');
+let mySwiper;
 
+const breakpointChecker = function () {
+    if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+    }
+    else if (breakpoint.matches === false) {
+        return useSwiper();
+    }
+};
+// swiper slide 옵션
+const useSwiper = function () {
+    mySwiper = new Swiper('.destorySwiper', {
+        slidesPerView: 1, //모바일 기준
+        spaceBetween: 30, //모바일 기준
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            760: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+            }
+        }
+    });
+};
 
+breakpoint.addEventListener('change', breakpointChecker);
+breakpointChecker();
+
+//AOS 라이브러리
+AOS.init();

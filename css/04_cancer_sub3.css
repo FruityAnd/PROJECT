@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Manrope:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* font awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 /* google icons */
@@ -16,17 +16,13 @@
     /* outline: 1px solid blue; */
 }
 
-body {
-    min-width: 1500px;
-}
-
 body .pageTop {
     position: fixed;
     right: 5%;
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -109,14 +105,14 @@ td {
 
 h1 {
     font-weight: 700;
-    font-size: 3.75rem;
-    line-height: 82px;
+    font-size: 3rem;
+    line-height: 60px;
     color: var(--colorFontWhite);
 }
 
 h2 {
     font-weight: 700;
-    font-size: 2.8125rem;
+    font-size: 2.5rem;
     line-height: 45px;
     letter-spacing: 0.02em;
 }
@@ -124,27 +120,27 @@ h2 {
 h3 {
     font-weight: 500;
     font-size: 2rem;
-    line-height: 44px;
+    line-height: 40px;
     letter-spacing: 0.02em;
 }
 
 h4 {
     font-weight: 500;
-    font-size: 1.6875rem;
-    line-height: 37px;
+    font-size: 1.5rem;
+    line-height: 30px;
 }
 
 p {
-    font-size: 1.25rem;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 27px;
     text-align: center;
     color: var(--colorFontBasic);
 }
 
 .source {
     font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 30px;
+    font-size: 1.3rem;
+    line-height: 25px;
     text-align: center;
     color: var(--colorFontBasic);
     margin: 10px 0 0;
@@ -152,7 +148,7 @@ p {
 
 /*main header*/
 header {
-    height: 50px;
+    height: 45px;
     width: 100%;
     background: #ffffff;
     position: relative;
@@ -166,86 +162,83 @@ nav.inner {
     justify-content: space-between;
 }
 
-nav.inner .logo {
+header .logo {
     width: 100px; 
-    height: 50px;
+    height: 45px;
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
-nav.inner .gnb {
-    display: flex; 
-    align-items: center;
-}
-
-nav.inner .gnb li {
-    margin: 0 0 0 30px; 
-}
-
-nav.inner li > a {
-    font-weight: 600;
-    font-size: 1.1875rem;
-    text-align: center;
-}
-
-nav.inner li > a:hover {
-    color: var(--colorRed);
-}
-
-nav.inner .more_bt {
+header .more_bt {
     cursor: pointer;
     display: none;
 }
 
+header .gnb {
+    display: flex; 
+    align-items: center;
+}
+
+header .gnb li {
+    margin: 0 0 0 40px; 
+}
+
+header .gnb a.c{
+    font-weight: 600;
+    font-size: 1.15rem;
+    text-align: center;
+    color: black;
+}
+
+header .gnb a.c.on{
+    color: var(--colorRed);
+}
+
+
 /* sub page: title */
 .sec01 {
-    height: 350px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 50% 55% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 0% 60% / cover;
 }
 
 .sec01 .inner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 20px 0;
+    padding: 60px 0;
 }
 
 .sec01 .inner p {
     font-weight: 700;
-    font-size: 1.875rem;
-    line-height: 41px;
+    font-size: 1.7rem;
+    line-height: 35px;
     letter-spacing: -0.05em;
     color: var(--colorFontWhite);
-    margin: 10px 0 4px;
 }
 
-.sec01 .inner .textBox {
+.sec01 .textBox {
     margin: 30px 0 0;
 }
 
-.sec01 .inner .textBox>.ico_wh {
-    margin: 0 15px 0 0;
-    font-size: 20px;
+.sec01 .textBox > .ico_wh {
+    margin: 0 10px 0 0;
     color: var(--colorFontWhite);
 }
 
-.sec01 .inner .textBox>span {
-    font-size: 1.25rem;
-    line-height: 30px;
+.sec01 .textBox > span{
+    font-size: 1.1rem;
     color: var(--colorFontWhite);
 }
-
 
 /* sub page: tab */
 .sec02 .tabButton {
-    height: 45px;
-    background: var(--colorRed);
+    height: 40px;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 5;
+    background-color: #ffffff;
 }
 
 .sec02 .tabButton .inner {
@@ -254,19 +247,11 @@ nav.inner .more_bt {
 
 .sec02 .tabButton .inner li {
     flex: 1 1 50%;
-    position: relative;
+    height: 100%
 }
 
-.sec02 .tabButton .inner li::after {
-    content: "";
-    width: 2px;
-    height: 20px;
-    display: block;
-    background: var(--colorFontWhite);
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
+.sec02 .tabButton .inner li.on {
+    background-color: var(--colorRed);
 }
 
 .sec02 .tabButton .inner li:last-child::after {
@@ -275,14 +260,18 @@ nav.inner .more_bt {
 
 .sec02 .tabButton .inner li h2 {
     cursor: pointer;
-    font-size: 1.25rem;
-    line-height: 27px;
+    font-size: 1.2rem;
+    line-height: 40px;
     text-align: center;
+    color: var(--colorFontBlack);
+}
+
+.sec02 .tabButton .inner li.on h2 {
     color: var(--colorFontWhite);
 }
 
-.sec02 .tabButton .inner li h2:hover {
-    color: var(--colorFontBlack);
+.sec02 .tabButton .pages {
+    display: none;
 }
 
 /* tab Content */
@@ -300,11 +289,11 @@ nav.inner .more_bt {
 .art1_1 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art1_1 .inner .title::after {
+.art1_1 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -315,22 +304,22 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art1_1 .inner .content {
+.art1_1 .content {
     display: flex;
     flex-direction: column;
     gap: 50px;    
 }
 
-.art1_1 .inner .content > div {
+.art1_1 .content > div {
     display: flex;
     gap: 10%;
 }
 
-.art1_1 .inner .content > div:nth-child(even) {
+.art1_1 .content > div:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.art1_1 .inner .content > div img {
+.art1_1 .content > div img {
     height: 400px;
     width: 45%;
     object-fit: cover;
@@ -340,17 +329,21 @@ nav.inner .more_bt {
     transition: all 0.3s;
 }
 
-.art1_1 .inner .content > div img:hover {
+.art1_1 .content > div:nth-child(1) img {
+    object-fit: fill;
+}
+
+.art1_1 .content > div img:hover {
     transform: translate(0, -10px);
     transition: all 0.3s;
 }
 
-.art1_1 .inner .content > div .textBox {
+.art1_1 .textBox {
     flex: 1 1 45%;
     align-self: center;
 }
 
-.art1_1 .inner .content > div .textBox h4{
+.art1_1 .textBox h4{
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 30px;
@@ -358,58 +351,58 @@ nav.inner .more_bt {
     margin: 0 0 30px;
 }
 
-.art1_1 .inner .content > div:nth-child(1) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square01.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(1) .textBox h4 {
+    background: url(/img/드림프로젝트/sub3page/number_square01.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(2) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square02.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(2) .textBox h4 {
+    background: url(/img/드림프로젝트/sub3page/number_square02.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(3) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square03.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(3) .textBox h4 {
+    background: url(/img/드림프로젝트/sub3page/number_square03.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(4) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square04.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(4) .textBox h4 {
+    background: url(/img/드림프로젝트/sub3page/number_square04.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div .textBox strong {
+.art1_1 .textBox strong {
     font-size: 1.25rem;
     line-height: 30px;
     color: var(--colorFontBasic);
     padding: 0 0 0 30px;
 }
 
-.art1_1 .inner .content > div .textBox .box {
+.art1_1 .textBox .box {
     margin: 10px 0 0;
 }
 
-.art1_1 .inner .content > div:nth-child(1) .textBox strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_run_man.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(1) .textBox strong {
+    background: url(/img/드림프로젝트/sub3page/emoji_run_man.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(2) .textBox > .box:nth-of-type(1) strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_meat.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(1) strong {
+    background: url(/img/드림프로젝트/sub3page/emoji_meat.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(2) .textBox > .box:nth-of-type(2) strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_kiwi.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(2) strong {
+    background: url(/img/드림프로젝트/sub3page/emoji_kiwi.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(2) .textBox > .box:nth-of-type(3) strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_milk.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(3) strong {
+    background: url(/img/드림프로젝트/sub3page/emoji_milk.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(3) .textBox strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_medicines.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(3) .textBox strong {
+    background: url(/img/드림프로젝트/sub3page/emoji_medicines.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div:nth-child(4) .textBox strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_intestinal_pain.png) no-repeat 0% 50% / contain;
+.art1_1 .content > div:nth-child(4) .textBox strong {
+    background: url(/img/드림프로젝트/sub3page/emoji_intestinal_pain.png) no-repeat 0% 50% / contain;
 }
 
-.art1_1 .inner .content > div .textBox p {   
+.art1_1 .textBox p {   
     text-align: left;
     padding: 5px 0 0 30px;
 }
@@ -417,18 +410,18 @@ nav.inner .more_bt {
 /* 암의 예방 */
 .art1_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/question_1.png) no-repeat 50% 20% / cover;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub3page/question_1.png) no-repeat 50% 20% / cover;
 }
 
 .art1_2 .backTitle .inner {
     align-items: flex-end;
 }
 
-.art1_2 .backTitle .inner .title {
-    padding: 50px 0;
+.art1_2 .backTitle .title {
+    padding: 60px 0;
 }
 
-.art1_2 .backTitle .inner .title h2 {
+.art1_2 .backTitle .title h2 {
     padding: 0 0 0 60px;
     font-weight: 600;
     font-size: 2.5rem;
@@ -436,19 +429,19 @@ nav.inner .more_bt {
     color: var(--colorFontWhite);
 }
 
-.art1_2 .backTitle .inner .title h2:nth-child(1) {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
+.art1_2 .backTitle .title h2:nth-child(1) {
+    background: url(/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
 }
 
-.art1_2 .backTitle .inner .title h2:nth-child(2) {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
+.art1_2 .backTitle .title h2:nth-child(2) {
+    background: url(/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
 }
 
 .art1_2 > .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
 .art1_2 > .inner .title::after {
@@ -463,40 +456,50 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art1_2 > .inner .content > p {
+.art1_2 .content > p {
     text-align: left;
 }
 
-.art1_2 > .inner .content > p:nth-child(1) {
+.art1_2 .content > p {
     font-weight: 600;
+    font-size: 1.4rem;
     margin: 0 0 15px;
 }
 
-.art1_2 > .inner .content > p:nth-child(1) > span {
+.art1_2 .content > p > span {
     color: var(--colorRed);
 }
 
-.art1_2 > .inner .content > p:nth-child(2),
-.art1_2 > .inner .content > p:nth-child(3) {
-    width: 50%;
-    float: left;
-    letter-spacing: -0.5px;
+.art1_2 .content .more {
+    display: flex;
+    flex-direction: row;
 }
 
-.art1_2 > .inner .content > p:nth-child(2) {
-    padding: 0 1% 0 0;
+.art1_2 .content .more li {
+    flex: 1 1 50%;
+    font-size: 1.1rem;
+    line-height: 24px;
+    color: var(--colorFontBasic);
 }
 
-.art1_2 > .inner .content > p:nth-child(3) {
-    padding: 0 0 0 1%;
+.art1_2 .content h4 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+    margin: 40px 0 0 ;
 }
 
-.art1_2 > .inner .table_content {
+.art1_2 .content h4 > span {
+    display: block;    
+    color: var(--colorRed);
+}
+
+.art1_2 .table_content {
     clear: both;
     padding: 40px 0 0;
 }
 
-.art1_2 > .inner .table_content table::before {
+.art1_2 .table_content table::before {
     content: "";
     width: 2px;
     height: 100%;
@@ -506,7 +509,7 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art1_2 > .inner .table_content table::after {
+.art1_2 .table_content table::after {
     content: "";
     width: 2px;
     height: 100%;
@@ -516,15 +519,15 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art1_2 > .inner .table_content table .c1 {
+.art1_2 .table_content table .c1 {
     width: 20%;
 } 
 
-.art1_2 > .inner .table_content table .c2 {
+.art1_2 .table_content table .c2 {
     width: 40%;
 }
 
-.art1_2 > .inner .table_content table th {
+.art1_2 .table_content table th {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 30px;
@@ -533,7 +536,7 @@ nav.inner .more_bt {
     background: var(--colorTable);
 }
 
-.art1_2 > .inner .table_content table td {
+.art1_2 .table_content table td {
     padding: 15px 0;
     font-size: 1.125rem;
     line-height: 25px;
@@ -541,23 +544,28 @@ nav.inner .more_bt {
     color: var(--colorFontBasic)
 }
 
-.art1_2 > .inner .content h4 {
-    font-size: 1.5rem;
-    line-height: 30px;
-    text-align: center;
-    margin: 40px 0 0 ;
-}
-
-.art1_2 > .inner .content h4 > span {
-    display: block;    
-    color: var(--colorRed);
-}
-
 /* tab Content - tab02 */
 /* 대장암 O,X 퀴즈 */
+.art2_1 .title {
+    text-align: center;
+    margin: 60px 0 0;
+    position: relative;
+}
+
+.art2_1 .title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
 .art2_1 h3,
 .art2_1 p {
-    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Hahmlet', serif;
 }
 
 .art2_1 button,
@@ -574,9 +582,9 @@ nav.inner .more_bt {
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    margin: 50px auto;
-    border-radius: 15px;
-    background: #DD454F; /*url(/img/드림프로젝트/sub3page/quiz_background.png); */
+    margin: 40px auto;
+    border-radius: 10px;
+    background: var(--colorSky);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -588,12 +596,12 @@ nav.inner .more_bt {
 
 .art2_1 .home-box h3, 
 .art2_1 .home-box p {
-    color: var(--colorFontWhite);
+    color: var(--colorFontBasic);
 }
 
 .art2_1 .home-box h3 {
     position: relative;
-    font-size: 3.125rem;
+    font-size: 2rem;
     line-height: 45px;
     text-transform: capitalize;
     padding: 0 0 0 55px;
@@ -607,28 +615,28 @@ nav.inner .more_bt {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_head.png) no-repeat;
+    background: url(/img/드림프로젝트/sub3page/icon_head.png) no-repeat;
 }
 
 .art2_1 .home-box p {
-    font-size: 4.5rem;
-    line-height: 43px;
+    font-size: 2.5rem;
+    line-height: 40px;
 }
 
 .art2_1 .home-box button {
     cursor: pointer;
     padding: 5px 20px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.1em;
-    color: var(--colorFontWhite);
+    color: var(--colorFontBasic);
     background-color: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid #383838;
     border-radius: 5px;
 }
 
 .art2_1 .home-box button:hover {
-    color: var(--colorRed);
-    background-color: #ffffff;
+    color: var(--colorFontWhite);
+    background-color: #383838;
 }
 
 /* 퀴즈 */
@@ -641,7 +649,7 @@ nav.inner .more_bt {
 }
 
 .art2_1 .quiz-box > div {
-    padding: 20px 50px 25px;
+    padding: 20px 50px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -652,14 +660,13 @@ nav.inner .more_bt {
     font-size: 1rem;
     line-height: 25px;
     text-align: center;
-    color: #fff;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: var(--colorFontBasic);
 }
 
 .art2_1 .quiz-box .question-text  {
-    font-family: 'East Sea Dokdo', cursive;
-    font-size: 3.2rem;
-    line-height: 45px;
+    font-family: 'Hahmlet', serif;
+    font-weight: 500;
+    font-size: 1.8rem;
     text-align: center;
     margin: 5px 0 0;
 }
@@ -680,19 +687,19 @@ nav.inner .more_bt {
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1) {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true.png) no-repeat;
+    background: url(/img/드림프로젝트/sub3page/icon_true.png) no-repeat;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1):hover {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat;
+    background: url(/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2) {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false.png) no-repeat;
+    background: url(/img/드림프로젝트/sub3page/icon_false.png) no-repeat;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2):hover {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat;
+    background: url(/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat;
 }
 
 /* 퀴즈 결과화면 */
@@ -701,31 +708,35 @@ nav.inner .more_bt {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 80px 0;
-    background: #ffffff url(/PROJECT/img/드림프로젝트/sub3page/wow3_background.png) repeat 50% -31%;
+    padding: 50px 0;
 }
 
-.art2_1 .result-box .quiz-score {
+.art2_1 .scoreBox .quiz-score {
     font-weight: 700;
     font-size: 4rem;
     line-height: 65px;
     letter-spacing: 0.05em;
 }
 
-.art2_1 .result-box .quiz-score > .ico_b {
+.art2_1 .scoreBox .ico_b {
     font-size: 20px;
     transform: translateY(-40px);
 }
 
-.art2_1 .result-box > div:nth-of-type(2),
-.art2_1 .result-box > div:nth-of-type(3) {
-    font-size: 1.3rem;
+.art2_1 .result-box ul {
+    margin: 40px 0 0;
+    text-align: center;
 }
 
-.art2_1 .result-box .result-strongtext {
+.art2_1 .result-box .result-text1 {
     font-weight: 700;
+    font-size: 1.5rem;
     color: var(--colorRed);
-    margin: 80px 0 0;
+}
+
+.art2_1 .result-box .result-text2 {
+    font-size: 1.3rem;
+    color: var(--colorFontBasic);
 }
 
 .art2_1 .result-box .buttonBox {
@@ -734,18 +745,18 @@ nav.inner .more_bt {
 
 .art2_1 .result-box .buttonBox button {
     cursor: pointer;
-    padding: 5px 10px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.05em;
     color: var(--colorRed);
     background-color: transparent;
     border: 2px solid var(--colorRed);
     border-radius: 5px;
+    padding: 3px 10px 4px;
 }
 
-.art2_1 .result-box .buttonBox button:nth-child(1) {
-    margin: 0 20px 0 0;
+.art2_1 .result-box .buttonBox .quiz-button {
+    margin-right: 20px;
 }
 
 .art2_1 .result-box .buttonBox button:hover {
@@ -755,16 +766,23 @@ nav.inner .more_bt {
 
 /* 퀴즈 정답 및 해설 */
 .art2_1 .answer-box .quiz-box {
-    margin: 20px auto;
+    margin: 40px auto;
+}
+
+.art2_1 .answer-box .quiz-box:first-child {
+    margin-top: 0;
 }
 
 .art2_1 .answer-box .quiz-box > div {
     padding: 15px 20px 20px;
 }
 
-.art2_1 .answer-box strong,
+.art2_1 .answer-box strong {
+    color: var(--colorFontBlack);
+}
+
 .art2_1 .answer-box p {
-    color: var(--colorFontWhite);
+    color: var(--colorFontBasic);
 }
 
 .art2_1 .answer-box .quiz-answer {
@@ -773,7 +791,7 @@ nav.inner .more_bt {
 }
 
 .art2_1 .answer-box .quiz-commentary {
-    width: 750px;
+    width: 850px;
     font-size: 1.1rem;
     line-height: 25px;
     white-space: pre-line;
@@ -792,9 +810,9 @@ nav.inner .more_bt {
 
 .fnb a, 
 .fnb span,
-.fnb p {
+.fnb p,
+.fnb .copy-right {
     font-weight: 300;
-    font-size: 0.95rem;
     font-style: normal;
     line-height: normal;
     text-align: left;
@@ -804,7 +822,7 @@ nav.inner .more_bt {
 .fnb .inner {
     height: 100%;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .fnb .top {
@@ -820,7 +838,7 @@ nav.inner .more_bt {
 }
 
 .fnb .top .sns a {
-    margin: 0 5% ;
+    margin: 0 5%;
 }
 
 .fnb .top .sns .ico_wh {
@@ -848,7 +866,7 @@ nav.inner .more_bt {
     margin: 10px 0 0;
 }
 
-.fnb .bottom p > a {
+.fnb .bottom .copy-right > a {
     font-weight: 400;
     color: var(--colorFontBlack);
 }
@@ -872,4 +890,4 @@ nav.inner .more_bt {
 
 .fnb .bottom address a:nth-child(1)::before {
     display: none;
-}    
+}     

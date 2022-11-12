@@ -33,8 +33,8 @@ function initSwiper() {
 
 initSwiper();
 
-//실시간 window width값 구함
-$(window).on('resize', function () {
-    ww = $(window).width();
-    initSwiper();
-});
+// //실시간 window width값 구함
+// $(window).on('resize', function () {
+//     ww = $(window).width();
+//     initSwiper();
+// });

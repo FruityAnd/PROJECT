@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* font awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 /* google icons */
@@ -16,17 +16,13 @@
     /* outline: 1px solid blue; */
 }
 
-body {
-    min-width: 1500px;
-}
-
 body .pageTop {
     position: fixed;
     right: 5%;
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -75,7 +71,7 @@ a:visited {
     color: inherit;
 }
 
-i>span {
+i >span {
     display: inline-block;
     width: 0;
     height: 0;
@@ -109,14 +105,14 @@ td {
 
 h1 {
     font-weight: 700;
-    font-size: 3.75rem;
-    line-height: 82px;
+    font-size: 3rem;
+    line-height: 60px;
     color: var(--colorFontWhite);
 }
 
 h2 {
     font-weight: 700;
-    font-size: 2.8125rem;
+    font-size: 2.5rem;
     line-height: 45px;
     letter-spacing: 0.02em;
 }
@@ -124,27 +120,26 @@ h2 {
 h3 {
     font-weight: 500;
     font-size: 2rem;
-    line-height: 44px;
+    line-height: 40px;
     letter-spacing: 0.02em;
 }
-
 h4 {
     font-weight: 500;
-    font-size: 1.6875rem;
-    line-height: 37px;
+    font-size: 1.5rem;
+    line-height: 30px;
 }
 
 p {
-    font-size: 1.25rem;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 27px;
     text-align: center;
     color: var(--colorFontBasic);
 }
 
 .source {
     font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 30px;
+    font-size: 1.3rem;
+    line-height: 25px;
     text-align: center;
     color: var(--colorFontBasic);
     margin: 10px 0 0;
@@ -152,7 +147,7 @@ p {
 
 /*main header*/
 header {
-    height: 50px;
+    height: 45px;
     width: 100%;
     background: #ffffff;
     position: relative;
@@ -166,87 +161,84 @@ nav.inner {
     justify-content: space-between;
 }
 
-nav.inner .logo {
+header .logo {
     width: 100px; 
-    height: 50px;
+    height: 45px;
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
-nav.inner .gnb {
+header .more_bt {
+    cursor: pointer;
+    display: none;
+}
+
+header .gnb {
     display: flex; 
     align-items: center;
 }
 
-nav.inner .gnb li {
-    margin: 0 0 0 30px; 
+header .gnb li {
+    margin: 0 0 0 40px; 
 }
 
-nav.inner li > a {
+header .gnb a.c{
     font-weight: 600;
-    font-size: 1.1875rem;
+    font-size: 1.15rem;
     text-align: center;
+    color: black;
 }
 
-nav.inner li > a:hover {
+header .gnb a.c.on{
     color: var(--colorRed);
-}
-
-nav.inner .more_bt {
-    cursor: pointer;
-    display: none;
 }
 
 
 /* sub page: title */
 .sec01 {
-    height: 350px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 0% 47% / cover;
 }
 
 .sec01 .inner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 20px 0;
+    padding: 60px 0;
 }
 
 .sec01 .inner p {
     font-weight: 700;
-    font-size: 1.875rem;
-    line-height: 41px;
+    font-size: 1.7rem;
+    line-height: 35px;
     letter-spacing: -0.05em;
     color: var(--colorFontWhite);
-    margin: 10px 0 4px;
 }
 
-.sec01 .inner .textBox {
+.sec01 .textBox {
     margin: 30px 0 0;
 }
 
-.sec01 .inner .textBox > .ico_wh {
-    margin: 0 15px 0 0;
-    font-size: 20px;
+.sec01 .textBox > .ico_wh {
+    margin: 0 10px 0 0;
     color: var(--colorFontWhite);
 }
 
-.sec01 .inner .textBox > span {
-    font-size: 1.25rem;
-    line-height: 30px;
+.sec01 .textBox > span{
+    font-size: 1.1rem;
     color: var(--colorFontWhite);
 }
 
 
 /* sub page: tab */
 .sec02 .tabButton {
-    height: 45px;
-    background: var(--colorRed);
+    height: 40px;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 5;
+    background-color: #ffffff;
 }
 
 .sec02 .tabButton .inner {
@@ -254,20 +246,12 @@ nav.inner .more_bt {
 }
 
 .sec02 .tabButton .inner li {
-    flex: 1 1 25%;
-    position: relative;
+    flex: 1 1 50%;
+    height: 100%
 }
 
-.sec02 .tabButton .inner li::after {
-    content: "";
-    width: 2px;
-    height: 20px;
-    display: block;
-    background: var(--colorFontWhite);
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -50%);
+.sec02 .tabButton .inner li.on {
+    background-color: var(--colorRed);
 }
 
 .sec02 .tabButton .inner li:last-child::after {
@@ -276,14 +260,18 @@ nav.inner .more_bt {
 
 .sec02 .tabButton .inner li h2 {
     cursor: pointer;
-    font-size: 1.25rem;
-    line-height: 27px;
+    font-size: 1.2rem;
+    line-height: 40px;
     text-align: center;
+    color: var(--colorFontBlack);
+}
+
+.sec02 .tabButton .inner li.on h2 {
     color: var(--colorFontWhite);
 }
 
-.sec02 .tabButton .inner li h2:hover {
-    color: var(--colorFontBlack);
+.sec02 .tabButton .pages {
+    display: none;
 }
 
 /* tab Content */
@@ -297,17 +285,18 @@ nav.inner .more_bt {
 
 /* tab Content - tab01 */
 /* 대장암이란? */
-.art1_1 .inner img {
+.art1_1 img {
     width: 50%;
     object-fit: contain;
 }
 
-.art1_1 .inner .textBox {
+.art1_1 .textBox {
+    width: 50%;
     padding: 80px 0;
-    margin: 0 0 0 auto;
+    margin: 0 0 0 50px;
 }
 
-.art1_1 .inner .title::after {
+.art1_1 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -318,22 +307,37 @@ nav.inner .more_bt {
     bottom: 0%;
 }
 
-.art1_1 .inner .textBox h4 {
-    margin: 50px 0;
+.art1_1 .textBox h4 {
+    margin: 40px 0;
 }
 
-.art1_1 .inner .textBox h4 > span {
+.art1_1 .textBox h4 > span {
     color: var(--colorRed);
 }
 
-.art1_1 .inner .textBox p {
+.art1_1 .textBox p {
     text-align: left;
+    padding-left: 10px;
+    position: relative;
+}
+
+.art1_1 .textBox p::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--colorRed);
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    transform: translate(-50%, -50%);
 }
 
 /* 대장암의 누적위험도*/
 .art1_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub2page/childern_01.png) no-repeat 50% 57% / cover
+    background: #000000 url(/img/드림프로젝트/sub2page/childern_01.png) no-repeat 15% 0% / contain;
 }
 
 .art1_2 .backTitle .inner {
@@ -345,7 +349,7 @@ nav.inner .more_bt {
     color: var(--colorFontWhite);
 }
 
-.art1_2 .backTitle .inner .title::after {
+.art1_2 .backTitle .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -357,21 +361,21 @@ nav.inner .more_bt {
     transform: translate(-50%, 0);
 }
 
-.backTitle .inner strong {
+.art1_2 .backTitle strong {
     font-weight: 500;
     font-size: 1.5rem;
     text-align: center;
     white-space: pre-line;
 }
 
-.art1_2 .backTitle .inner strong > span {
+.art1_2 .backTitle strong > span {
     color: var(--colorRed);
 }
 
 .art1_2 > .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
+    padding: 60px 0;
     gap: 40px;
 }
 
@@ -379,18 +383,18 @@ nav.inner .more_bt {
     white-space: pre-line;
 }
 
-.art1_2 > .inner p:nth-of-type(2) strong {
+.art1_2 > .inner p:nth-of-type(1) strong {
     font-weight: 600;
-    font-size: 1.5625rem;
-    line-height: 34px;
+    font-size: 1.5rem;
+    line-height: 30px;
 }
 
-.art1_2 >  .inner p:nth-of-type(2) strong > span {
+.art1_2 > .inner p:nth-of-type(1) strong > span {
     color: var(--colorRed);
 }
 
-.art1_2  >  .inner .graph img {
-    width: 800px;
+.art1_2 > .inner .graph img {
+    max-width: 800px;
     background: var(--colorTable);
 }
 
@@ -403,28 +407,28 @@ nav.inner .more_bt {
 .art1_3 .inner {
     flex-direction: column;
     align-items: center;
-    background: url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat;
+    background: url(/img/드림프로젝트/sub1page/search.png) no-repeat;
     padding: 35px 140px 35px 160px;
 }
 
-.art1_3 .inner .bubble {
+.art1_3 .bubble {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: auto 0;
 }
 
-.art1_3 .inner .bubble a {
+.art1_3 .bubble a {
     display: inline-block;
 }
 
-.art1_3 .inner .bubble img {
+.art1_3 .bubble img {
     height: 100px;
     transform: scale(1);
     transition: all 0.2s ease-in-out;
 }
 
-.art1_3 .inner .bubble img:hover {
+.art1_3 .bubble img:hover {
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
@@ -434,11 +438,11 @@ nav.inner .more_bt {
 .art2_1 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art2_1 .inner .title::after {
+.art2_1 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -450,15 +454,15 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art2_1 .inner .table_content {
-    margin: 40px 0 0 0;
+.art2_1 .table_content {
+    margin: 30px 0 0 0;
 }
 
-.art2_1 .inner .table_content table {
+.art2_1 .table_content table {
     position: relative;
 }
 
-.art2_1 .inner .table_content table::before {
+.art2_1 .table_content table::before {
     content: "";
     width: 2px;
     height: 100%;
@@ -468,7 +472,7 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art2_1 .inner .table_content table::after {
+.art2_1 .table_content table::after {
     content: "";
     width: 2px;
     height: 100%;
@@ -478,53 +482,55 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art2_1 .inner .table_content table colgroup .c1 {
+.art2_1 .table_content table colgroup .c1 {
     width: 25%;
     background: var(--colorTable);
 }
 
-.art2_1 .inner .table_content table colgroup .c2 {
+.art2_1 .table_content table colgroup .c2 {
     width: 75%;
 }
 
-.art2_1 .inner .table_content table th {
+.art2_1 .table_content table th {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 30px;
     text-align: center;
 }
 
-.art2_1 .inner .table_content table thead th {
+.art2_1 .table_content table thead th {
     padding: 10px 0;
     background: var(--colorTable);
 }
 
-.art2_1 .inner .table_content table tbody td {
+.art2_1 .table_content table tbody td {
     padding: 10px;
 }
 
-.art2_1 .inner .table_content table tbody li {
+.art2_1 .table_content table tbody li {
     font-size: 1.125rem;
     line-height: 25px;
     text-align: left;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 15px;
     word-break: keep-all;
     color: var(--colorFontBasic);
 }
 
-.art2_1 .inner .table_content table tbody .subtitle_t {
+.art2_1 .table_content .subtitle_t {
     position: relative;
     line-height: 30px;
 }
 
-.art2_1 .inner .table_content table tbody .subtitle_t::before {
+.art2_1 .table_content .subtitle_t::before {
     content: "";
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     position: absolute;
-    left: 0;
-    top: 13px;
+    left: 4px;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background: var(--colorRed);
+    border-radius: 50%;
 }
 
 /* 대장암 발생과정 */
@@ -535,11 +541,11 @@ nav.inner .more_bt {
 .art2_2 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art2_2 .inner .title::after {
+.art2_2 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -551,46 +557,45 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art2_2 .inner .content p {
+.art2_2 .content p {
     text-align: left;
 }
 
-.art2_2 .inner .content p:nth-child(1) {
+.art2_2 .content > p {
     font-weight: 600;
+    font-size: 1.4rem;
     margin: 0 0 15px;
 }
 
-.art2_2 .inner .content p:nth-child(1) > span {
+.art2_2 .content > p > span {
     color: var(--colorRed);
 }
 
-.art2_2 .inner .content p:nth-child(2),
-.art2_2 .inner .content p:nth-child(3) {
-    width: 50%;
-    float: left;
+.art2_2 .content .more {
+    display: flex;
+    flex-direction: row;
 }
 
-.art2_2 .inner .content p:nth-child(2) {
-    padding: 0 1% 0 0;
+.art2_2 .content .more li {
+    flex: 1 1 50%;
+    font-size: 1.1rem;
+    line-height: 24px;
+    color: var(--colorFontBasic);
 }
 
-.art2_2 .inner .content p:nth-child(3) {
-    padding: 0 0 0 1%;
-}
-
-.art2_2 .inner .content .progress {
+.art2_2 .progress {
     clear: both;
     display: flex;
     padding: 30px 0 0;
 }
 
-.art2_2 .inner .content .progress .card {
+.art2_2 .progress .card {
     position: relative;
     flex: 1 1 20%;
     padding: 30px 0 0;
 }
 
-.art2_2 .inner .content .progress .card div {
+.art2_2 .progress .card div {
     position: absolute;
     left: 50%;
     top: 10%;
@@ -601,12 +606,12 @@ nav.inner .more_bt {
     background: var(--colorRed);
 }
 
-.art2_2 .inner .content .progress .card img {
+.art2_2 .progress .card img {
     width: 100%;
     height: 150px;
 }
 
-.art2_2 .inner .content .progress .ico_bl {
+.art2_2 .progress .ico_bl {
     font-weight: 700;
     font-size: 3.0rem;
     line-height: 150px;
@@ -618,11 +623,11 @@ nav.inner .more_bt {
 .art2_3 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art2_3 .inner .title::after {
+.art2_3 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -634,13 +639,13 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art2_3 .inner .graphcard {
+.art2_3 .graphcard {
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
-.art2_3 .inner .graphcard .card {
+.art2_3 .graphcard .card {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -650,15 +655,15 @@ nav.inner .more_bt {
     border-radius: 15px;
 }
 
-.art2_3 .inner .graphcard .card:hover {
+.art2_3 .graphcard .card:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.art2_3 .inner .graphcard .card:nth-child(2) {
+.art2_3 .graphcard .card:nth-child(2) {
     margin: 0 0 0 auto;
 }
 
-.art2_3 .inner .graphcard .card img {
+.art2_3 .graphcard .card img {
     height: 400px;
     object-fit: contain;
     margin: 0 0 30px;
@@ -666,20 +671,20 @@ nav.inner .more_bt {
     border-radius: 15px;
 }
 
-.art2_3 .inner .graphcard .card h4 > span {
+.art2_3 .graphcard .card h4 > span {
     color: var(--colorRed);
 }
 
-.art2_3 .inner .graphcard .card > p {
+.art2_3 .graphcard .card > p {
     text-align: left;
     margin: 20px 0;
 }
 
-.art2_3 .inner .graphcard .card .sourceBox {
+.art2_3 .graphcard .sourceBox {
     display: flex;
 }
 
-.art2_3 .inner .graphcard .card .sourceBox > div {
+.art2_3 .graphcard .sourceBox > div {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 30px;
@@ -689,12 +694,12 @@ nav.inner .more_bt {
     background: var(--colorRed);
 }
 
-.art2_3 .inner .graphcard .card .sourceBox > p {
+.art2_3 .graphcard .sourceBox > p {
     line-height: 40px;
     color: #808080;
 }
 
-.art2_3 .inner .graphcard .card .sourceBox > p:hover {
+.art2_3 .graphcard .sourceBox > p:hover {
     color: var(--colorRed);
 }
 
@@ -704,10 +709,11 @@ nav.inner .more_bt {
 .art3_1 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art3_1 .inner .title::after {
+.art3_1 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -719,36 +725,32 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art3_1 .inner .content {
-    margin: 50px 0 0;
-}
-
-.art3_1 .inner .table_content {
-    margin: 40px 0;
-}
-
-.art3_1 .inner .content > p:nth-of-type(1) {
+.art3_1 .content > p:nth-of-type(1) {
     margin: 10px 0 0;
 }
 
-.art3_1 .inner .content > p:nth-of-type(3) {
+.art3_1 .content > p:nth-of-type(3) {
     margin: 20px 0 0;
 }
 
-.art3_1 .inner .content > p:nth-of-type(3) span {
+.art3_1 .content > p:nth-of-type(3) span {
     font-weight: 500;
     color: var(--colorRed);
 }
 
-.art3_1 .inner .content h4>span {
+.art3_1 .content h4 > span {
     color: var(--colorRed);
 }
 
-.art3_1 .inner .content .table_content table {
+.art3_1 .table_content {
+    margin: 30px 0;
+}
+
+.art3_1 .table_content table {
     position: relative;
 }
 
-.art3_1 .inner .content .table_content table::before {
+.art3_1 .table_content table::before {
     content: "";
     width: 2px;
     height: 100%;
@@ -758,7 +760,7 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art3_1 .inner .content .table_content table::after {
+.art3_1 .table_content table::after {
     content: "";
     width: 2px;
     height: 100%;
@@ -768,12 +770,12 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art3_1 .inner .content .table_content colgroup col {
+.art3_1 .table_content colgroup col {
     width: 33.333%
 }
 
-.art3_1 .inner .content .table_content thead,
-.art3_1 .inner .content .table_content tbody tr:nth-child(1) {
+.art3_1 .table_content thead,
+.art3_1 .table_content tbody tr:nth-child(1) {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 30px;
@@ -781,15 +783,15 @@ nav.inner .more_bt {
     background: var(--colorTable);
 }
 
-.art3_1 .inner .content .table_content th {
+.art3_1 .table_content th {
     padding: 10px 0;
 }
 
-.art3_1 .inner .content .table_content ul {
+.art3_1 .table_content ul {
     padding: 10px 0;
 }
 
-.art3_1 .inner .content .table_content li {
+.art3_1 .table_content li {
     font-size: 1.125rem;
     line-height: 25px;
     text-align: center;
@@ -801,7 +803,7 @@ nav.inner .more_bt {
 /* 대장암의 병기 */
 .art3_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/tab3_background.png) no-repeat 50% 10% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/드림프로젝트/sub2page/tab3_background.png) no-repeat 0% 74% / cover;
 }
 
 .art3_2 .backTitle .inner {
@@ -831,7 +833,7 @@ nav.inner .more_bt {
 }
 
 .art3_2 > .inner {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .art3_2 > .inner img {
@@ -842,56 +844,53 @@ nav.inner .more_bt {
 
 .art3_2 > .inner .right {
     flex: 1 1 50%;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 30px;
 }
 
 .art3_2 > .inner .right p {
     text-align: left
 }
 
-.art3_2 > .inner .right .textBox {
+.art3_2 > .inner .textBox {
     margin: 30px 0 0;
 }
 
-.art3_2 > .inner .right .textBox > strong {
+.art3_2 > .inner .textBox > strong {
     font-size: 1.25rem;
     line-height: 30px;
     color: var(--colorFontBasic);
 }
 
-.art3_2 > .inner .right .textBox > strong,
-.art3_2 > .inner .right .textBox > p {
+.art3_2 > .inner .textBox > strong,
+.art3_2 > .inner .textBox > p {
     padding: 0 0 0 30px;
 }
 
-.art3_2 > .inner .right .textBox:nth-of-type(1) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square1.png) no-repeat 0% 50% / contain;
+.art3_2 > .inner .textBox:nth-of-type(1) > strong {
+    background: url(/img/드림프로젝트/sub2page/number_square1.png) no-repeat 0% 50% / contain;
 }
 
-.art3_2 > .inner .right .textBox:nth-of-type(2) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square2.png) no-repeat 0% 50% / contain;
+.art3_2 > .inner .textBox:nth-of-type(2) > strong {
+    background: url(/img/드림프로젝트/sub2page/number_square2.png) no-repeat 0% 50% / contain;
 }
 
-.art3_2 > .inner .right .textBox:nth-of-type(3) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square3.png) no-repeat 0% 50% / contain;
+.art3_2 > .inner .textBox:nth-of-type(3) > strong {
+    background: url(/img/드림프로젝트/sub2page/number_square3.png) no-repeat 0% 50% / contain;
 }
 
-.art3_2 > .inner .right .textBox:nth-of-type(4) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square4.png) no-repeat 0% 50% / contain;
+.art3_2 > .inner .textBox:nth-of-type(4) > strong {
+    background: url(/img/드림프로젝트/sub2page/number_square4.png) no-repeat 0% 50% / contain;
 }
 
 /* 병기에 따른 대장암의 분류 */
-.art3_3 {
-    background: var(--colorLightpink);
-}
-
 .art3_3 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art3_3 .inner .title::after {
+.art3_3 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -903,33 +902,69 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art3_3 .inner .content div {
-    margin: 40px 0;
+.art3_3 .content {
+    width: 670px
 }
 
-.art3_3 .inner .content img {
-    width: 70%;
-    margin: 0 15%;
+.art3_3 .tabH {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.art3_3 .inner .content > p {
-    white-space: pre-line;
+.art3_3 .tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.art3_3 .tabButton {
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    padding: 0px 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 28px;
+    color: var(--colorFontBasic);
+    background-color: var(--colorSky);
+    border-radius: 5px;
+}
+
+.art3_3 .tabButton.on {
+    color: var(--colorFontWhite);
+    background-color: var(--colorRed);
+}
+
+.art3_3 .tab-content {
+    margin: 20px 0 0;
+}
+
+.art3_3 .tabBox {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--colorFontBasic);
+    display: none;
+}
+
+.art3_3 .tabBox > span {
+    color: var(--colorRed);
+}
+
+.art3_3 .tabBox.on {
+    display: block;
 }
 
 /* tab Content - tab04 */
 /* 대장암 치료방법 */
-.art4_1 {
-    background: var(--colorLightpink);
-}
-
 .art4_1 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art4_1 .inner .title::after {
+.art4_1 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -940,55 +975,55 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art4_1 .inner .content h4 {
+.art4_1 .content h4 {
     text-align: center;
 }
 
-.art4_1 .inner .treatment {
+.art4_1 .treatment {
     display: flex;
     margin: 50px 0 0 0;
     gap: 10%;
 }
 
-.art4_1 .inner .treatment .left,
-.art4_1 .inner .treatment .right {
+.art4_1 .treatment .left,
+.art4_1 .treatment .right {
     flex: 1 1 45%;
 }
 
-.art4_1 .inner .treatment .left .card {
+.art4_1 .treatment .left .card {
     margin: 0 0 100px 0;
 }
 
-.art4_1 .inner .treatment .right .card {
+.art4_1 .treatment .right .card {
     margin: 100px 0 0 0;
 }
 
-.art4_1 .inner .treatment .card {
+.art4_1 .treatment .card {
     position: relative;
     padding: 30px;
-    background: var(--colorFontWhite);
+    background: #ffffff;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     transform: translate(0, 0);
     transition: all 0.3s;
 }
 
-.art4_1 .inner .treatment .card:hover {
+.art4_1 .treatment .card:hover {
     transform: translate(0, -15px);
     transition: all 0.3s;
 }
 
 
-.art4_1 .inner .treatment .card img {
+.art4_1 .treatment .card img {
     width: 100%;
     object-fit: cover;
 }
 
-.art4_1 .inner .treatment .card > p {
+.art4_1 .treatment .card > p {
     text-align: left;
     margin: 30px 0 0;
 }
 
-.art4_1 .inner .treatment .method {
+.art4_1 .treatment .method {
     display: inline-block;
     position: absolute;
     left: 60px;
@@ -997,7 +1032,7 @@ nav.inner .more_bt {
     background: var(--colorRed);
 }
 
-.art4_1 .inner .treatment .method > p {
+.art4_1 .treatment .method > p {
     text-align: left;
     color: var(--colorFontWhite);
 }
@@ -1007,11 +1042,11 @@ nav.inner .more_bt {
 .art4_2 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
-    gap: 50px;
+    padding: 60px 0;
+    gap: 40px;
 }
 
-.art4_2 .inner .title::after {
+.art4_2 .title::after {
     content: "";
     width: 40px;
     height: 5px;
@@ -1022,19 +1057,19 @@ nav.inner .more_bt {
     transform: translate(-50%, 0%);
 }
 
-.art4_2 .inner .content h4 > span {
+.art4_2 .content h4 > span {
     color: var(--colorRed);
 }
 
-.art4_2 .inner .table_content{
+.art4_2  .table_content{
     margin: 40px 0;
 }
 
-.art4_2 .inner .table_content table {
+.art4_2 .table_content table {
     position: relative;
 }
 
-.art4_2 .inner .table_content table::before {
+.art4_2 .table_content table::before {
     content: "";
     width: 2px;
     height: 100%;
@@ -1044,7 +1079,7 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art4_2 .inner .table_content table::after {
+.art4_2 .table_content table::after {
     content: "";
     width: 2px;
     height: 100%;
@@ -1054,15 +1089,15 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art4_2 .inner .table_content table .c1 {
+.art4_2 .table_content table .c1 {
     width: 30%;
 }
 
-.art4_2 .inner .table_content table .c2 {
+.art4_2 .table_content table .c2 {
     width: 70%;
 }
 
-.art4_2 .inner .table_content table th {
+.art4_2 .table_content table th {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 30px;
@@ -1071,7 +1106,7 @@ nav.inner .more_bt {
     background: var(--colorTable);
 }
 
-.art4_2 .inner .table_content table td {
+.art4_2 .table_content table td {
     padding: 15px 0;
     font-size: 1.125rem;
     line-height: 25px;
@@ -1082,7 +1117,7 @@ nav.inner .more_bt {
 /* 대장암의 예후 */
 .art4_3 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/tab4_background.png) no-repeat 0% 58% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/드림프로젝트/sub2page/tab4_background.png) no-repeat 0% 58% / cover;
 }
 
 .art4_3 .backTitle .inner {
@@ -1111,7 +1146,7 @@ nav.inner .more_bt {
 
 .art4_3 > .inner {
     flex-direction: column;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .art4_3 > .inner h4  {
@@ -1136,15 +1171,15 @@ nav.inner .more_bt {
     margin: 20px 0 0;
 } 
 
-.art4_3 > .inner .table_content {
+.art4_3 .table_content {
     margin: 40px 0;
 }
 
-.art4_3 > .inner .table_content table {
+.art4_3 .table_content table {
     position: relative;
 }
 
-.art4_3 .inner .table_content table::before {
+.art4_3 .table_content table::before {
     content: "";
     width: 2px;
     height: 100%;
@@ -1154,7 +1189,7 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art4_3 .inner .table_content table::after {
+.art4_3 .table_content table::after {
     content: "";
     width: 2px;
     height: 100%;
@@ -1164,15 +1199,15 @@ nav.inner .more_bt {
     background: var(--colorFontWhite);
 }
 
-.art4_3 > .inner .table_content table .c1 {
+.art4_3 .table_content table .c1 {
     width: 25%;
 }
 
-.art4_3 > .inner .table_content table .c2 {
+.art4_3 .table_content table .c2 {
     width: 10%;
 }
 
-.art4_3 > .inner .table_content table th {
+.art4_3 .table_content table th {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 30px;
@@ -1181,12 +1216,12 @@ nav.inner .more_bt {
     background: var(--colorTable);
 }
 
-.art4_3 > .inner .table_content table tbody tr:nth-child(2) > th {
+.art4_3 .table_content tbody tr:nth-child(2) > th {
     color: var(--colorFontBlack);
 }
 
 
-.art4_3 > .inner .table_content table td {
+.art4_3 .table_content table td {
     padding: 15px 0;
     font-size: 1.125rem;
     line-height: 25px;
@@ -1194,28 +1229,28 @@ nav.inner .more_bt {
     color: var(--colorFontBasic)
 }
 
-.art4_3 > .inner .table_content table .img_c {
+.art4_3 .table_content table .img_c {
     text-indent: -1000px;
     overflow: hidden;
 }
 
-.art4_3 > .inner .table_content table .img_c:nth-of-type(1) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률1.png) no-repeat 45% 0% / auto;
+.art4_3 .table_content table .img_c:nth-of-type(1) {
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률1.png) no-repeat 45% 0% / auto;
 }
 
-.art4_3 > .inner .table_content table .img_c:nth-of-type(2) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률2.png) no-repeat 50% 0% / auto;
+.art4_3 .table_content table .img_c:nth-of-type(2) {
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률2.png) no-repeat 50% 0% / auto;
 }
 
-.art4_3 > .inner .table_content table .img_c:nth-of-type(3) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률3.png) no-repeat 50% 0% / auto;
+.art4_3 .table_content table .img_c:nth-of-type(3) {
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률3.png) no-repeat 50% 0% / auto;
 }
-.art4_3 > .inner .table_content table .img_c:nth-of-type(4) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률4.png) no-repeat 50% 0% / auto;
+.art4_3 .table_content table .img_c:nth-of-type(4) {
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률4.png) no-repeat 50% 0% / auto;
 }
 
-.art4_3 > .inner .table_content table .img_c:nth-of-type(5) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률5.png) no-repeat 55% 0% / auto;
+.art4_3 .table_content table .img_c:nth-of-type(5) {
+    background: url(/img/드림프로젝트/sub2page/대장암의_병기별_생존률5.png) no-repeat 55% 0% / auto;
 }
 
 /* footer */
@@ -1225,9 +1260,9 @@ nav.inner .more_bt {
 
 .fnb a, 
 .fnb span,
-.fnb p {
+.fnb p,
+.fnb .copy-right {
     font-weight: 300;
-    font-size: 0.95rem;
     font-style: normal;
     line-height: normal;
     text-align: left;
@@ -1237,7 +1272,7 @@ nav.inner .more_bt {
 .fnb .inner {
     height: 100%;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .fnb .top {
@@ -1253,7 +1288,7 @@ nav.inner .more_bt {
 }
 
 .fnb .top .sns a {
-    margin: 0 5% ;
+    margin: 0 5%;
 }
 
 .fnb .top .sns .ico_wh {
@@ -1281,7 +1316,7 @@ nav.inner .more_bt {
     margin: 10px 0 0;
 }
 
-.fnb .bottom p > a {
+.fnb .bottom .copy-right > a {
     font-weight: 400;
     color: var(--colorFontBlack);
 }
