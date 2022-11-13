@@ -19,7 +19,7 @@ body .pageTop{
     position: fixed;
     right: 5%; bottom: 3%;
     width: 50px; height: 50px;
-    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -114,7 +114,7 @@ header .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
 header .more_bt {
@@ -365,8 +365,7 @@ header .gnb a.c.on{
 .sec03 .ageCard img {
     max-width: 100%;
     height: auto;
-    border-radius: 15px;
-    
+    border-radius: 15px;   
     background: var(--colorSky);
 }
 
@@ -421,19 +420,19 @@ header .gnb a.c.on{
 }
 
 .sec04 .prevention li:nth-child(1) .icon {
-    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention1.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(2) .icon {
-    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention2.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(3) .icon {
-    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention3.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention li:nth-child(4) .icon {
-    background: #DDF3FF url(/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50% / auto;
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/mainpage/icon/icon_prevention4.png) no-repeat 50% 50% / auto;
 }
 
 .sec04 .prevention .textBox {
@@ -457,7 +456,7 @@ header .gnb a.c.on{
 
 /* 대장암 바로알기 */
 .sec05 {
-    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
+    background: linear-gradient(0deg, rgba(221, 69, 79, 0.8), rgba(221, 69, 79, 0.8)), url(/PROJECT/img/드림프로젝트/mainpage/background-1.png) no-repeat 50% 50% / cover;
 }
 
 .sec05 .inner {
@@ -627,7 +626,7 @@ header .gnb a.c.on{
     font-weight: 300;
     font-style: normal;
     line-height: normal;
-    text-align: left;
+    text-align: center;
     color: var(--colorFontWhite);
 }
 
@@ -654,33 +653,40 @@ header .gnb a.c.on{
 }
 
 .fnb .top .sns .ico_wh {
-    font-size: 15px;
-    line-height: 15px;
-    width: 100%;
-    height: 100%;
+    font-size: 16px;
     padding: 5px 10px;
     border-radius: 5px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba(235, 73, 84, 0.8);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba(213, 46, 57, 0.882);
 }
 
 .fnb .top .sns .ico_wh:hover {
-    background: rgba(0, 0, 0, 0.5);
+    color: var(--colorRed);
+    background-color: rgba(255, 255, 255, 0.848);
 }
 
 .fnb .top .logo {
+    display: block;
     margin: 5px 0 0;
+}
+
+.fnb .top .logo > img {
+    display: block;
+    width: 100%;
 }
 
 .fnb .bottom {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 10px 0 0;
 }
 
 .fnb .bottom .copy-right > a {
     font-weight: 400;
     color: var(--colorFontBlack);
+}
+
+.fnb .bottom address {
+    text-align: center;
 }
 
 .fnb .bottom address a {

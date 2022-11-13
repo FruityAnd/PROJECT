@@ -15,7 +15,7 @@ const breakpointChecker = function () {
 const useSwiper = function () {
     mySwiper = new Swiper('.destorySwiper', {
         slidesPerView: 1, //모바일 기준
-        spaceBetween: 30, //모바일 기준
+        spaceBetween: 35, //모바일 기준
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -23,7 +23,7 @@ const useSwiper = function () {
         breakpoints: {
             760: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 40,
             }
         }
     });

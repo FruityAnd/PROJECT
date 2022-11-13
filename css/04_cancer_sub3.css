@@ -22,7 +22,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -168,7 +168,7 @@ header .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
 header .more_bt {
@@ -199,7 +199,7 @@ header .gnb a.c.on{
 
 /* sub page: title */
 .sec01 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 0% 60% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 0% 60% / cover;
 }
 
 .sec01 .inner {
@@ -352,19 +352,19 @@ header .gnb a.c.on{
 }
 
 .art1_1 .content > div:nth-child(1) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square01.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square01.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(2) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square02.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square02.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(3) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square03.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square03.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(4) .textBox h4 {
-    background: url(/img/드림프로젝트/sub3page/number_square04.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square04.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .textBox strong {
@@ -379,27 +379,27 @@ header .gnb a.c.on{
 }
 
 .art1_1 .content > div:nth-child(1) .textBox strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_run_man.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_run_man.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(1) strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_meat.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_meat.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(2) strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_kiwi.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_kiwi.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(3) strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_milk.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_milk.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(3) .textBox strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_medicines.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_medicines.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .content > div:nth-child(4) .textBox strong {
-    background: url(/img/드림프로젝트/sub3page/emoji_intestinal_pain.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_intestinal_pain.png) no-repeat 0% 50% / contain;
 }
 
 .art1_1 .textBox p {   
@@ -410,7 +410,7 @@ header .gnb a.c.on{
 /* 암의 예방 */
 .art1_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub3page/question_1.png) no-repeat 50% 20% / cover;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/question_1.png) no-repeat 50% 20% / cover;
 }
 
 .art1_2 .backTitle .inner {
@@ -430,11 +430,11 @@ header .gnb a.c.on{
 }
 
 .art1_2 .backTitle .title h2:nth-child(1) {
-    background: url(/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
 }
 
 .art1_2 .backTitle .title h2:nth-child(2) {
-    background: url(/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
 }
 
 .art1_2 > .inner {
@@ -615,7 +615,7 @@ header .gnb a.c.on{
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/img/드림프로젝트/sub3page/icon_head.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_head.png) no-repeat;
 }
 
 .art2_1 .home-box p {
@@ -687,19 +687,19 @@ header .gnb a.c.on{
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1) {
-    background: url(/img/드림프로젝트/sub3page/icon_true.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true.png) no-repeat;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1):hover {
-    background: url(/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2) {
-    background: url(/img/드림프로젝트/sub3page/icon_false.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false.png) no-repeat;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2):hover {
-    background: url(/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat;
 }
 
 /* 퀴즈 결과화면 */
@@ -815,7 +815,7 @@ header .gnb a.c.on{
     font-weight: 300;
     font-style: normal;
     line-height: normal;
-    text-align: left;
+    text-align: center;
     color: var(--colorFontWhite);
 }
 
@@ -842,33 +842,40 @@ header .gnb a.c.on{
 }
 
 .fnb .top .sns .ico_wh {
-    font-size: 15px;
-    line-height: 15px;
-    width: 100%;
-    height: 100%;
+    font-size: 16px;
     padding: 5px 10px;
     border-radius: 5px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba(235, 73, 84, 0.8);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba(213, 46, 57, 0.882);
 }
 
 .fnb .top .sns .ico_wh:hover {
-    background: rgba(0, 0, 0, 0.5);
+    color: var(--colorRed);
+    background-color: rgba(255, 255, 255, 0.848);
 }
 
 .fnb .top .logo {
+    display: block;
     margin: 5px 0 0;
+}
+
+.fnb .top .logo > img {
+    display: block;
+    width: 100%;
 }
 
 .fnb .bottom {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 10px 0 0;
 }
 
 .fnb .bottom .copy-right > a {
     font-weight: 400;
     color: var(--colorFontBlack);
+}
+
+.fnb .bottom address {
+    text-align: center;
 }
 
 .fnb .bottom address a {
@@ -890,4 +897,4 @@ header .gnb a.c.on{
 
 .fnb .bottom address a:nth-child(1)::before {
     display: none;
-}     
+}    
