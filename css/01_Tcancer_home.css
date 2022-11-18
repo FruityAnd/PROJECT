@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+body .pageTop{
+    right: 20px; 
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+.inner {
+    width: auto;
+    margin: 0 40px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2 > strong {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+
+/* main header */
+header .logo {
+    width: 90px;
+    height: 45px;
+}
+
+header .more_bt {
+    display: block;
+    position: absolute;
+    top: auto;
+    right: 40px;
+}
+
+header .gnb {
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 45px;
+    right: 0;
+    padding: 50px 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(221, 69, 79, 0.8);
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+header .gnb.on {
+    height: 100vh;
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+header .gnb li {
+    margin: 0;
+    padding: 15px;
+}
+
+
+header .gnb a.c {
+    font-size: 1.8rem;
+    color: var(--colorFontWhite);
+}
+
+header .gnb a.c:hover {
+    color: var(--colorFontBlack);
+}
+
+/* swiper slide */
+.sec01 {
+    margin: 45px 0 0 0;
+}
+
+/* Dream Project */ 
+.sec02 .inner {
+    padding: 50px 0;
+}
+
+.sec02 p {
+    font-size: 1.3rem;
+}
+
+.sec02 .title > h2 {
+    font-size: 3.0rem;
+    line-height: 47px;
+}
+
+.sec02 .textShow {
+    height: 51px;
+}
+
+.sec02 .textShow .showBox p {
+    font-size: 1.5rem;
+    height: 41px;
+    margin-bottom: 41px;
+}
+
+@keyframes show {
+    0% {margin-top:-410px;}
+    10% {margin-top:-328px;}
+    20% {margin-top:-328px;}
+    30% {margin-top:-246px;}
+    40% {margin-top:-246px;}
+    50% {margin-top:-164px;}
+    60% {margin-top:-164px;}
+    70% {margin-top:-82px;}
+    80% {margin-top:-82px;}
+    90% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-410px;}
+}
+
+/* swiper slide */
+
+/* 성별 나이 상관없는 전국민 프로젝트 */
+.sec03 .inner,
+.sec04 .inner {
+    padding: 50px 0;
+}
+
+.sec03 .inner {
+    gap: 40px;
+}
+
+.title .jumping_dots > span::before {
+    top: -7px;
+    width: 7px;
+    height: 7px;
+}
+
+.sec03 .ageCard a {
+    padding: 20px 15px;
+}
+
+.sec03 .ageCard img {
+    border-radius: 10px;
+}
+
+.sec03 .ageCard .textBox {
+    margin: 15px 0 0;
+}
+
+.sec03 .ageCard .textBox p {
+    font-size: 1.2rem;
+}
+
+/* 대장암 예방방법 */
+.sec04 .prevention {
+    gap: 80px;
+    margin: 50px 0 20px 0;
+}
+
+.sec04 .prevention .icon {
+    width: 200px;
+    height: 200px;
+}
+
+.sec04 .prevention li:nth-child(1) .icon,
+.sec04 .prevention li:nth-child(2) .icon,
+.sec04 .prevention li:nth-child(4) .icon  {
+    background-size: 60%;
+}
+
+.sec04 .prevention li:nth-child(3) .icon {
+    background-size: 47%;
+}
+
+.sec04 .prevention .textBox p {
+    font-size: 1.1rem;
+    line-height: 27px;
+}
+
+
+/* 대장암 바로알기 */
+.sec05 .inner {
+    padding: 50px 0;
+}
+
+.sec05 .textBox { 
+    gap: 30px; 
+}
+
+.sec05 .textBox h2 {
+    font-size: 1.7rem;
+    line-height: normal;
+}
+
+.sec05 .textBox h2 > strong {
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+
+.sec05 .textBox p {
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.sec05 a {
+    max-width: 55%;
+}
+
+.sec05 a img {
+    width: 100%
+}
+
+
+/* 대장암 홍보자료 */
+.sec06 .inner {
+    padding: 50px 0 0;
+}
+
+.sec06 .swiper-wrapper {
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.sec06 .destorySwiper {
+    padding: 10px;
+}
+
+.sec06 .destorySwiper .slide_card {
+    flex: none;
+    padding: 25px 20px;
+}
+
+.sec06 .destorySwiper .slide_card img {
+    height: 250px;
+}
+
+.sec06 .destorySwiper .slide_card:nth-child(3) img {
+    object-position: 50% 35%;
+}
+
+.sec06 .destorySwiper .slide_card a {
+    font-size: 1rem;
+}
+
+.sec06 .swiper-pagination-bullet {
+    display: inline-block;
+}
+
+.sec06 .swiper-horizontal > .swiper-pagination-bullets,
+.sec06 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.sec06 .swiper-pagination-custom, 
+.sec06 .swiper-pagination-fraction {
+    position: relative;
+    bottom: -5px;
+}
+
+.sec06 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.sec06 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+/* 가로: 무한 롤링 text */
+.rollingtext .track span {
+    font-size: 4rem;
+}
+
+/* footer */
+.fnb a, 
+.fnb span,
+.fnb p,
+.fnb .copy-right {
+    font-size: 0.9rem;
+}
+
+.fnb .inner {
+    padding: 30px 0;
+}
+
+.fnb .top .sns .ico_wh {
+    font-size: 14px;
+}
+
+.fnb .top .logo > img {
+    width: 90%;
+    margin: auto;
+}

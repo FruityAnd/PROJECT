@@ -1,0 +1,280 @@
+/* 공통 */
+body .pageTop {
+    right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.inner {
+    margin: 0 20px;
+}
+
+.title {
+    padding: 0 0 10px;
+}
+
+.title::after {
+    width: 25px;
+    height: 4px;
+}
+
+table {
+    min-width: 510px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.7rem;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 1.35rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.source {
+    min-width: 510px;
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+}
+
+.text-hide2 {
+    display: none;
+}
+
+.art1_1 .inner,
+.art2_1 .inner,
+.art2_2>.inner,
+.art2_3 .inner {
+    padding: 25px 0;
+}
+
+.art1_1 .inner,
+.art2_1 .inner {
+    gap: 15px;
+}
+
+/*main header*/
+header {
+    height: 35px;
+}
+
+header .more_bt {
+    right: 20px;
+}
+
+header .gnb {
+    top: 35px;
+}
+
+header .logo {
+    width: 70px;
+    height: 35px;
+}
+
+/* sub page: title */
+.sec01 .inner {
+    padding: 20px 0;
+}
+
+.sec01 .inner p {
+    font-size: 1rem;
+}
+
+.sec01 .textBox {
+    font-size: 12px;
+    margin: 10px 0 0;
+}
+
+.sec01 .textBox > span {
+    font-size: 0.9rem;
+}
+
+/* sub page: tab */
+.sec02 .tabButton {
+    height: 25px;
+}
+
+.sec02 .tabButton .inner li h2 {
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 25px;
+}
+
+/* tab Content - tab01 */
+/* 대장암 검진방법 */
+/* swiper: slide card */
+.art1_1 .destorySwiper2 {
+    margin: 20px 0 0;
+}
+
+.art1_1 .slide_card dl {
+    padding: 0 15px 10px;
+}
+
+.art1_1 .slide_card dt {
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.art1_1 .slide_card dd {
+    font-size: 1rem;
+    padding: 0 0 0 10px;
+    margin: 0px 0 3px 0;
+}
+
+.art1_1 .slide_card dd::before {
+    width: 4px;
+    height: 4px;
+    top: 8px;
+}
+
+/* tab Content - tab02 */
+/* 전세계 20~40대 대장암 발생률*/
+.art2_1 .content p > span {
+    font-size: 1rem;
+}
+
+.art2_1 .ranking .swiper-wrapper {
+    margin: 20px 0 0;
+}
+
+.art2_1 .ranking .r_card {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.art2_1 .ranking .r_card:nth-child(2) {
+    transform: none;
+}
+
+.art2_1 .ranking .r_card p {
+    font-size: 0.9rem;
+}
+
+.art2_1 .swiper-pagination-bullet {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--colorFontBasic);
+    opacity: 1;
+    background-color: var(--colorSky);
+}
+
+.art2_1 .swiper-pagination-bullet-active {
+    color: #fff;
+    background-color: var(--colorRed);
+}
+
+.art2_1 .swiper-horizontal>.swiper-pagination-bullets,
+.art2_1 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.art2_1 .swiper-pagination-custom,
+.art2_1 .swiper-pagination-fraction {
+    position: relative;
+    bottom: 0px;
+    line-height: 17px;
+    margin: 5px 0 0;
+}
+
+.art2_1 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.art2_1 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+/* 대장암 브레이크 */
+.art2_2 .backTitle {
+    height: 150px;
+}
+
+.art2_2 .backTitle strong {
+    font-size: 1.1rem;
+}
+
+.art2_2 .backTitle .inner {
+    padding: 0px;
+}
+
+.art2_2 .table_content {
+    width: 95%;
+    padding: 0 0 10px 0;
+    overflow: auto;
+}
+
+.art2_2 .table_content table th {
+    font-size: 0.8rem;
+    padding: 5px 0;
+}
+
+.art2_2 .table_content table td {
+    font-size: 0.8rem;
+    padding: 5px 0;
+}
+
+.art2_2 > .inner > p:nth-of-type(1),
+.art2_3 .content > p:first-of-type {
+    font-size: 1.1rem;
+}
+
+/* 암검진 미수검 이유 */
+.art2_3 .chart-container {
+    width: 85%;
+    height: 350px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* 주변 검진기관 찾기 */
+.art2_4 {
+    height: 150px;
+}
+
+.art2_4 .inner {
+    padding: 5px 0px;
+}
+
+.art2_4 .title h2{
+    font-size: 1.2rem;
+}
+
+.art2_4 .bubble {
+    width: 80vw;
+}
+
+.art2_4 .bubble img {
+    width: 45%;
+}
+
+/* footer */
+.fnb a,
+.fnb span,
+.fnb p {
+    font-size: 0.8rem;
+}
+
+.fnb .inner {
+    padding: 20px 0;
+}
+
+.fnb .top .sns .ico_wh {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.fnb .top .logo > img {
+    width: 70%;
+}
+
+.fnb .bottom address a:nth-child(3) {
+    display: inline-block;
+}

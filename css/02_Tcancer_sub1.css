@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+body .pageTop{
+    right: 20px; 
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+.inner {
+    width: auto;
+    margin: 0 40px;
+}
+
+.title {
+    position: relative;
+    padding: 0 0 15px;
+}
+
+.title::after {
+    width: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 45px;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: normal;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+h4 {
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: normal;
+}
+
+.art1_1 .inner,
+.art1_2 .inner,
+.art1_3 .inner,
+.art2_1 .inner {
+    padding: 40px 0;
+    gap: 30px;
+}
+
+/* main header */
+header .logo {
+    width: 90px;
+    height: 45px;
+}
+
+header .more_bt {
+    display: block;
+    position: absolute;
+    top: auto;
+    right: 40px;
+}
+
+header .gnb {
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 45px;
+    right: 0;
+    padding: 50px 20px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(221, 69, 79, 0.8);
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+header .gnb.on {
+    height: 100vh;
+    transform: translateX(0%);
+    transition: transform 0.5s;
+}
+
+header .gnb li {
+    margin: 0;
+    padding: 15px;
+}
+
+header .gnb a.c {
+    font-size: 1.8rem;
+    color: var(--colorFontWhite);
+}
+
+header .gnb a.c:hover {
+    color: var(--colorFontBlack);
+}
+
+/* sub page: title */
+.sec01 .inner {
+    padding: 35px 0;
+}
+
+.sec01 .inner p {
+    font-size: 1.4rem;    
+    line-height: normal;
+}
+
+.sec01 .textBox {
+    margin: 20px 0 0;
+}
+
+/* sub page: tab */
+.sec02 .tabButton {
+    height: 35px;
+}
+
+.sec02 .tabButton .inner li h2 {
+    font-size: 1.1rem;
+    line-height: 35px;
+}
+
+/* tab Content - tab01 */
+/* DREAM project? */
+.art1_1 .left {
+    min-width: 550px;
+    padding: 30px;
+}
+
+.art1_1 .left p:nth-child(1) {
+    font-size: 1.4rem;
+}
+
+.art1_1 .left p:nth-child(2) {
+    margin: 20px 0 10px;
+}
+
+.art1_1 .left p:nth-child(2),
+.art1_1 .left p:nth-child(3) {
+    font-size: 1.1rem;
+    line-height: normal;
+}
+
+.art1_1 img {
+    height: 190px;
+    margin-left: -60px;
+}
+
+/* 대장암 예방법 'DREAM' */
+.art1_2 .dream div {
+    margin: 0 0 15px;
+}
+
+.art1_2 .dream div dt {
+    font-size: 1.8rem;
+    line-height: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    margin: 0 15px 0 0;
+}
+
+.art1_2 .dream div dd {
+    line-height: 55px;
+}
+
+.art1_2 .dream div dd:nth-child(2) {
+    font-size: 1.5rem;
+    margin: 0 10px 0 0;
+}
+
+.art1_2 .dream div:last-child dd {
+    font-size: 1.4rem;
+}
+
+.art1_2 .dream div dd:nth-child(3) {
+    font-size: 1.1rem;
+}
+
+/* 모두에게 적용되는 프로젝트 */
+.art1_3 .inner {
+    gap: 40px;
+}
+
+.art1_3 .content {
+    padding: 0 70px;
+    gap: 50px;
+}
+
+.art1_3 .content li img {
+    height: 180px;
+}
+
+.art1_3 .content li dl > dt {
+    font-size: 1.6rem;
+    line-height: normal;
+    margin: 0 0 20px;
+}
+
+.art1_3 .content li dl > dd {
+    font-size: 1.1rem;
+    line-height: normal;
+}
+
+/* 로고 및 캐릭터 */
+.art2_1 .ico_bl {
+    font-size: 18px;
+}
+
+.art2_1 ul {
+    width: 100%;
+    gap: 35px;
+}
+
+.art2_1 ul li:nth-child(2) {
+    padding: 35px 0 0;
+}
+
+.art2_1 ul li h4 {
+    font-size: 1.5rem;
+}
+
+.art2_1 ul li:nth-child(1) h4,
+.art2_1 ul li:nth-child(3) h4 {
+    margin: 0 0 20px;
+}
+
+.art2_1 ul li p {
+    font-size: 1.1rem;
+    line-height: 25px;
+    padding-left: 12px;
+}
+
+.art2_1 .color {
+    gap: 7%;
+    padding: 30px 0 40px;
+}
+
+.art2_1 .color > span {
+    font-size: 1.6rem;
+    line-height: 150px;
+}
+
+.art2_1 ul .design img {
+    margin: 25px 0;
+}
+
+.art2_1 .design > a {
+    font-size: 1rem;
+}
+
+/* footer */
+.fnb a, 
+.fnb span,
+.fnb p,
+.fnb .copy-right {
+    font-size: 0.9rem;
+}
+
+.fnb .inner {
+    padding: 30px 0;
+}
+
+.fnb .top .sns .ico_wh {
+    font-size: 14px;
+}
+
+.fnb .top .logo > img {
+    width: 90%;
+    margin: auto;
+}
