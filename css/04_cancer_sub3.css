@@ -84,6 +84,17 @@ i > span {
     padding: 0 0 20px;
 }
 
+.title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -146,6 +157,14 @@ p {
     margin: 10px 0 0;
 }
 
+.art1_1 .inner,
+.art1_2 > .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    gap: 40px;
+}
+
 /*main header*/
 header {
     height: 45px;
@@ -199,7 +218,7 @@ header .gnb a.c.on{
 
 /* sub page: title */
 .sec01 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 0% 60% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/PROJECT/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 0% 60% / cover;
 }
 
 .sec01 .inner {
@@ -285,140 +304,105 @@ header .gnb a.c.on{
 
 /* tab Content - tab01 */
 /* 대장암 예방방법 */
-/* 암의 예방 */
-.art1_1 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
+.art1_1 .destorySwiper5 {
+    width: 100%;
 }
 
-.art1_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
+.art1_1 .swiper-wrapper {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 5px;
 }
 
-.art1_1 .content {
+.art1_1 .slide_card {
     display: flex;
     flex-direction: column;
-    gap: 50px;    
-}
-
-.art1_1 .content > div {
-    display: flex;
-    gap: 10%;
-}
-
-.art1_1 .content > div:nth-child(even) {
-    flex-direction: row-reverse;
-}
-
-.art1_1 .content > div img {
-    height: 400px;
-    width: 45%;
-    object-fit: cover;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    transform: translate(0, 0);
+    flex: 1 1 45%;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 20%);
     transition: all 0.3s;
 }
 
-.art1_1 .content > div:nth-child(1) img {
-    object-fit: fill;
+.art1_1 .slide_card:hover {
+    transform: translate(0, -15px);
+    transition: all 0.3s;
 }
 
-.art1_1 .content > div img:hover {
-    transform: translate(0, -10px);
-    transition: all 0.3s;
+.art1_1 .slide_card img {
+    max-width: 100%;
 }
 
 .art1_1 .textBox {
-    flex: 1 1 45%;
-    align-self: center;
+    margin-top: -20px;
 }
 
-.art1_1 .textBox h4{
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 30px;
-    padding: 0 0 0 30px;
-    margin: 0 0 30px;
+.art1_1 .textBox .box {
+    margin: 5px 0 0;
 }
 
-.art1_1 .content > div:nth-child(1) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square01.png) no-repeat 0% 50% / contain;
+.art1_1 .textBox .box:nth-of-type(1) {
+    margin: 15px 0 0;
 }
 
-.art1_1 .content > div:nth-child(2) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square02.png) no-repeat 0% 50% / contain;
-}
-
-.art1_1 .content > div:nth-child(3) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square03.png) no-repeat 0% 50% / contain;
-}
-
-.art1_1 .content > div:nth-child(4) .textBox h4 {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/number_square04.png) no-repeat 0% 50% / contain;
+.art1_1 .textBox h4 {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 27px;
+    padding: 5px 20px;    
+    margin-left: 20px;
+    color: var(--colorFontWhite);
+    background-color: var(--colorRed);
 }
 
 .art1_1 .textBox strong {
     font-size: 1.25rem;
     line-height: 30px;
     color: var(--colorFontBasic);
-    padding: 0 0 0 30px;
+    padding: 0 0 0 20px;
+    position: relative;
 }
 
-.art1_1 .textBox .box {
-    margin: 10px 0 0;
-}
-
-.art1_1 .content > div:nth-child(1) .textBox strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_run_man.png) no-repeat 0% 50% / contain;
-}
-
-.art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(1) strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_meat.png) no-repeat 0% 50% / contain;
-}
-
-.art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(2) strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_kiwi.png) no-repeat 0% 50% / contain;
-}
-
-.art1_1 .content > div:nth-child(2) .textBox > .box:nth-of-type(3) strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_milk.png) no-repeat 0% 50% / contain;
-}
-
-.art1_1 .content > div:nth-child(3) .textBox strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_medicines.png) no-repeat 0% 50% / contain;
-}
-
-.art1_1 .content > div:nth-child(4) .textBox strong {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_intestinal_pain.png) no-repeat 0% 50% / contain;
+.art1_1 .textBox strong::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--colorRed);
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 
 .art1_1 .textBox p {   
     text-align: left;
-    padding: 5px 0 0 30px;
+    padding: 0 0 0 20px;
+}
+
+.art1_1 .swiper-pagination-bullet {
+    display: none;
 }
 
 /* 암의 예방 */
 .art1_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/question_1.png) no-repeat 50% 20% / cover;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/question_1.png) no-repeat 0% 13% / cover;
 }
 
 .art1_2 .backTitle .inner {
-    align-items: flex-end;
+    align-items: center;
 }
 
 .art1_2 .backTitle .title {
-    padding: 60px 0;
+    padding: 0;
+}
+
+.art1_2 .backTitle .title::after {
+    content: none;
 }
 
 .art1_2 .backTitle .title h2 {
@@ -437,30 +421,15 @@ header .gnb a.c.on{
     background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
 }
 
-.art1_2 > .inner {
+.art1_2 .content {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art1_2 > .inner .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
+    width: 100%;
 }
 
 .art1_2 .content > p {
-    text-align: left;
-}
-
-.art1_2 .content > p {
+    align-self: flex-start;
     font-weight: 600;
     font-size: 1.4rem;
     margin: 0 0 15px;
@@ -486,7 +455,6 @@ header .gnb a.c.on{
     font-size: 1.5rem;
     line-height: 30px;
     text-align: center;
-    margin: 40px 0 0 ;
 }
 
 .art1_2 .content h4 > span {
@@ -495,8 +463,8 @@ header .gnb a.c.on{
 }
 
 .art1_2 .table_content {
-    clear: both;
-    padding: 40px 0 0;
+    width: 90%;
+    padding: 40px 0;
 }
 
 .art1_2 .table_content table::before {
@@ -537,7 +505,7 @@ header .gnb a.c.on{
 }
 
 .art1_2 .table_content table td {
-    padding: 15px 0;
+    padding: 15px 5px;
     font-size: 1.125rem;
     line-height: 25px;
     text-align: center;
@@ -546,21 +514,12 @@ header .gnb a.c.on{
 
 /* tab Content - tab02 */
 /* 대장암 O,X 퀴즈 */
+.art2_1 {
+    padding: 60px 0 0;
+}
 .art2_1 .title {
     text-align: center;
-    margin: 60px 0 0;
     position: relative;
-}
-
-.art2_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
 }
 
 .art2_1 h3,
@@ -580,17 +539,18 @@ header .gnb a.c.on{
 .art2_1 .quiz-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 1000px;
+    max-width: 900px;
+    height: 350px;
     margin: 40px auto;
     border-radius: 10px;
     background: var(--colorSky);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
 }
 
 /* 퀴즈 시작화면 */
 .art2_1 .home-box {
-    padding: 50px 0;
     gap: 30px;
 }
 
@@ -600,23 +560,23 @@ header .gnb a.c.on{
 }
 
 .art2_1 .home-box h3 {
+    display: flex;
     position: relative;
     font-size: 2rem;
     line-height: 45px;
     text-transform: capitalize;
-    padding: 0 0 0 55px;
 }
 
-.art2_1 .home-box h3::before {
-    content: "";
-    width: 42px;
-    height: 42px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_head.png) no-repeat;
+.art2_1 .home-box h3 > .ico_b {
+    font-size: 40px;
+    align-self: center;
 }
+
+.art2_1 .home-box img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+} 
 
 .art2_1 .home-box p {
     font-size: 2.5rem;
@@ -640,9 +600,6 @@ header .gnb a.c.on{
 }
 
 /* 퀴즈 */
-.art2_1 .quiz-box {
-    padding: 40px 0;
-}
 .art2_1 .quiz-box > div,
 .art2_1 form {
     width: 750px;
@@ -652,7 +609,7 @@ header .gnb a.c.on{
     padding: 20px 50px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .art2_1 .quiz-box .question-number {
@@ -663,7 +620,7 @@ header .gnb a.c.on{
     color: var(--colorFontBasic);
 }
 
-.art2_1 .quiz-box .question-text  {
+.art2_1 .quiz-box .question-text {
     font-family: 'Hahmlet', serif;
     font-weight: 500;
     font-size: 1.8rem;
@@ -687,19 +644,19 @@ header .gnb a.c.on{
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1) {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true.png) no-repeat 50% 50% / cover;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1):hover {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat 50% 50% / cover;;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2) {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false.png) no-repeat 50% 50% / cover;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2):hover {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat 50% 50% / cover;;
 }
 
 /* 퀴즈 결과화면 */
@@ -708,7 +665,7 @@ header .gnb a.c.on{
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 45px 0;
 }
 
 .art2_1 .scoreBox .quiz-score {
@@ -724,7 +681,7 @@ header .gnb a.c.on{
 }
 
 .art2_1 .result-box ul {
-    margin: 40px 0 0;
+    margin: 35px 0 0;
     text-align: center;
 }
 
@@ -766,6 +723,8 @@ header .gnb a.c.on{
 
 /* 퀴즈 정답 및 해설 */
 .art2_1 .answer-box .quiz-box {
+    height: auto;
+    padding: 40px 0;
     margin: 40px auto;
 }
 
@@ -791,7 +750,7 @@ header .gnb a.c.on{
 }
 
 .art2_1 .answer-box .quiz-commentary {
-    width: 850px;
+    width: 800px;
     font-size: 1.1rem;
     line-height: 25px;
     white-space: pre-line;

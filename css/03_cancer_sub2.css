@@ -71,7 +71,7 @@ a:visited {
     color: inherit;
 }
 
-i >span {
+i > span {
     display: inline-block;
     width: 0;
     height: 0;
@@ -79,15 +79,65 @@ i >span {
     overflow: hidden;
 }
 
+.backTitle {
+    height: 300px;
+}
+
+.backTitle .inner {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 50px;
+    gap: 30px;
+    color: var(--colorFontWhite);
+}
+
 .title {
     position: relative;
     padding: 0 0 20px;
+}
+
+.title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     position: relative;
+}
+
+.table_content table::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background: var(--colorFontWhite);
+}
+
+.table_content table::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: -1px;
+    top: 0;
+    background: var(--colorFontWhite);
+}
+
+.table_content table th {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 30px;
+    text-align: center; 
 }
 
 caption {
@@ -127,6 +177,7 @@ h4 {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 30px;
+    text-align: center;
 }
 
 p {
@@ -143,6 +194,36 @@ p {
     text-align: center;
     color: var(--colorFontBasic);
     margin: 10px 0 0;
+}
+
+.art1_2 > .inner,
+.art2_1 .inner, 
+.art2_2 .inner, 
+.art2_3 .inner,
+.art3_1 .inner,
+.art3_3 .inner,
+.art4_1 .inner,
+.art4_2 .inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    gap: 40px;
+}
+
+.art2_1 .content,
+.art3_1 .content,
+.art4_2 .content,
+.art4_3 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.art1_2 .backTitle strong,
+.art3_2 .backTitle p,
+.art4_3 .backTitle strong {
+    font-size: 1.3rem;
 }
 
 /*main header*/
@@ -198,7 +279,7 @@ header .gnb a.c.on{
 
 /* sub page: title */
 .sec01 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/PROJECT/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 0% 47% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/PROJECT/img/드림프로젝트/sub2page/sub2_title.png) no-repeat 0% 47% / cover;
 }
 
 .sec01 .inner {
@@ -291,23 +372,19 @@ header .gnb a.c.on{
 }
 
 .art1_1 .textBox {
+    align-self: center;
     width: 50%;
-    padding: 80px 0;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 10px;
 }
 
 .art1_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
     left: 0%;
     bottom: 0%;
+    transform: translate(0%, 0%);
 }
 
 .art1_1 .textBox h4 {
+    text-align: left;
     margin: 40px 0;
 }
 
@@ -323,8 +400,8 @@ header .gnb a.c.on{
 
 .art1_1 .textBox p::before {
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     display: inline-block;
     border-radius: 50%;
     background: var(--colorRed);
@@ -336,34 +413,15 @@ header .gnb a.c.on{
 
 /* 대장암의 누적위험도*/
 .art1_2 .backTitle {
-    height: 300px;
     background: #000000 url(/PROJECT/img/드림프로젝트/sub2page/childern_01.png) no-repeat 15% 0% / contain;
 }
 
 .art1_2 .backTitle .inner {
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    gap: 30px;
-    padding: 0 0 50px;
-    color: var(--colorFontWhite);
-}
-
-.art1_2 .backTitle .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0);
 }
 
 .art1_2 .backTitle strong {
     font-weight: 500;
-    font-size: 1.5rem;
     text-align: center;
     white-space: pre-line;
 }
@@ -372,58 +430,75 @@ header .gnb a.c.on{
     color: var(--colorRed);
 }
 
-.art1_2 > .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
+.art1_2 > .inner div:nth-child(1) {
+    text-align: center;
 }
 
 .art1_2 > .inner p {
     white-space: pre-line;
+    line-height: 20px;
 }
 
-.art1_2 > .inner p:nth-of-type(1) strong {
+.art1_2 > .inner strong {
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 30px;
 }
 
-.art1_2 > .inner p:nth-of-type(1) strong > span {
+.art1_2 > .inner strong > span {
     color: var(--colorRed);
 }
 
+.art1_2 > .inner div p:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+.art1_2 > .inner .graph {
+    width: 100%;
+    text-align: center;
+}
+
 .art1_2 > .inner .graph img {
-    max-width: 800px;
     background: var(--colorTable);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.2);
 }
 
 /* 주변 검진기관 찾기 */
 .art1_3 {
-    height: 450px;
-    background: var(--colorSky);
+    height: 350px;
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat 50% 50% / contain;
 }
 
 .art1_3 .inner {
     flex-direction: column;
     align-items: center;
-    background: url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat;
-    padding: 35px 140px 35px 160px;
+    padding: 15px 0;
+}
+
+.art1_3 .title {
+    padding: 0;
+}
+
+.art1_3 .title::after {
+    display: none;
+}
+
+.art1_3 .title h2{
+    font-size: 2.3rem;
 }
 
 .art1_3 .bubble {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 70%;
     margin: auto 0;
 }
 
 .art1_3 .bubble a {
-    display: inline-block;
+    display: block;
 }
 
 .art1_3 .bubble img {
-    height: 100px;
     transform: scale(1);
     transition: all 0.2s ease-in-out;
 }
@@ -435,67 +510,22 @@ header .gnb a.c.on{
 
 /* tab Content - tab02 */
 /* 발생 원인 및 위험인자 */
-.art2_1 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art2_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
 .art2_1 .table_content {
-    margin: 30px 0 0 0;
+    width: 90%;
+    padding: 30px 0 0 0;
 }
 
 .art2_1 .table_content table {
     position: relative;
 }
 
-.art2_1 .table_content table::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
-}
-
-.art2_1 .table_content table::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    right: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
-}
-
 .art2_1 .table_content table colgroup .c1 {
-    width: 25%;
+    width: 20%;
     background: var(--colorTable);
 }
 
 .art2_1 .table_content table colgroup .c2 {
-    width: 75%;
-}
-
-.art2_1 .table_content table th {
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 30px;
-    text-align: center;
+    width: 80%;
 }
 
 .art2_1 .table_content table thead th {
@@ -504,33 +534,36 @@ header .gnb a.c.on{
 }
 
 .art2_1 .table_content table tbody td {
-    padding: 10px;
+    padding: 15px 10px;
 }
 
 .art2_1 .table_content table tbody li {
     font-size: 1.125rem;
     line-height: 25px;
     text-align: left;
-    padding: 0 0 0 15px;
-    word-break: keep-all;
+    padding: 0 0 0 20px;
     color: var(--colorFontBasic);
 }
 
-.art2_1 .table_content .subtitle_t {
+.art2_1 .table_content .subtitle {
     position: relative;
     line-height: 30px;
 }
 
-.art2_1 .table_content .subtitle_t::before {
+.art2_1 .table_content .subtitle::before {
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 5px;
+    height: 5px;
     position: absolute;
-    left: 4px;
+    left: 10px;
     top: 50%;
     transform: translate(-50%, -50%);
     background: var(--colorRed);
     border-radius: 50%;
+}
+
+.art2_1 .table_content .description {
+    white-space: pre-line;
 }
 
 /* 대장암 발생과정 */
@@ -538,23 +571,8 @@ header .gnb a.c.on{
     background: var(--colorLightpink);
 }
 
-.art2_2 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art2_2 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
+.art2_2 .content {
+    width: 100%;
 }
 
 .art2_2 .content p {
@@ -573,7 +591,6 @@ header .gnb a.c.on{
 
 .art2_2 .content .more {
     display: flex;
-    flex-direction: row;
 }
 
 .art2_2 .content .more li {
@@ -583,80 +600,67 @@ header .gnb a.c.on{
     color: var(--colorFontBasic);
 }
 
-.art2_2 .progress {
-    clear: both;
-    display: flex;
-    padding: 30px 0 0;
+.art2_2 .content .more-btn {
+    display: none;   
+}
+
+.art2_2 .destorySwiper6 {
+    width: 100%;
+}
+
+.art2_2 .swiper-wrapper {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    gap: 80px;
+    margin: 30px 0 0;
 }
 
 .art2_2 .progress .card {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     flex: 1 1 20%;
-    padding: 30px 0 0;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 0.2);
 }
 
 .art2_2 .progress .card div {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -10%);
-    display: inline-block;
-    padding: 5px 10px;
-    color: var(--colorFontWhite);
-    background: var(--colorRed);
+    font-weight: 500;
+    font-size: 1.05rem;
+    line-height: normal;
+    text-align: center;
+    padding: 4px 10px 0px;
+    color: var(--colorFontBasic);
+    background: #ffffff;
 }
 
 .art2_2 .progress .card img {
-    width: 100%;
-    height: 150px;
+    max-width: 100%;
+    border: 5px solid #ffffff
 }
 
-.art2_2 .progress .ico_bl {
-    font-weight: 700;
-    font-size: 3.0rem;
-    line-height: 150px;
-    margin: 30px 0 0;
-    color: var(--colorFontBasic);
+.art2_2 .swiper-pagination-bullet {
+    display: none;
 }
 
 /* 국내 대장암 발생 및 사망 통계 */
-.art2_3 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art2_3 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
 .art2_3 .graphcard {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    width: 100%;
+    gap: 80px;
 }
 
 .art2_3 .graphcard .card {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 65%;
     padding: 30px;
     background: #FFFFFF;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
 
 .art2_3 .graphcard .card:hover {
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 .art2_3 .graphcard .card:nth-child(2) {
@@ -664,11 +668,14 @@ header .gnb a.c.on{
 }
 
 .art2_3 .graphcard .card img {
-    height: 400px;
-    object-fit: contain;
     margin: 0 0 30px;
     background: var(--colorTable);
     border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.art2_3 .graphcard .card h4 {
+    text-align: left;
 }
 
 .art2_3 .graphcard .card h4 > span {
@@ -677,17 +684,18 @@ header .gnb a.c.on{
 
 .art2_3 .graphcard .card > p {
     text-align: left;
+    line-height: normal;
     margin: 20px 0;
 }
 
 .art2_3 .graphcard .sourceBox {
     display: flex;
+    align-items: center;
 }
 
 .art2_3 .graphcard .sourceBox > div {
     font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 30px;
+    font-size: 1.2rem;
     padding: 5px 15px;
     margin: 0 10px 0 0;
     color: var(--colorFontWhite);
@@ -695,45 +703,20 @@ header .gnb a.c.on{
 }
 
 .art2_3 .graphcard .sourceBox > p {
-    line-height: 40px;
     color: #808080;
+}
+
+.art2_3 .graphcard .sourceBox > p > a {
+    display: inline-block;
 }
 
 .art2_3 .graphcard .sourceBox > p:hover {
     color: var(--colorRed);
 }
 
-
 /* tab Content - tab03 */
 /* 대장암의 증상 */
-.art3_1 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art3_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
-.art3_1 .content > p:nth-of-type(1) {
-    margin: 10px 0 0;
-}
-
-.art3_1 .content > p:nth-of-type(3) {
-    margin: 20px 0 0;
-}
-
-.art3_1 .content > p:nth-of-type(3) span {
+.art3_1 .content > p:nth-of-type(2) span {
     font-weight: 500;
     color: var(--colorRed);
 }
@@ -743,31 +726,12 @@ header .gnb a.c.on{
 }
 
 .art3_1 .table_content {
-    margin: 30px 0;
+    width: 80%;
+    padding: 30px 0;
 }
 
 .art3_1 .table_content table {
     position: relative;
-}
-
-.art3_1 .table_content table::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
-}
-
-.art3_1 .table_content table::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    right: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
 }
 
 .art3_1 .table_content colgroup col {
@@ -799,52 +763,58 @@ header .gnb a.c.on{
     margin: 5px 0;
 }
 
-
 /* 대장암의 병기 */
 .art3_2 .backTitle {
-    height: 300px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/PROJECT/img/드림프로젝트/sub2page/tab3_background.png) no-repeat 0% 74% / cover;
 }
 
 .art3_2 .backTitle .inner {
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
-    padding: 0 0 50px;
-    gap: 30px;
 }
 
-.art3_2 .backTitle .title h2,
-.art3_2 .backTitle strong,
 .art3_2 .backTitle p {
+    font-weight: 500;
     text-align: left;
     color: var(--colorFontWhite);
 }
 
-.art3_2 .backTitle .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
+.art3_2 .backTitle p > span {
     display: block;
-    background: var(--colorRed);
-    position: absolute;
+    font-weight: 400;
+}
+
+.art3_2 .backTitle .title::after {
     left: 0%;
     bottom: 0%;
+    transform: translate(0%, 0%);
 }
 
 .art3_2 > .inner {
+    flex-direction: column;
     padding: 60px 0;
 }
 
+.art3_2 > .inner > p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 0 0 0 25px;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/square00.png) no-repeat;
+}
+
+.art3_2 > .inner .content {
+    display: flex;
+    margin: 15px 0 0;
+}
+
 .art3_2 > .inner img {
-    width: 50%;
-    object-fit: cover;
-    object-position: 62% 0%;
+    max-width: 50%;
 }
 
 .art3_2 > .inner .right {
-    flex: 1 1 50%;
-    padding: 0 0 0 30px;
+    width: 50%;
+    padding: 0 0 0 20px;
+    margin: auto;
 }
 
 .art3_2 > .inner .right p {
@@ -855,53 +825,38 @@ header .gnb a.c.on{
     margin: 30px 0 0;
 }
 
+.art3_2 > .inner .textBox:nth-child(1) {
+    margin: 0;
+}
+
 .art3_2 > .inner .textBox > strong {
     font-size: 1.25rem;
     line-height: 30px;
     color: var(--colorFontBasic);
+    padding: 0 0 0 25px;
 }
 
-.art3_2 > .inner .textBox > strong,
 .art3_2 > .inner .textBox > p {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 25px;
 }
 
 .art3_2 > .inner .textBox:nth-of-type(1) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square1.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square1.png) no-repeat;
 }
 
 .art3_2 > .inner .textBox:nth-of-type(2) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square2.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square2.png) no-repeat;
 }
 
 .art3_2 > .inner .textBox:nth-of-type(3) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square3.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square3.png) no-repeat;
 }
 
 .art3_2 > .inner .textBox:nth-of-type(4) > strong {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square4.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/number_square4.png) no-repeat;
 }
 
 /* 병기에 따른 대장암의 분류 */
-.art3_3 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art3_3 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
 .art3_3 .content {
     width: 670px
 }
@@ -920,11 +875,10 @@ header .gnb a.c.on{
 .art3_3 .tabButton {
     cursor: pointer;
     display: inline-block;
-    height: 30px;
-    padding: 0px 20px;
+    height: auto;
     font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 28px;
+    font-size: 1.2rem;    
+    padding: 3px 20px;
     color: var(--colorFontBasic);
     background-color: var(--colorSky);
     border-radius: 5px;
@@ -936,7 +890,7 @@ header .gnb a.c.on{
 }
 
 .art3_3 .tab-content {
-    margin: 20px 0 0;
+    margin: 25px 0 0;
 }
 
 .art3_3 .tabBox {
@@ -955,54 +909,31 @@ header .gnb a.c.on{
     display: block;
 }
 
+.art3_3 .source {
+    margin: 0;
+}
+
 /* tab Content - tab04 */
 /* 대장암 치료방법 */
-.art4_1 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art4_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
-.art4_1 .content h4 {
-    text-align: center;
-}
-
+.art4_1 .content,
 .art4_1 .treatment {
-    display: flex;
-    margin: 50px 0 0 0;
-    gap: 10%;
+    width: 100%;
 }
 
-.art4_1 .treatment .left,
-.art4_1 .treatment .right {
-    flex: 1 1 45%;
-}
-
-.art4_1 .treatment .left .card {
-    margin: 0 0 100px 0;
-}
-
-.art4_1 .treatment .right .card {
-    margin: 100px 0 0 0;
+.art4_1 .swiper-wrapper {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 5px;
+    margin: 40px 0 0 0;
 }
 
 .art4_1 .treatment .card {
+    flex: 1 1 45%;
     position: relative;
     padding: 30px;
     background: #ffffff;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     transform: translate(0, 0);
     transition: all 0.3s;
 }
@@ -1012,101 +943,62 @@ header .gnb a.c.on{
     transition: all 0.3s;
 }
 
-
 .art4_1 .treatment .card img {
     width: 100%;
     object-fit: cover;
 }
 
-.art4_1 .treatment .card > p {
-    text-align: left;
-    margin: 30px 0 0;
+.art4_1 .treatment .method {
+    margin-top: -25px;
 }
 
-.art4_1 .treatment .method {
+.art4_1 .treatment .method > p:first-child {
     display: inline-block;
-    position: absolute;
-    left: 60px;
-    bottom: 31%;
     padding: 5px 20px;
+    margin-left: 20px;
+    color: var(--colorFontWhite);    
     background: var(--colorRed);
 }
 
-.art4_1 .treatment .method > p {
+.art4_1 .treatment .method > p:last-child {
     text-align: left;
-    color: var(--colorFontWhite);
+    margin-top: 20px;
 }
 
+.art4_1 .swiper-pagination-bullet {
+    display: none;
+}
 
 /* 병기에 따른 치료 방법 */
-.art4_2 .inner {
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    gap: 40px;
-}
-
-.art4_2 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
 .art4_2 .content h4 > span {
     color: var(--colorRed);
 }
 
-.art4_2  .table_content{
-    margin: 40px 0;
+.art4_2 .table_content{
+    width: 80%;
+    padding: 40px 0;
 }
 
 .art4_2 .table_content table {
     position: relative;
 }
 
-.art4_2 .table_content table::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
-}
-
-.art4_2 .table_content table::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    right: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
-}
-
 .art4_2 .table_content table .c1 {
-    width: 30%;
+    width: 20%;
 }
 
 .art4_2 .table_content table .c2 {
-    width: 70%;
+    width: 80%;
 }
 
-.art4_2 .table_content table th {
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 30px;
-    text-align: center;
+.art4_2 .table_content table th,
+.art4_3 .table_content table th {
     padding: 10px 0;
     background: var(--colorTable);
 }
 
-.art4_2 .table_content table td {
+.art4_2 .table_content table td,
+.art4_3 .table_content table td {
     padding: 15px 0;
     font-size: 1.125rem;
     line-height: 25px;
@@ -1116,32 +1008,22 @@ header .gnb a.c.on{
 
 /* 대장암의 예후 */
 .art4_3 .backTitle {
-    height: 300px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/PROJECT/img/드림프로젝트/sub2page/tab4_background.png) no-repeat 0% 58% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/PROJECT/img/드림프로젝트/sub2page/tab4_background.png) no-repeat 0% 58% / cover;
 }
 
 .art4_3 .backTitle .inner {
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-end;
-    padding: 0 0 50px;
-    gap: 30px;
 }
 
 .art4_3 .backTitle .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
+    left: inherit;
     right: 0%;
     bottom: 0%;
+    transform: translate(0%, 0%);
 }
 
-.art4_3 .backTitle .title h2,
 .art4_3 .backTitle strong {
-    color: var(--colorFontWhite);
+    text-align: right;
 }
 
 .art4_3 > .inner {
@@ -1154,7 +1036,8 @@ header .gnb a.c.on{
     white-space: pre-line;
 }
 
-.art4_3 > .inner h4 span {
+.art4_3 > .inner span,
+.art4_3 > .inner strong {
     color: var(--colorRed);
 }
 
@@ -1163,40 +1046,13 @@ header .gnb a.c.on{
     margin: 10px 0 0;
 }
 
-.art4_3 > .inner > p:nth-of-type(2) {
-    white-space: pre-line;
-}
-
-.art4_3 > .inner > p:nth-of-type(3) {
-    margin: 20px 0 0;
-} 
-
 .art4_3 .table_content {
-    margin: 40px 0;
+    width: 100%;
+    padding: 40px 0;
 }
 
 .art4_3 .table_content table {
     position: relative;
-}
-
-.art4_3 .table_content table::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
-}
-
-.art4_3 .table_content table::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    right: -1px;
-    top: 0;
-    background: var(--colorFontWhite);
 }
 
 .art4_3 .table_content table .c1 {
@@ -1207,26 +1063,8 @@ header .gnb a.c.on{
     width: 10%;
 }
 
-.art4_3 .table_content table th {
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 30px;
-    text-align: center;
-    padding: 10px 0;
-    background: var(--colorTable);
-}
-
 .art4_3 .table_content tbody tr:nth-child(2) > th {
     color: var(--colorFontBlack);
-}
-
-
-.art4_3 .table_content table td {
-    padding: 15px 0;
-    font-size: 1.125rem;
-    line-height: 25px;
-    text-align: center;
-    color: var(--colorFontBasic)
 }
 
 .art4_3 .table_content table .img_c {
@@ -1235,22 +1073,22 @@ header .gnb a.c.on{
 }
 
 .art4_3 .table_content table .img_c:nth-of-type(1) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률1.png) no-repeat 45% 0% / auto;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률1.png) no-repeat 50% 0% / contain;
 }
 
 .art4_3 .table_content table .img_c:nth-of-type(2) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률2.png) no-repeat 50% 0% / auto;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률2.png) no-repeat 50% 0% / contain;
 }
 
 .art4_3 .table_content table .img_c:nth-of-type(3) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률3.png) no-repeat 50% 0% / auto;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률3.png) no-repeat 50% 0% / contain;
 }
 .art4_3 .table_content table .img_c:nth-of-type(4) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률4.png) no-repeat 50% 0% / auto;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률4.png) no-repeat 50% 0% / contain;
 }
 
 .art4_3 .table_content table .img_c:nth-of-type(5) {
-    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률5.png) no-repeat 55% 0% / auto;
+    background: url(/PROJECT/img/드림프로젝트/sub2page/대장암의_병기별_생존률5.png) no-repeat 50% 0% / contain;
 }
 
 /* footer */

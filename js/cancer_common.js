@@ -42,6 +42,3 @@ window.onload = function () {
     let currentYear = date.getFullYear();
     copyRight.innerHTML = `All Right Researved <a href="https://giendo.or.kr/KSDE4.0/main/" target="_blank">대한위대장내시경학회</a> @${currentYear}`;
 };
-
-
-

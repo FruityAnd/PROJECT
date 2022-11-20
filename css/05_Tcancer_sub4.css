@@ -53,6 +53,10 @@ p {
     margin: 7px 0 0;
 }
 
+.text-hide {
+    display: none;
+}
+
 .art1_1 .inner,
 .art2_1 .inner,
 .art2_2 > .inner,
@@ -66,6 +70,10 @@ p {
 }
 
 /* main header */
+header {
+    position: fixed;
+}
+
 header .logo {
     width: 90px;
     height: 45px;
@@ -87,7 +95,7 @@ header .gnb {
     padding: 50px 20px;
     width: 100%;
     height: 100vh;
-    background-color: rgba(221, 69, 79, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     transform: translateX(100%);
     transition: transform 0.5s;
 }
@@ -103,18 +111,19 @@ header .gnb li {
     padding: 15px;
 }
 
+
 header .gnb a.c {
     font-size: 1.8rem;
-    color: var(--colorFontWhite);
-}
-
-header .gnb a.c:hover {
     color: var(--colorFontBlack);
 }
 
 /* sub page: title */
+.sec01 {
+    margin-top: 45px;
+}
+
 .sec01 .inner {
-    padding: 40px 0;
+    padding: 35px 0;
 }
 
 .sec01 .inner p {
@@ -128,6 +137,7 @@ header .gnb a.c:hover {
 
 /* sub page: tab */
 .sec02 .tabButton {
+    position: inherit;
     height: 35px;
 }
 
@@ -144,50 +154,60 @@ header .gnb a.c:hover {
     gap: 0;
 }
 
-.art1_1 .destorySwiper .slide_card{
+.art1_1 .slide_card{
     flex: none;
 }
 
-.art1_1 .destorySwiper .slide_card > img {
+.art1_1 .slide_card > img {
     width: 100%;
 }
 
-.art1_1 .destorySwiper .slide_card dl {
+.art1_1 .slide_card dl {
     padding: 0 20px 15px;
 }
 
-.art1_1 .destorySwiper .slide_card dt {
-    font-size: 1.1rem;
+.art1_1 .slide_card dt {
+    font-size: 1.15rem;
     line-height: 25px;
 }
 
-.art1_1 .destorySwiper .slide_card dd {
+.art1_1 .slide_card dd {
     font-size: 1rem;
     line-height: normal;
 }
 
-.art1_1 .destorySwiper .slide_card dd.hidden {
-    display: none;
-}
-
-.art1_1 .destorySwiper .slide_card dd::before {
+.art1_1 .slide_card dd::before {
     width: 5px;
     height: 5px;
 }
 
 .art1_1 .swiper-pagination-bullet {
     display: inline-block;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 17px;
+    color: var(--colorFontBasic);
+    opacity: 1;
+    background-color: var(--colorSky);
 }
 
-.art1_1 .swiper-horizontal > .swiper-pagination-bullets,
+.art1_1 .swiper-pagination-bullet-active {
+    color: #fff;
+    background-color: var(--colorRed);
+}
+
+.art1_1 .swiper-horizontal>.swiper-pagination-bullets,
 .art1_1 .swiper-pagination-bullets.swiper-pagination-horizontal,
-.art1_1 .swiper-pagination-custom, 
+.art1_1 .swiper-pagination-custom,
 .art1_1 .swiper-pagination-fraction {
     position: relative;
     bottom: 0px;
+    margin: 5px 0 0;
 }
 
-.art1_1 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.art1_1 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .art1_1 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 10px;
 }
@@ -198,7 +218,7 @@ header .gnb a.c:hover {
     font-size: 1.3rem;
 }
 
-.art2_1 .ranking {
+.art2_1 .ranking .swiper-wrapper {
     margin: 60px 0 0;
 }
 
@@ -207,11 +227,8 @@ header .gnb a.c:hover {
 }
 
 .art2_1 .ranking .r_card span {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
+    padding: 4px 8px;
     font-size: 1rem;    
-    line-height: 30px;
 }
 
 .art2_1 .ranking .r_card p {
@@ -232,7 +249,7 @@ header .gnb a.c:hover {
 }
 
 .art2_2 .table_content table th {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: normal;
 }
 
@@ -244,9 +261,10 @@ header .gnb a.c:hover {
 
 /* 암검진 미수검 이유 */
 .art2_3 .chart-container {
-    width: 85%;
-    height: 400px;
-    padding: 20px 25px 40px;
+    width: 90%;
+    height: 45%;
+    padding: 20px 25px 20px;
+    margin: 30px auto;
 }
 
 /* 주변 검진기관 찾기 */
@@ -255,7 +273,11 @@ header .gnb a.c:hover {
 }
 
 .art2_4 .inner {
-    padding: 15px 0px;
+    padding: 10px 0px;
+}
+
+.art2_4 .title h2{
+    font-size: 1.9rem;
 }
 
 .art2_4 .bubble {

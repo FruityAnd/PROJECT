@@ -161,28 +161,25 @@ header .gnb a.c.on{
 .sec01 .slideBanner img {
     display: block;
     width: 100%;
-    max-height: 700px;
-    object-fit: contain;
 }
 
-/* 화살표 커스텀 */
-.sec01 .slideBanner .swiper-button-next::after,
-.sec01 .slideBanner .swiper-button-prev::after {
-    display: none;
-}
-
-/* pagination 변경 */
 .sec01 .slideBanner .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: var(--colorRed);
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, 
-.swiper-pagination-bullets.swiper-pagination-horizontal, 
-.swiper-pagination-custom, .swiper-pagination-fraction {
-    /* position: relative; */
-    bottom: 0;
+.sec01 .slideBanner .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 10px;
+    background-color: var(--colorSky);
+}
+
+.sec01 .swiper-horizontal > .swiper-pagination-bullets, 
+.sec01 .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.sec01 .swiper-pagination-custom, 
+.sec01 .swiper-pagination-fraction {
+    bottom: 3px;
 }
 
 /* Dream Project */
@@ -281,6 +278,7 @@ header .gnb a.c.on{
     height: 100%;
     flex-direction: column;
     padding: 80px 0;
+    gap: 60px;
 }
 
 .sec03 .title {
@@ -293,7 +291,6 @@ header .gnb a.c.on{
 .title .jumping_dots {
     font-style: normal;
 }
-
 
 .title .jumping_dots > span {
     position: relative;
@@ -344,28 +341,25 @@ header .gnb a.c.on{
 
 .sec03 .ageCard {
     display: flex;
-    margin: 60px 0 0;
+    width: 100%;
+}
+
+.sec03 .swiper-wrapper {
+    padding: 5px 0;
 }
 
 .sec03 .ageCard a {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 33.33%;
+    width: 30%;
     padding: 25px 20px;
-    margin-right: 5%;
+    margin: auto;
     background: #ffffff;
     border-radius: 15px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.sec03 .ageCard a:nth-child(3) {
-    margin-right: 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 .sec03 .ageCard img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;   
+    width: 100%;
+    border-radius: 15px;
     background: var(--colorSky);
 }
 
@@ -385,6 +379,10 @@ header .gnb a.c.on{
     text-align: center;
     white-space: pre-line;
     color: var(--colorFontBasic);
+}
+
+.sec03 .swiper-pagination-bullet {
+    display: none;
 }
 
 /* 대장암 예방방법 */

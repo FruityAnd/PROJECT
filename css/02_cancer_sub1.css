@@ -84,6 +84,18 @@ i > span {
     padding: 0 0 20px;
 }
 
+.title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
 h1 {
     font-weight: 700;
     font-size: 3rem;
@@ -109,6 +121,15 @@ h4 {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 30px;
+}
+
+.art1_1 .inner,
+.art1_2 .inner,
+.art1_3 .inner,
+.art2_1 .inner {
+    flex-direction: column;
+    padding: 60px 0;
+    gap: 40px;
 }
 
 /*main header*/
@@ -163,8 +184,7 @@ header .gnb a.c.on{
 
 /* sub page: title */
 .sec01 {
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/PROJECT/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 0% 58% / cover; */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/PROJECT/img/드림프로젝트/sub1page/sub1_title1.png) no-repeat 0% 58% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/PROJECT/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 0% 58% / cover;
 }
 
 .sec01 .inner {
@@ -252,37 +272,21 @@ header .gnb a.c.on{
 /* tab Content - tab01 */
 /* DREAM project? */
 .art1_1 .inner {
-    flex-direction: column;
     align-items: center;
-    padding: 50px 0 70px 0;
-    gap: 50px;
-}
-
-.art1_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
 }
 
 .art1_1 .content {
-    width: 100%;
     display: flex;
-    position: relative;
+    justify-content: center;
+    width: 100%;
 }
 
 .art1_1 .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 1 75%;
-    height: 100%;
-    padding: 60px 50px;
+    width: 70%;
+    padding: 50px;
     background: var(--colorRed);
 }
 
@@ -292,8 +296,8 @@ header .gnb a.c.on{
 }
 
 .art1_1 .left p:nth-child(1) {
-    font-size: 1.6875rem;
-    line-height: 37px;
+    font-size: 1.7rem;
+    line-height: normal;
 }
 
 .art1_1 .left p:nth-child(1) span {
@@ -301,7 +305,7 @@ header .gnb a.c.on{
 }
 
 .art1_1 .left p:nth-child(2) {
-    margin: 50px 0 15px;
+    margin: 30px 0 15px;
 }
 
 .art1_1 .left p:nth-child(2),
@@ -310,31 +314,11 @@ header .gnb a.c.on{
     line-height: 27px;
 }
 
-.art1_1 .right {
-    flex: 1 1 25%;
-    height: 100%;
-}
-
-.art1_1 .right .sprout {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub1page/sprout.png) no-repeat 50% 50% / cover;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-indent: -1000px;
-    overflow: hidden;
-}
-
 .art1_1 img {
-    width: 350px;
-    height: 300px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute; 
-    top: 75px;
-    right: 65px;
+    width: auto;
+    margin: auto 0;
+    margin-left: -100px;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 0.25);
 }
 
 /* 대장암 예방법 'DREAM' */
@@ -343,10 +327,7 @@ header .gnb a.c.on{
 }
 
 .art1_2 .inner {
-    flex-direction: column;
     justify-content: space-between;
-    padding: 50px 0;
-    gap: 40px;
 }
 
 .art1_2 .inner h3 > span {
@@ -354,61 +335,58 @@ header .gnb a.c.on{
     font-weight: 600;
 }
 
-.art1_2 .dream div {
+.art1_2 .dream {
     display: flex;
-    margin: 0 0 20px;
+    flex-direction: row;
 }
 
-.art1_2 .dream div:last-child {
-    margin: 0;
+.art1_2 .dream-title,
+.art1_2 .dream-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.art1_2 .dream div dt {
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 66px;
-    text-align: center;
-    color: var(--colorFontWhite);
+.art1_2 .dream-title {
+    padding: 0 25px 0 20px; 
+}
+
+.art1_2 .dream-title .tabButton {
     width: 70px;
     height: 70px;
-    border-radius: 25px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 65px;
+    text-align: center;
+    color: var(--colorFontWhite);
+    border-radius: 20px;
     background: var(--colorRed);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0 40px 0 0;
-    transform: scale(1);
-    transition: all 0.3s ease-out;
-    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-.art1_2 .dream div dt:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease-out;
+.art1_2 .dream-content p {
+    display: inline-block;
 }
 
-.art1_2 .dream div dd {
+.art1_2 .dream-content .tabBox > p:first-child {
     font-weight: 600;
+    font-size: 2rem;
     line-height: 70px;
 }
 
-.art1_2 .dream div dd > span {
+.art1_2 .dream-content p > span {
     color: var(--colorRed);
 }
 
-.art1_2 .dream div dd:nth-child(2) {
-    font-size: 2rem;
-    margin: 0 15px 0 0;
-}
-
-.art1_2 .dream div dd:nth-child(3) {
+.art1_2 .translation {
     font-size: 1.5rem;
     color: var(--colorFontBasic);
+    margin-left: 10px;
 }
 
 /* 모두에게 적용되는 프로젝트 */
 .art1_3 .inner {
-    flex-direction: column;
-    padding: 50px 0;
-    gap: 60px;
+    gap: 50px;
 }
 
 .art1_3 .inner h3 {
@@ -424,36 +402,31 @@ header .gnb a.c.on{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 150px;
-    margin: 0 0 10px 0;
     gap: 80px;
+    padding: 0 150px;
+    margin-bottom: 10px;
 }
 
 .art1_3 .content li {
     display: flex;
     align-items: center;
-    gap: 15%;
+    gap: 10%;
 }
 
 .art1_3 .content li img {
-    width: 25%;
-    height: 250px;
+    width: auto;
     border-radius: 15px;
     background: var(--colorSky);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transform: scale(1);
     transition: all 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .art1_3 .content li img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.3s ease-in-out;
 }
 
-.art1_3 .content li dl {
-    flex: 1 1 60%;
-}
 .art1_3 .content li dl > dt {
     font-weight: 700;
     font-size: 2rem;
@@ -469,34 +442,25 @@ header .gnb a.c.on{
 }
 
 .art1_3 .content li dl > dd:nth-child(2) {
+    font-weight: 500;
     margin: 0 0 10px;
 }
 
 /* 로고 및 캐릭터 */
 .art2_1 .inner {
-    flex-direction: column;
     align-items: center;
-    padding: 50px 0;
 }
 
-.art2_1 .inner .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
+.art2_1 .ico_bl {
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .art2_1 ul {
     display: flex;
     flex-direction: column;
-    gap: 60px 0;
-    width: 100%;
-    margin: 50px 0;
+    width: 90%;
+    gap: 60px;
 }
 
 .art2_1 ul li {
@@ -504,10 +468,10 @@ header .gnb a.c.on{
 }
 
 .art2_1 ul li:nth-child(2) {
-    margin: 50px 0 0;
+    padding: 50px 0 0;
 }
 
-.art2_1 ul li:nth-child(1)::after,
+.art2_1 ul li:nth-child(2)::before,
 .art2_1 ul li:nth-child(2)::after {
     content: "";
     width: 100%;
@@ -515,20 +479,21 @@ header .gnb a.c.on{
     display: block;
     background: #D2D2D2;
     position: absolute;
+}
+
+.art2_1 ul li:nth-child(2)::before {
+    left: 0%;
+    top: 0%;
+}
+
+.art2_1 ul li:nth-child(2)::after {
     left: 0%;
     bottom: 0%;
 }
 
-.art2_1 ul li:nth-child(1)::after {
-    position: absolute;
-    left: 0;
-    bottom: -60px;
-}
-
 .art2_1 ul li h4 {
     font-weight: 500;
-    font-size: 1.875rem;
-    line-height: 41px;
+    font-size: 1.8rem;
 }
 
 .art2_1 ul li:nth-child(1) h4,
@@ -539,20 +504,34 @@ header .gnb a.c.on{
 .art2_1 ul li p {
     font-size: 1.25rem;
     line-height: 30px;
-    white-space: pre-line;
+    padding-left: 15px;
     color: var(--colorFontBasic);
+    position: relative;
+}
+
+.art2_1 ul li p::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--colorRed);
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    transform: translate(-50%, -50%);
 }
 
 .art2_1 .color {
     display: flex;
+    gap: 7%;
     padding: 30px 0 50px;
 }
 
 .art2_1 .color > span {
     flex: 1 1 50%;
-    height: 200px;
     font-weight: 700;
-    font-size: 1.875rem;
+    font-size: 1.8rem;
     line-height: 200px;
     text-align: center;
     color: var(--colorFontWhite);
@@ -561,12 +540,10 @@ header .gnb a.c.on{
 
 .art2_1 .color > span:nth-child(1) {
     background: #A0C9AF;
-    margin: 0 50px 0 0;
 }
 
 .art2_1 .color > span:nth-child(2) {
     background: var(--colorRed);
-    margin: 0 0 0 50px;
 }
 
 .art2_1 .design {
@@ -574,34 +551,19 @@ header .gnb a.c.on{
     flex-direction: column;
 }
 
-.art2_1 .design > img {
-    height: 400px;
-}
-
-.art2_1 ul li:nth-child(1) .design img {
-    object-fit: contain;
-    object-position: 50% 50%;
-}
-
-.art2_1 ul li:nth-child(3) .design img {
-    object-fit: cover;
-    object-position: 50% 22%;
-}
-
-.art2_1 ul li:nth-child(1) .design img, 
-.art2_1 ul li:nth-child(3) .design img {
+.art2_1 ul .design img {
+    width: auto;
     margin: 30px 0;
 }
 
 .art2_1 .design > a {
     align-self: center;
-    padding: 5px 25px;
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 34px;
-    text-align: center;
+    padding: 5px 15px;
+    font-weight: 500;
+    font-size: 1.3rem;
     color: var(--colorRed);
     border: 1px solid var(--colorRed);
+    border-radius: 10px;
 }
 
 .art2_1 .design > a:hover {

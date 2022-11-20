@@ -84,6 +84,18 @@ i > span {
     padding: 0 0 20px;
 }
 
+.title::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    display: block;
+    background: var(--colorRed);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0%);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -146,18 +158,6 @@ p {
     margin: 10px 0 0;
 }
 
-.title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
 /*main header*/
 header {
     height: 45px;
@@ -210,7 +210,7 @@ header .gnb a.c.on{
 
 /* sub page: title */
 .sec01 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/PROJECT/img/드림프로젝트/sub4page/sub4_title.png) no-repeat 0% 15% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/PROJECT/img/드림프로젝트/sub4page/sub4_title.png) no-repeat 0% 15% / cover;
 }
 
 .sec01 .inner {
@@ -312,7 +312,7 @@ header .gnb a.c.on{
 }
 
 /* swiper: slide card */
-.art1_1 .destorySwiper {
+.art1_1 .destorySwiper2 {
     margin: 30px 0 0;
 }
 
@@ -322,16 +322,16 @@ header .gnb a.c.on{
     gap: 50px;
 }
 
-.art1_1 .destorySwiper .slide_card{
+.art1_1 .slide_card{
     flex: 1 1 45%;
     position: relative;
 }
 
-.art1_1 .destorySwiper .slide_card > img {
+.art1_1 .slide_card > img {
     width: 100%;
 }
 
-.art1_1 .destorySwiper .slide_card > .c_gradient {
+.art1_1 .slide_card > .c_gradient {
     display: block;
     position: absolute;
     left: 0;
@@ -342,23 +342,23 @@ header .gnb a.c.on{
     overflow: hidden;
 }
 
-.art1_1 .destorySwiper .slide_card:nth-child(1) > .c_gradient {
+.art1_1 .slide_card:nth-child(1) > .c_gradient {
     background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(222, 237, 249, 1) 60%);
 }
 
-.art1_1 .destorySwiper .slide_card:nth-child(2) > .c_gradient {
+.art1_1 .slide_card:nth-child(2) > .c_gradient {
     background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(207, 233, 242, 1) 60%);
 }
 
-.art1_1 .destorySwiper .slide_card:nth-child(3) > .c_gradient {
+.art1_1 .slide_card:nth-child(3) > .c_gradient {
     background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(219, 209, 210, 1) 60%);
 }
 
-.art1_1 .destorySwiper .slide_card:nth-child(4) > .c_gradient {
+.art1_1 .slide_card:nth-child(4) > .c_gradient {
     background: linear-gradient(180deg, rgba(64,86,45,0) 0%, rgba(225, 194, 185, 1) 60%);
 }
 
-.art1_1 .destorySwiper .slide_card dl {
+.art1_1 .slide_card dl {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -367,16 +367,16 @@ header .gnb a.c.on{
     padding: 0 30px 25px;
 }
 
-.art1_1 .destorySwiper .slide_card dt {
+.art1_1 .slide_card dt {
     font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 30px;
+    font-size: 1.4rem;
+    line-height: 35px;
     letter-spacing: -0.5px;
     color: var(--colorFontBasic);
 }
 
-.art1_1 .destorySwiper .slide_card dd {
-    font-size: 1.125rem;
+.art1_1 .slide_card dd {
+    font-size: 1.2rem;
     line-height: 25px;
     color: #525252;
     padding: 0 0 0 15px;
@@ -384,7 +384,7 @@ header .gnb a.c.on{
     position: relative;
 }
 
-.art1_1 .destorySwiper .slide_card dd::before {
+.art1_1 .slide_card dd::before {
     display: inline-block;
     content: "";
     width: 6px;
@@ -410,18 +410,6 @@ header .gnb a.c.on{
     gap: 40px;
 }
 
-.art2_1 .title::after {
-    content: "";
-    width: 40px;
-    height: 5px;
-    display: block;
-    background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
-}
-
 .art2_1 .content {
     width: 100%;
 }
@@ -437,15 +425,14 @@ header .gnb a.c.on{
     color: var(--colorRed);
 }
 
-.art2_1 .ranking {
+.art2_1 .ranking .swiper-wrapper {
     margin: 80px 0 0;
-    display: flex;
 }
 
 .art2_1 .ranking .r_card {
     width: 30%;
     padding: 20px;
-    margin: 0 auto;
+    margin: 0 auto 5px auto;
     position: relative;
     border-radius: 15px;
     background: var(--colorLightpink);
@@ -453,34 +440,38 @@ header .gnb a.c.on{
 }
 
 .art2_1 .ranking .r_card:nth-child(2) {
-    transform: translateY(-35px);
+    transform: translateY(-40px);
 }
 
 .art2_1 .ranking .r_card img {
     width: 100%;
-    margin: 0 0 15px 0;
     border-radius: 10px;
     box-shadow: 1px 1px 4px rgb(0 0 0 / 10%);
 }
 
+.art2_1 .ranking .r_card > div {
+    margin-top: -20px;
+}
+
 .art2_1 .ranking .r_card span {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
+    display: inline-block;
     font-weight: 600;
     font-size: 1.25rem;
-    line-height: 40px;
-    text-align: center;
+    padding: 5px 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
     color: var(--colorFontWhite);
     background: var(--colorRed);
-    position: absolute;
-    left: 50%;
-    bottom: 25%;
-    transform: translate(-50%, -0%);
 }
 
 .art2_1 .ranking .r_card h4 {
     text-align: center;
+    margin-top: 5px;
+}
+
+.art2_1 .swiper-pagination-bullet {
+    display: none;
 }
 
 /* 대장암 브레이크 */
@@ -514,6 +505,9 @@ header .gnb a.c.on{
 .art2_2 .backTitle p {
     text-align: left;
     white-space: pre-line;
+}
+
+.art2_2 .backTitle p:first-of-type {
     margin: 20px 0 0;
 }
 
@@ -580,7 +574,7 @@ header .gnb a.c.on{
 .art2_2 > .inner > p:nth-of-type(1),
 .art2_3 .content > p:first-of-type {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--colorRed);
 }
 
@@ -600,10 +594,11 @@ header .gnb a.c.on{
 }
 
 .art2_3 .chart-container {
-    width: 80%;
-    height: 500px;
+    /* 가로 : 세로 = 2:1 */
+    width: 900px; 
+    height: 450px;
     margin: 40px auto;
-    padding: 30px 35px 50px;
+    padding: 25px 35px 25px;
     background-color: #fff;
     box-shadow: 1px 1px 8px rgb(0 0 0 / 0.15);
     border-radius: 15px;
@@ -612,13 +607,13 @@ header .gnb a.c.on{
 /* 주변 검진기관 찾기 */
 .art2_4 {
     height: 350px;
-    background: #DDF3FF url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat 49% 50% / contain;
+    background: #DDF3FF url(/PROJECT/img/드림프로젝트/sub1page/search.png) no-repeat 50% 50% / contain;
 }
 
 .art2_4 .inner {
     flex-direction: column;
     align-items: center;
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 .art2_4 .title {
@@ -627,6 +622,10 @@ header .gnb a.c.on{
 
 .art2_4 .title::after {
     display: none;
+}
+
+.art2_4 .title h2{
+    font-size: 2.3rem;
 }
 
 .art2_4 .bubble {

@@ -92,19 +92,20 @@ chartData.onreadystatechange = function () {
                 maintainAspectRatio: false,
                 // aspectRatio: 1, // canvas요소 부모에 사이즈 지정할때
                 // responsive: false, //canvas요소 본인에 사이즈 지정할때
-                // plugins: {
-                //     legend: {
-                //        labels: {
-                //             usePointStyle: true,
-                //        },
-                //     }
-                // },
+                plugins: {
+                    legend: {
+                        labels : {
+                            usePointStyle: true,
+                            pointStyle: 'rect'
+                        }
+                    }
+                },
                 elements: {
                     line: {
                         tension: 0.1 //line 곡선의 정도(직선은 0)
                     },
                     point: {
-                        borderWidth: 4, //point점의 너비
+                        borderWidth: 2, //point점의 너비
                         pointHoverBackgroundColor: '#ffffff',
                         pointHoverBorderWidth: 4
                     }
@@ -120,11 +121,11 @@ chartData.onreadystatechange = function () {
                     }
                 },
                 animation: {
-                    duration: 1000
+                    duration: 500
                 }
             }
         });
-        console.log(myChart)
+        // console.log(myChart)
     }
 };
 

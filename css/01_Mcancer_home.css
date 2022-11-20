@@ -37,6 +37,16 @@ header .more_bt {
 
 header .gnb {
     top: 35px;
+    padding: 30px 20px;
+}
+
+header .gnb li {
+    margin: 0;
+    padding: 10px;
+}
+
+header .gnb a.c {
+    font-size: 1.4rem;
 }
 
 header .logo {
@@ -99,16 +109,14 @@ header .logo {
     100% {margin-top:-330px;}
 }
 
-/* swiper slide */
-.sec01 .slideBanner .swiper-pagination-bullet {
-    width: 5px;
-    height: 5px;
-}
-
 /* 성별 나이 상관없는 전국민 프로젝트 */
 .sec03 .inner,
 .sec04 .inner {
     padding: 30px 0;
+}
+
+.sec03 .inner {
+    gap: 25px;
 }
 
 .sec03 .title {
@@ -122,20 +130,12 @@ header .logo {
 }
 
 .sec03 .ageCard {
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 0 0;
+    padding: 0 0 15px;
 }
 
 .sec03 .ageCard a {
-    max-width: 200px;
     padding: 15px;
-    margin-right: 0;
-    margin-bottom: 5%;
-}
-
-.sec03 .ageCard a:nth-child(3) {
-    margin-bottom: 0;
+    border-radius: 10px;
 }
 
 .sec03 .ageCard .textBox {
@@ -145,6 +145,11 @@ header .logo {
 .sec03 .ageCard .textBox p {
     font-size: 1rem;
 }
+
+.sec01 .slideBanner .swiper-pagination-bullet {
+    display: none;
+}
+
 /* 대장암 예방방법 */
 .sec04 .prevention {
     gap: 50px;
@@ -250,6 +255,7 @@ header .logo {
 
 .fnb .top .sns .ico_wh {
     font-size: 12px;
+    padding: 4px 8px;
 }
 
 .fnb .top .logo > img {

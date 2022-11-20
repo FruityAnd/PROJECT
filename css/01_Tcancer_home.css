@@ -25,7 +25,6 @@ h3 {
     line-height: normal;
 }
 
-
 /* main header */
 header .logo {
     width: 90px;
@@ -48,7 +47,7 @@ header .gnb {
     padding: 50px 20px;
     width: 100%;
     height: 100vh;
-    background-color: rgba(221, 69, 79, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     transform: translateX(100%);
     transition: transform 0.5s;
 }
@@ -64,13 +63,8 @@ header .gnb li {
     padding: 15px;
 }
 
-
 header .gnb a.c {
     font-size: 1.8rem;
-    color: var(--colorFontWhite);
-}
-
-header .gnb a.c:hover {
     color: var(--colorFontBlack);
 }
 
@@ -119,15 +113,15 @@ header .gnb a.c:hover {
 }
 
 /* swiper slide */
-.sec01 .slideBanner .swiper-pagination-bullet {
-    width: 7px;
-    height: 7px;
-}
 
 /* 성별 나이 상관없는 전국민 프로젝트 */
 .sec03 .inner,
 .sec04 .inner {
     padding: 50px 0;
+}
+
+.sec03 .inner {
+    gap: 40px;
 }
 
 .title .jumping_dots > span::before {
@@ -136,12 +130,8 @@ header .gnb a.c:hover {
     height: 7px;
 }
 
-.sec03 .ageCard {
-    margin: 50px 0 0;
-}
-
 .sec03 .ageCard a {
-    padding: 20px;
+    padding: 20px 15px;
 }
 
 .sec03 .ageCard img {
@@ -167,20 +157,14 @@ header .gnb a.c:hover {
     height: 200px;
 }
 
-.sec04 .prevention li:nth-child(1) .icon {
-    background-size: 60%;
-}
-
-.sec04 .prevention li:nth-child(2) .icon {
+.sec04 .prevention li:nth-child(1) .icon,
+.sec04 .prevention li:nth-child(2) .icon,
+.sec04 .prevention li:nth-child(4) .icon  {
     background-size: 60%;
 }
 
 .sec04 .prevention li:nth-child(3) .icon {
     background-size: 47%;
-}
-
-.sec04 .prevention li:nth-child(4) .icon {
-    background-size: 60%;
 }
 
 .sec04 .prevention .textBox p {
