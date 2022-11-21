@@ -652,7 +652,7 @@ header .gnb a.c.on{
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2) {
-    background: url(/PROJECTimg/드림프로젝트/sub3page/icon_false.png) no-repeat 50% 50% / cover;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false.png) no-repeat 50% 50% / cover;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2):hover {
