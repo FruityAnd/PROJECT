@@ -648,7 +648,7 @@ header .gnb a.c.on{
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1):hover {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat 50% 50% / cover;;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat 50% 50% / cover;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2) {
@@ -656,7 +656,7 @@ header .gnb a.c.on{
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2):hover {
-    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat 50% 50% / cover;;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat 50% 50% / cover;
 }
 
 /* 퀴즈 결과화면 */
