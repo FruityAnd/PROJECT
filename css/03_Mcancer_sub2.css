@@ -28,7 +28,8 @@ body .pageTop {
 }
 
 .table_content {
-    overflow: auto;
+    /* overflow: auto; */
+    overflow: scroll;
 }
 
 .table_content table th {

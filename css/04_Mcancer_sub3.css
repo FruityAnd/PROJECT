@@ -263,7 +263,8 @@ header .logo {
 .art1_2 .table_content {
     width: 100%;
     padding: 20px 0;
-    overflow: auto;
+    /* overflow: auto; */
+    overflow: scroll;
 }
 
 .art1_2 .table_content table th {
