@@ -361,7 +361,7 @@ header .gnb a.c {
 }
 
 /* 병기에 따른 대장암의 분류 */
-.art3_3 .tabButton {
+.art3_3 .tab-button {
     height: auto;
     font-size: 1.1rem;
     padding: 3px 16px;

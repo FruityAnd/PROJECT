@@ -104,12 +104,12 @@ function getTotalScore() {
         quizScore.textContent = `${totalscore}점`;
         resultText1.textContent = `이대로는 안돼요!`;
         resultText2.textContent = `대장암이 무엇인지 처음부터 차근차근 알아볼까요?`;
-        linkButton.innerHTML = `<a href="/PROJECT/html/03_cancer_sub2.html" target="_blank">다시 알아보기</a>`;
+        linkButton.innerHTML = `<a href="/html/03_cancer_sub2.html" target="_blank">다시 알아보기</a>`;
     } else if (40 <= totalscore && 60 >= totalscore) {
         quizScore.textContent = `${totalscore}점`;
         resultText1.textContent = `아쉬워요!`;
         resultText2.textContent = `대장암에 대해 조금 더 알아볼까요?`;
-        linkButton.innerHTML = `<a href="/PROJECT/html/04_cancer_sub3.html" target="_blank">더 알아보기</a>`;
+        linkButton.innerHTML = `<a href="/html/04_cancer_sub3.html" target="_blank">더 알아보기</a>`;
     } else {
         quizScore.textContent = `${totalscore}점`;
         resultText1.textContent = `완벽해요!`;

@@ -22,7 +22,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -154,7 +154,7 @@ header .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
 header .more_bt {
@@ -184,7 +184,7 @@ header .gnb a.c.on{
 
 /* sub page: title */
 .sec01 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/PROJECT/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 0% 58% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/드림프로젝트/sub1page/sub1_title.png) no-repeat 0% 58% / cover;
 }
 
 .sec01 .inner {
@@ -349,9 +349,10 @@ header .gnb a.c.on{
 
 .art1_2 .dream-title {
     padding: 0 25px 0 20px; 
+    z-index: 1;
 }
 
-.art1_2 .dream-title .tabButton {
+.art1_2 .dream-title .tab-button {
     width: 70px;
     height: 70px;
     font-weight: 700;
