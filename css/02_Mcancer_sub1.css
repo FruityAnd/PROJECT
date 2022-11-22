@@ -1,0 +1,323 @@
+/* 공통 */
+body .pageTop {
+    right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.inner {
+    margin: 0 20px;
+}
+
+.title {
+    padding: 0 0 10px;
+}
+
+.title::after {
+    width: 25px;
+    height: 4px;
+}
+
+h1 {
+    font-size: 1.65rem;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 1.35rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.art1_1 .inner,
+.art1_2 .inner,
+.art1_3 .inner,
+.art2_1 .inner {
+    padding: 25px 0;
+    gap: 20px;
+}
+
+.text-hide2 {
+    display: none;
+}
+
+/*main header*/
+header {
+    height: 35px;
+}
+
+header .more_bt {
+    right: 20px;
+}
+
+header .gnb {
+    top: 35px;
+    padding: 30px 20px;
+}
+
+
+header .gnb li {
+    margin: 0;
+    padding: 10px;
+}
+
+header .gnb a.c {
+    font-size: 1.4rem;
+}
+
+header .logo {
+    width: 70px;
+    height: 35px;
+}
+
+/* sub page: title */
+.sec01 {
+    margin-top: 35px;
+}
+
+.sec01 .inner {
+    padding: 20px 0;
+}
+
+.sec01 .inner p {
+    font-size: 1rem;
+}
+
+.sec01 .textBox {
+    font-size: 12px;
+    margin: 10px 0 0;
+}
+
+.sec01 .textBox > span {
+    font-size: 0.9rem;
+}
+
+/* sub page: tab */
+.sec02 .tabButton {
+    height: 25px;
+}
+
+.sec02 .tabButton .inner li h2 {
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 25px;
+}
+
+/* tab Content - tab01 */
+/* DREAM project? */
+.art1_1 .content {
+    flex-direction: column;
+    width: auto;
+}
+
+.art1_1 .left {
+    width: 100%;
+    min-width: auto;
+    padding: 20px;
+}
+
+.art1_1 .left p:nth-child(1) {
+    font-size: 1.1rem;
+}
+
+.art1_1 .left p:nth-child(1) span {
+    font-weight: 600;
+}
+
+.art1_1 .left p:nth-child(2) {
+    font-size: 1rem;
+}
+
+.art1_1 img {
+    align-self: center;
+    width: fit-content;
+    height: 120px;
+    margin-left: 0px;
+    margin-top: -20px;
+}
+
+/* 대장암 예방법 'DREAM' */
+.art1_2 .dream {
+    flex-direction: column;
+    align-items: center;
+}
+
+.art1_2 .dream-title,
+.art1_2 .dream-content {
+    flex-direction: row;
+    gap: 0
+}
+
+.art1_2 .dream-title {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 355px;
+    padding: 0;
+}
+
+.art1_2 .dream-title .tab-button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    line-height: 39px;
+    color: var(--colorFontBasic);
+    background-color: var(--colorSky);
+    border-radius: 10px;
+}
+
+.art1_2 .dream-title .tab-button.on {
+    color: var(--colorFontWhite);
+    background-color: var(--colorRed);
+}
+
+.art1_2 .dream-content {
+    flex-direction: column;
+}
+
+.art1_2 .dream-content p {
+    display: block;
+}
+
+.art1_2 .dream-content .tabBox {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.art1_2 .dream-content .tabBox.on {
+    display: block;
+}
+
+.art1_2 .dream-content .tabBox > p:first-child {
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.art1_2 .translation {
+    font-size: 1rem;
+    margin-left: 0;
+}
+
+
+/* 모두에게 적용되는 프로젝트 */
+.art1_3 .content {
+    padding: 0;
+    gap: 30px;
+}
+
+.art1_3 .content li {
+    gap: 5%;
+}
+
+.art1_3 .content li img {
+    max-height: 140px;
+}
+
+.art1_3 .content li dl {
+    max-width: 385px;
+}
+
+.art1_3 .content li dl > dt {
+    font-size: 1.15rem;
+    line-height: 20px;
+    margin: 0 0 10px;
+}
+
+.art1_3 .content li dl > dd {
+    font-size: 1rem;
+}
+
+.art1_3 .content li dl > dd:last-of-type {
+    font-size: 0.9rem;
+    line-height: 18px;
+}
+
+/* 로고 및 캐릭터 */
+.art2_1 .ico_bl {
+    font-size: 14px;
+}
+
+.art2_1 ul {
+    gap: 20px;
+}
+
+.art2_1 ul li:nth-child(2) {
+    padding: 20px 0 0;
+}
+
+.art2_1 ul li h4 {
+    font-size: 1.2rem;
+}
+
+.art2_1 ul li:nth-child(1) h4,
+.art2_1 ul li:nth-child(3) h4 {
+    margin: 0 0 10px;
+}
+
+.art2_1 ul li p {
+    font-size: 0.95rem;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+.art2_1 ul li p::before {
+    width: 3px;
+    height: 3px;
+    top: 10px;
+}
+
+.art2_1 .color {
+    gap: 5%;
+    padding: 15px 0 25px;
+}
+
+.art2_1 .color > span {
+    font-size: 1.2rem;
+    line-height: 70px;
+    border-radius: 10px;
+}
+
+.art2_1 ul .design img {
+    margin: 15px 0;
+}
+
+.art2_1 .design > a {
+    font-size: 0.9rem;
+    padding: 3px 10px;
+    border-radius: 7px;
+}
+
+/* footer */
+.fnb a,
+.fnb span,
+.fnb p {
+    font-size: 0.8rem;
+}
+
+.fnb .inner {
+    padding: 20px 0;
+}
+
+.fnb .top .sns .ico_wh {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.fnb .top .logo > img {
+    width: 70%;
+}
+
+.fnb .bottom address a:nth-child(3) {
+    display: inline-block;
+}

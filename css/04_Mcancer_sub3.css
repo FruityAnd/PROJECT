@@ -1,0 +1,432 @@
+/* 공통 */
+body .pageTop {
+    right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.inner {
+    margin: 0 20px;
+}
+
+.title {
+    padding: 0 0 10px;
+}
+
+.title::after {
+    width: 25px;
+    height: 4px;
+}
+
+table {
+    min-width: 580px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.65rem;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 1.35rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+.source {
+    min-width: 580px;
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+}
+
+.text-hide2 {
+    display: none;
+}
+
+.art1_1 .inner,
+.art1_2 > .inner {
+    padding: 25px 0;
+    gap: 20px;
+} 
+
+/*main header*/
+header {
+    height: 35px;
+}
+
+header .more_bt {
+    right: 20px;
+}
+
+header .gnb {
+    top: 35px;
+}
+
+header .gnb li {
+    margin: 0;
+    padding: 10px;
+}
+
+header .gnb a.c {
+    font-size: 1.4rem;
+}
+
+header .logo {
+    width: 70px;
+    height: 35px;
+}
+
+/* sub page: title */
+.sec01 {
+    margin-top: 35px;
+}
+
+.sec01 .inner {
+    padding: 20px 0;
+}
+
+.sec01 .inner p {
+    font-size: 1rem;
+}
+
+.sec01 .textBox {
+    font-size: 12px;
+    margin: 10px 0 0;
+}
+
+.sec01 .textBox > span {
+    font-size: 0.9rem;
+}
+
+/* sub page: tab */
+.sec02 .tabButton {
+    height: 25px;
+}
+
+.sec02 .tabButton .inner li h2 {
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 25px;
+}
+
+/* tab Content - tab01 */
+/* 대장암 예방방법 */
+.art1_1 .swiper-wrapper {
+    flex-wrap: nowrap;
+    gap: 0;
+}
+
+.art1_1 .slide_card {
+    flex: none;
+    padding: 20px 15px;
+}
+
+.art1_1 .textBox h4 {
+    font-size: 1rem;
+    padding: 4px 12px;
+}
+
+.art1_1 .slide_card:hover {
+    transform: none;
+}
+
+.art1_1 .textBox strong {
+    font-size: 0.9rem;
+    padding: 0 0 0 10px;
+}
+
+.art1_1 .textBox p {
+    font-size: 0.9rem;
+    padding: 0 0 0 10px;
+}
+
+.art1_1 .textBox .box:nth-of-type(1) {
+    margin: 10px 0 0;
+}
+
+.art1_1 .swiper-pagination-bullet {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--colorFontBasic);
+    opacity: 1;
+    background-color: var(--colorSky);
+}
+
+.art1_1 .swiper-pagination-bullet-active {
+    color: #fff;
+    background-color: var(--colorRed);
+}
+
+.art1_1 .swiper-horizontal > .swiper-pagination-bullets,
+.art1_1 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.art1_1 .swiper-pagination-custom,
+.art1_1 .swiper-pagination-fraction {
+    position: relative;
+    bottom: 0px;
+    line-height: 17px;
+    margin: 7px 0 0;
+}
+
+.art1_1 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.art1_1 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+/* 암의 예방 */
+.art1_2 .backTitle {
+    height: 150px;
+}
+
+.art1_2 .backTitle .title h2 {
+    padding: 0 0 0 35px;
+    font-size: 1.4rem;
+}
+
+.art1_2 .content > p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.art1_2 .content .more {
+    height: 40px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.art1_2 .content.active .more {
+    height: auto;
+}
+
+.art1_2 .content .more::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(transparent, #fff);
+}
+
+.art1_2 .content.active .more::before {
+    display: none;
+}
+
+.art1_2 .content .more-btn {
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--colorFontBasic);
+    padding: 3px 10px;
+    margin: 15px auto 0 auto;
+    background-color: transparent;
+    border: 1px solid var(--colorFontBasic);
+    border-radius: 5px;
+    position: relative;
+}
+
+.art1_2 .content .more-btn:hover,
+.art1_2 .content.active .more-btn {
+    color: var(--colorSky);
+    background-color: var(--colorFontBasic);
+}
+
+.art1_2 .content .more-btn::before {
+    content: "더보기";
+}
+
+.art1_2 .content.active .more-btn::before {
+    content: "접기";
+}
+
+.art1_2 .content .more li {
+    font-size: 0.9rem;
+    line-height: normal;
+}
+
+.art1_2 .content h4 {
+    font-size: 0.95rem;
+    line-height: normal;
+}
+
+.art1_2 .table_content {
+    width: 100%;
+    padding: 20px 0;
+    /* overflow: auto; */
+    overflow: scroll;
+}
+
+.art1_2 .table_content table th {
+    font-size: 0.9rem;
+    padding: 5px 0;
+}
+
+.art1_2 .table_content table td {
+    font-size: 0.85rem;
+    padding: 5px;
+}
+
+/* tab Content - tab02 */
+/* 대장암 O,X 퀴즈 */
+.art2_1 {
+    padding: 25px 0 0;
+    margin: auto 20px;
+}
+
+.art2_1 .home-box, 
+.art2_1 .quiz-box {
+    margin: 25px auto;
+    height: 230px;
+}
+
+/* 퀴즈 시작화면 */
+.art2_1 .home-box {
+    gap: 15px;
+} 
+
+.art2_1 .home-box h3 {
+    font-size: 1.3rem;
+}
+
+.art2_1 .home-box h3 > .ico_b {
+    font-size: 25px;
+}
+
+.art2_1 .home-box img {
+    width: 60%;
+}
+
+.art2_1 .home-box p {
+    font-size: 1.5rem;
+    line-height: normal;
+}
+
+.art2_1 .home-box button {
+    font-weight: normal;
+    padding: 3px 10px;
+}
+
+/* 퀴즈 */
+.art2_1 .quiz-box > div,
+.art2_1 form {
+    width: 85%;
+}
+
+.art2_1 .quiz-box > div {
+    padding: 10px 0px;
+}
+
+.art2_1 .quiz-box .question-number {
+    font-size: 0.9rem;
+    line-height: 15px;
+}
+
+.art2_1 .quiz-box .question-text {
+    font-size: 1.05rem;
+}
+
+.art2_1 .quiz-box form {
+    justify-content: space-around;
+    margin: 25px 0 0;
+    padding: 0;
+}
+
+.art2_1 .quiz-box form input[type="radio"] {
+    width: 65px;
+    height: 65px;
+}
+
+/* 퀴즈 결과화면 */
+.art2_1 .result-box {
+    padding: 30px 0;
+}
+
+.art2_1 .scoreBox .quiz-score {
+    font-size: 2.5rem;
+    line-height: 45px;
+}
+
+.art2_1 .scoreBox .ico_b {
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.art2_1 .result-box ul {
+    margin: 15px 0 0;
+}
+
+.art2_1 .result-box .result-text1 {
+    font-size: 1.1rem;
+}
+
+.art2_1 .result-box .result-text2 {
+    font-size: 1rem;
+}
+
+.art2_1 .result-box .buttonBox {
+    margin: 15px 0 0;
+}
+
+.art2_1 .result-box .buttonBox button {
+    font-size: 0.9rem;
+    padding: 3px 6px 3px;
+}
+
+.art2_1 .result-box .buttonBox .quiz-button {
+    margin-right: 15px;
+}
+
+/* 퀴즈 정답 및 해설 */
+.art2_1 .answer-box .quiz-box {
+    padding: 20px 0;
+    margin: 25px auto;
+}
+
+.art2_1 .answer-box .quiz-box > div {
+    padding: 7px 0px 12px;
+}
+
+.art2_1 .answer-box .quiz-answer {
+    font-size: 1.1rem;
+}
+
+.art2_1 .answer-box .quiz-commentary {
+    font-size: 0.9rem;
+    line-height: normal;
+    white-space: inherit;
+}
+
+/* footer */
+.fnb a,
+.fnb span,
+.fnb p {
+    font-size: 0.8rem;
+}
+
+.fnb .inner {
+    padding: 20px 0;
+}
+
+.fnb .top .sns .ico_wh {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.fnb .top .logo > img {
+    width: 70%;
+}
+
+.fnb .bottom address a:nth-child(3) {
+    display: inline-block;
+}
