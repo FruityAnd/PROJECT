@@ -872,7 +872,7 @@ header .gnb a.c.on{
     justify-content: space-between;
 }
 
-.art3_3 .tabButton {
+.art3_3 .tab-button {
     cursor: pointer;
     display: inline-block;
     height: auto;
@@ -884,7 +884,7 @@ header .gnb a.c.on{
     border-radius: 5px;
 }
 
-.art3_3 .tabButton.on {
+.art3_3 .tab-button.on {
     color: var(--colorFontWhite);
     background-color: var(--colorRed);
 }
