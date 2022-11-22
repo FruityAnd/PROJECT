@@ -22,7 +22,7 @@ body .pageTop {
     bottom: 3%;
     width: 50px;
     height: 50px;
-    background: url(/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/Arrow_upward_sky.png) 50% 50% no-repeat;
     z-index: 5;
     border: none;
     text-indent: -1000px;
@@ -187,7 +187,7 @@ header .logo {
     display: block;
     text-indent: -1000px;
     overflow: hidden;
-    background: url(/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
+    background: url(/PROJECT/img/드림프로젝트/mainpage/logo2_project.png) no-repeat 50% 45%/ cover;
 }
 
 header .more_bt {
@@ -218,7 +218,7 @@ header .gnb a.c.on{
 
 /* sub page: title */
 .sec01 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 0% 60% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/PROJECT/img/드림프로젝트/sub3page/sub3_title.png) no-repeat 0% 60% / cover;
 }
 
 .sec01 .inner {
@@ -390,7 +390,7 @@ header .gnb a.c.on{
 /* 암의 예방 */
 .art1_2 .backTitle {
     height: 300px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/img/드림프로젝트/sub3page/question_1.png) no-repeat 0% 13% / cover;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(/PROJECT/img/드림프로젝트/sub3page/question_1.png) no-repeat 0% 13% / cover;
 }
 
 .art1_2 .backTitle .inner {
@@ -414,11 +414,11 @@ header .gnb a.c.on{
 }
 
 .art1_2 .backTitle .title h2:nth-child(1) {
-    background: url(/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji__talke.png) no-repeat 0% 50% / contain;
 }
 
 .art1_2 .backTitle .title h2:nth-child(2) {
-    background: url(/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/emoji_talkq.png) no-repeat 0% 50% / contain;
 }
 
 .art1_2 .content {
@@ -644,19 +644,19 @@ header .gnb a.c.on{
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1) {
-    background: url(/img/드림프로젝트/sub3page/icon_true.png) no-repeat 50% 50% / cover;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true.png) no-repeat 50% 50% / cover;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(1):hover {
-    background: url(/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat 50% 50% / cover;;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_true_hover.png) no-repeat 50% 50% / cover;;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2) {
-    background: url(/img/드림프로젝트/sub3page/icon_false.png) no-repeat 50% 50% / cover;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false.png) no-repeat 50% 50% / cover;
 }
 
 .art2_1 .quiz-box form input[type="radio"]:nth-child(2):hover {
-    background: url(/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat 50% 50% / cover;;
+    background: url(/PROJECT/img/드림프로젝트/sub3page/icon_false_hover.png) no-repeat 50% 50% / cover;;
 }
 
 /* 퀴즈 결과화면 */

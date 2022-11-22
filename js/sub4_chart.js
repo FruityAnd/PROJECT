@@ -2,7 +2,7 @@
 
 /** javascript로 JSON 데이터 가져오기 → XMLHttpRequest 객체 생성 **/
 const chartData = new XMLHttpRequest();
-const url = "/json/sub4_chartData.json";
+const url = "/PROJECT/json/sub4_chartData.json";
 
 //XMLHttpRequest 내장 함수
 chartData.open("get", url, true); //XMLHttpRequest의 open()메서드 : .open(전송방식, 전송위치, sync방식)
@@ -90,8 +90,6 @@ chartData.onreadystatechange = function () {
             },
             options: {
                 maintainAspectRatio: false,
-                // aspectRatio: 1, // canvas요소 부모에 사이즈 지정할때
-                // responsive: false, //canvas요소 본인에 사이즈 지정할때
                 plugins: {
                     legend: {
                         labels : {
